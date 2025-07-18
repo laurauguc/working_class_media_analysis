@@ -1,4 +1,5 @@
-# Who Is the Working Class?
+# Who Counts as Working Class?
+## Analysis of Media Representations
 
 **Objective:**  
 This project analyzes how the working class is represented in the media. It explores changes in representation over time and compares portrayals across different publishers.
