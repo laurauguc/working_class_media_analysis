@@ -61,7 +61,7 @@ working-class-media-analysis/
 │   └── processed/                  # Cleaned and structured data ready for analysis
 ├── data_preparation/              # Scripts or notebooks for parsing and cleaning data
 │   └── prepare_data.ipynb         # Notebook/script for data parsing and cleaning
-├── notebooks/                     # Main study notebooks
+├── analysis/                     # Main study notebooks
 │   ├── Who_is_the_Working_Class.ipynb  # Study 1: Analysis of working class definitions
 │   ├── Article_classification.ipynb    # Study 2: Classification of article themes/topics
 │   └── POV_trends.ipynb                # Study 3: Point-of-view and discourse trends over time
