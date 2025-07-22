@@ -48,7 +48,27 @@ working-class-media-analysis/
 ├── requirements.txt                # List of Python dependencies
 ├── Who_is_the_Working_Class.ipynb  # Main notebook for running the analysis
 └── plots/                          # Output directory for generated plots and visualizations
+└── README.md                      # Project overview and setup instructions
 
+```
+
+Proposed structure (discuss with Guo and Burui):
+
+```
+working-class-media-analysis/
+├── data/                           # Directory for raw and processed datasets
+│   ├── raw/                        # Raw, unprocessed data
+│   └── processed/                  # Cleaned and structured data ready for analysis
+├── data_preparation/              # Scripts or notebooks for parsing and cleaning data
+│   └── prepare_data.ipynb         # Notebook/script for data parsing and cleaning
+├── notebooks/                     # Main study notebooks
+│   ├── Who_is_the_Working_Class.ipynb  # Study 1: Analysis of working class definitions
+│   ├── Article_classification.ipynb    # Study 2: Classification of article themes/topics
+│   └── POV_trends.ipynb                # Study 3: Point-of-view and discourse trends over time
+├── plots/                         # Output directory for generated plots and visualizations
+├── results/                       # Final outputs, e.g., tables, metrics, summaries
+├── requirements.txt               # List of Python dependencies
+└── README.md                      # Project overview and setup instructions
 ```
 
 
