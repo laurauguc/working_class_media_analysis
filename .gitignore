@@ -1,5 +1,5 @@
 # Ignore the entire data folder and its contents
-data/
+data/processed/
 
 # Ignore jupyter notebook checkpoints
 .ipynb_checkpoints/
