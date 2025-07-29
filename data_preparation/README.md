@@ -60,6 +60,8 @@ Combined parsed articles:
 ../data/processed/parsed_articles.pkl
 ```
 
+---
+
 ## 🧼 2. Data Cleaning
 
 ### 📄 Script
@@ -84,6 +86,8 @@ This step transforms the parsed data into a clean, analysis-ready format by perf
 ### 📦 Output
 
 `../data/processed/cleaned_articles.pkl`
+
+---
 
 ## ✅ To-Do
 

@@ -7,6 +7,8 @@ This project analyzes how the working class is represented in the media. It expl
 **Dataset:**  
 The analysis is based on a corpus of over 40,000 articles related to the working class, published between June 1, 1980, and December 31, 2024. Sources include *The New York Times* and other major media outlets.
 
+**Note:** For details on how the data was parsed, cleaned, and processed, please see the separate `README.md` file in the [`data_preparation`](./data_preparation/README.md) folder.
+
 ---
 
 ## Installation
@@ -42,25 +44,13 @@ View the main script, `Who_is_the_Working_Class.ipynb` in a Jupyter notebook.
 ## Project Structure
 
 ```
-
-working-class-media-analysis/
-├── data/                           # Directory for raw and processed datasets
-├── requirements.txt                # List of Python dependencies
-├── Who_is_the_Working_Class.ipynb  # Main notebook for running the analysis
-└── plots/                          # Output directory for generated plots and visualizations
-└── README.md                      # Project overview and setup instructions
-
-```
-
-Proposed structure (discuss with Guo and Burui):
-
-```
 working-class-media-analysis/
 ├── data/                           # Directory for raw and processed datasets
 │   ├── raw/                        # Raw, unprocessed data
 │   └── processed/                  # Cleaned and structured data ready for analysis
-├── data_preparation/              # Scripts or notebooks for parsing and cleaning data
-│   └── prepare_data.ipynb         # Notebook/script for data parsing and cleaning
+├── data_preparation/               # Scripts or notebooks for parsing and cleaning data
+│   └── 1.parse_articles.py         # Script for parsing the data
+│   └── 2.clean_data.ipynb          # Notebook for cleaning the data
 ├── analysis/                     # Main study notebooks
 │   ├── Who_is_the_Working_Class.ipynb  # Study 1: Analysis of working class definitions
 │   ├── Article_classification.ipynb    # Study 2: Classification of article themes/topics
@@ -70,7 +60,6 @@ working-class-media-analysis/
 ├── requirements.txt               # List of Python dependencies
 └── README.md                      # Project overview and setup instructions
 ```
-
 
 ## Contact
 
