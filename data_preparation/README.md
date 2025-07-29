@@ -90,3 +90,4 @@ This step transforms the parsed data into a clean, analysis-ready format by perf
 - [ ] Review `clean_data.py`
 - [ ] Discuss observation with team and finalize script
 - [ ] Finalize data processing documentation
+- [ ] Delete extra files in this folder (0. Coding practices.ipynb, 3. Data checks.ipynb)
