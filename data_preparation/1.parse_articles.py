@@ -74,6 +74,7 @@ def extract_articles_to_dataframe(doc_path, save_intermediate=False):
                         load_date_at_end = True
 
             # Look ahead for 'Section:', 'Length:', and 'Body' markers
+            body_start_found = False
             for i in range(3,20):
                 text = doc.paragraphs[count+i].text
                 if text[:8] == "Section:":
@@ -83,34 +84,51 @@ def extract_articles_to_dataframe(doc_path, save_intermediate=False):
                     article["length"] = text[8:]
                 if text == "Body":
                     count_body_start = count + i + 1
+                    body_start_found = True
                     break
-
+            if not body_start_found:
+                article["body"] = ""
+                count += 3
             # Extract article body until "End of Document"
-            body = []
-            new_count = count_body_start
-            while text.strip("\n ").lower() != "end of document":
-                text = doc.paragraphs[new_count].text
-                body.append(text)
-                new_count += 1
-            article["body"] = "\n".join(body[:-1])
+            else:
+                body = []
+                new_count = count_body_start
+                while text.strip("\n ").lower() != "end of document":
+                    text = doc.paragraphs[new_count].text
+                    body.append(text)
+                    new_count += 1
+                article["body"] = "\n".join(body[:-1])
 
-            # If correction was appended, extract the corrected date from body
-            if correction_appended:
-                date_parts  = article["body"].split("Correction-Date: ")[-1].split()[:3]
-                cleaned_date_str = " ".join(date_parts).strip(",")
-                article['date'] = clean_date(cleaned_date_str)
+                # If correction was appended, extract the corrected date from body
+                if correction_appended:
+                    correction_text = article["body"].split("Correction-Date: ")[-1]
 
-            # If date wasn't parsed earlier, attempt to extract Load-Date from body
-            if load_date_at_end:
-                try:
-                    date_parts  = article["body"].split("Load-Date: ")[-1].split()[:3]
-                    cleaned_date_str = " ".join(date_parts).strip(",")
-                    article['date'] = clean_date(cleaned_date_str)
-                except:
-                    print(f"Date not found in doc {relative_path}. See: {article['title']}.")
+                    # Try different date parsing patterns
+                    date_patterns = [
+                        lambda text: " ".join(text.split()[:3]).strip(","),
+                        lambda text: " ".join(text.split()[1:4]).strip(","),
+                        lambda text: ", ".join(text.split(",")[:2]).strip(","),
+                    ]
 
-            # Update counter to move to next article
-            count = new_count
+                    for parse_func in date_patterns:
+                        try:
+                            cleaned_date_str = parse_func(correction_text)
+                            article['date'] = clean_date(cleaned_date_str)
+                            break
+                        except Exception:
+                            continue
+
+                # If date wasn't parsed earlier, attempt to extract Load-Date from body
+                if load_date_at_end:
+                    try:
+                        date_parts  = article["body"].split("Load-Date: ")[-1].split()[:3]
+                        cleaned_date_str = " ".join(date_parts).strip(",")
+                        article['date'] = clean_date(cleaned_date_str)
+                    except:
+                        print(f"Date not found in doc {relative_path}. See: {article['title']}.")
+
+                # Update counter to move to next article
+                count = new_count
 
             # Add correction and fallback flags
             article["correction_appended"] = correction_appended
@@ -153,6 +171,8 @@ if __name__ == "__main__":
 
     # Find all DOCX files in the raw data folder
     docx_files = glob.glob(os.path.join('..', 'data', 'raw', '*', '*.DOCX'))
+    docx_files = ['../data/raw/Other publishers/Files (305).DOCX', '../data/raw/Other publishers/Files (500) (31).DOCX']
+
     print("Files to process: ", len(docx_files))
 
     # Partially apply the save_intermediate argument for use in parallel
