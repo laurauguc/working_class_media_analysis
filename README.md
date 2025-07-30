@@ -61,6 +61,8 @@ working-class-media-analysis/
 └── README.md                      # Project overview and setup instructions
 ```
 
+---
+
 ## Contact
 
 TBD.
