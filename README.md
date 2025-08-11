@@ -45,20 +45,25 @@ View the main script, `Who_is_the_Working_Class.ipynb` in a Jupyter notebook.
 
 ```
 working-class-media-analysis/
-├── data/                           # Directory for raw and processed datasets
-│   ├── raw/                        # Raw, unprocessed data
-│   └── processed/                  # Cleaned and structured data ready for analysis
-├── data_preparation/               # Scripts or notebooks for parsing and cleaning data
-│   └── 1.parse_articles.py         # Script for parsing the data
-│   └── 2.clean_data.ipynb          # Notebook for cleaning the data
-├── analysis/                     # Main study notebooks
+├── data/                               # Directory for raw and processed datasets
+│   ├── raw/                            # Raw, unprocessed data
+│   └── processed/                      # Cleaned and structured data ready for analysis
+│   │   └── parsed_articles.pkl         # TK
+│   │   └── cleaned_articles.pkl        # TK 
+├── data_preparation/                   # Scripts or notebooks for parsing and cleaning data
+│   └── 1.parse_articles.py             # Script for parsing the data
+│   └── 2.clean_data.ipynb              # Notebook for cleaning the data
+├── data_exploration/                   # Scripts or notebooks for parsing and cleaning data
+│   └── 1.explore_parsed_data.ipynb     # TK
+│   └── 2.explore_cleaned_data.ipynb    # TK
+├── analysis/                           # Main study notebooks
 │   ├── Who_is_the_Working_Class.ipynb  # Study 1: Analysis of working class definitions
 │   ├── Article_classification.ipynb    # Study 2: Classification of article themes/topics
 │   └── POV_trends.ipynb                # Study 3: Point-of-view and discourse trends over time
-├── plots/                         # Output directory for generated plots and visualizations
-├── results/                       # Final outputs, e.g., tables, metrics, summaries
-├── requirements.txt               # List of Python dependencies
-└── README.md                      # Project overview and setup instructions
+├── plots/                              # Output directory for generated plots and visualizations
+├── results/                            # Final outputs, e.g., tables, metrics, summaries
+├── requirements.txt                    # List of Python dependencies
+└── README.md                           # Project overview and setup instructions
 ```
 
 ---
