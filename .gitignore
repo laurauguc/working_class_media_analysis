@@ -1,4 +1,4 @@
-# Ignore the entire data folder and its contents
+# Ignore the processed data folder and its contents
 data/processed/
 
 # Ignore jupyter notebook checkpoints
