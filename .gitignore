@@ -8,3 +8,6 @@ data/processed/
 .DS_Store
 
 .venv/
+
+#__pycache__
+data_preparation/__pycache__/
