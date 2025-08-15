@@ -97,7 +97,7 @@ def mark_duplicates(group, threshold):
     duplicate_of_index = []
 
     for idx, row in group.iterrows():
-        body = row['body_clean']
+        body = row['body']
         is_duplicate = False
         duplicate_index = np.nan
 
