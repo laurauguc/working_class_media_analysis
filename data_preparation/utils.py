@@ -1,5 +1,8 @@
 import re
 import calendar
+import pandas as pd
+import pycountry
+import re
 
 def standardize_text(text, title_stop_words = None):
     # Remove all non-alphanumeric characters except spaces
@@ -140,3 +143,116 @@ def add_duplicate_flags(df, group_col, thresholds):
         #cols = ['title'] + [col for col in df_out.columns if col != 'title']
         #df_out = df_out[cols]
     return df_out
+
+
+# --- US states with abbreviations ---
+US_STATES = {
+    "Alabama": "AL","Alaska": "AK","Arizona": "AZ","Arkansas": "AR","California": "CA",
+    "Colorado": "CO","Connecticut": "CT","Delaware": "DE","Florida": "FL","Georgia": "GA",
+    "Hawaii": "HI","Idaho": "ID","Illinois": "IL","Indiana": "IN","Iowa": "IA","Kansas": "KS",
+    "Kentucky": "KY","Louisiana": "LA","Maine": "ME","Maryland": "MD","Massachusetts": "MA",
+    "Michigan": "MI","Minnesota": "MN","Mississippi": "MS","Missouri": "MO","Montana": "MT",
+    "Nebraska": "NE","Nevada": "NV","New Hampshire": "NH","New Jersey": "NJ","New Mexico": "NM",
+    "New York": "NY","North Carolina": "NC","North Dakota": "ND","Ohio": "OH","Oklahoma": "OK",
+    "Oregon": "OR","Pennsylvania": "PA","Rhode Island": "RI","South Carolina": "SC","South Dakota": "SD",
+    "Tennessee": "TN","Texas": "TX","Utah": "UT","Vermont": "VT","Virginia": "VA","Washington": "WA",
+    "West Virginia": "WV","Wisconsin": "WI","Wyoming": "WY"
+}
+
+# --- US regions (only unambiguous ones) ---
+US_REGIONS = ["Midwest", "Pacific Northwest", "New England"]
+
+# --- Other US indicators ---
+US_INDICATORS = ["USA", "US", "U.S.", "United States", "America"]
+
+# --- Alternative names for foreign countries ---
+ALT_NAMES = {
+    "United Kingdom": ["UK", "Britain", "England"],
+    "Russia": ["Russian Federation"],
+    "South Korea": ["Republic of Korea"],
+    "North Korea": ["Democratic People's Republic of Korea"],
+    "Iran": ["Iran, Islamic Republic of"],
+    "Syria": ["Syrian Arab Republic"],
+    "Venezuela": ["Bolivarian Republic of Venezuela"]
+}
+
+# --- Function to safely detect US state abbreviations in parentheses or after comma+space ---
+def match_state_abbr(text, state, abbr):
+    # Match "(CA)" or ", CA"
+    pattern = rf"(?:\(\s*{re.escape(abbr)}\s*\)|,\s*{re.escape(abbr)})"
+    return re.search(pattern, text)
+
+# --- Function to check countries/flags in text ---
+def find_country_flags(text):
+    text_lower = text.lower()
+
+    countries = [c.name for c in pycountry.countries if c.name not in ["Jersey", "Georgia"]]
+    foreign_found = set()
+    us_found = set()
+
+    # Foreign countries
+    for country in countries:
+        if country == "Mexico":
+            # Match "Mexico" but exclude "New Mexico"
+            pattern = r"(?<!new\s)\bmexico\b"
+        else:
+            pattern = r"\b" + re.escape(country.lower()) + r"\b"
+
+        if re.search(pattern, text_lower):
+            if country != "United States":
+                foreign_found.add(country)
+
+    # Alternative foreign names
+    for country, aliases in ALT_NAMES.items():
+        for alias in aliases:
+            if re.search(r"\b" + re.escape(alias.lower()) + r"\b", text_lower):
+                foreign_found.add(country)
+
+    # US states (full names + abbreviations)
+    for state, abbr in US_STATES.items():
+        # Default pattern
+        pattern = r"\b" + re.escape(state.lower()) + r"\b"
+        # Special case: skip "New York" if followed by "Times"
+        if state == "New York":
+            pattern = r"\bnew york\b(?!\s+times)"
+
+        # Full name match
+        if re.search(pattern, text_lower):
+            us_found.add(state)
+
+        # Abbreviation match (only parentheses or after comma+space)
+        if match_state_abbr(text, state, abbr):
+            us_found.add(f"{state} ({abbr})")
+
+    # US regions
+    for region in US_REGIONS:
+        if re.search(r"\b" + re.escape(region.lower()) + r"\b", text_lower):
+            us_found.add(region)
+
+    # US indicators
+    for indicator in US_INDICATORS:
+        if re.search(r"\b" + re.escape(indicator.lower()) + r"\b", text_lower):
+            us_found.add(indicator)
+
+    # Determine flag
+    if foreign_found and us_found:
+        flag = "BOTH"
+    elif foreign_found:
+        flag = "FOREIGN_ONLY"
+    elif us_found:
+        flag = "US_ONLY"
+    else:
+        flag = "NONE"
+
+    return flag, list(foreign_found), list(us_found)
+
+# --- Apply to DataFrame ---
+def flag_country(df):
+    flags = df.apply(
+        lambda row: find_country_flags(str(row['title']) + " " + str(row['body'])),
+        axis=1
+    )
+    df['country_flag'] = flags.apply(lambda x: x[0])
+    df['foreign_countries'] = flags.apply(lambda x: x[1])
+    df['us_mentions'] = flags.apply(lambda x: x[2])
+    return df
