@@ -186,7 +186,8 @@ def match_state_abbr(text, state, abbr):
 def find_country_flags(text):
     text_lower = text.lower()
 
-    countries = [c.name for c in pycountry.countries if c.name not in ["Jersey", "Georgia"]]
+    countries = [c.name for c in pycountry.countries if c.name not in ["Jersey", "Georgia"]] + ["Taiwan", "Saint Martin", "Iran", "Lao", "Moldova", "Tanzania", "Vatican", "Venezuela", "Korea"]
+
     foreign_found = set()
     us_found = set()
 
