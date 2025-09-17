@@ -3,26 +3,46 @@ from collections import Counter
 import numpy as np
 import pycountry
 
-def compare_histograms(items_list1, items_list2, title, filename, label1='List 1', label2='List 2', scale_counts = True):
+from collections import Counter
+import numpy as np
+import matplotlib.pyplot as plt
+
+def compare_histograms(items_list1, items_list2, title, filename,
+                       label1='List 1', label2='List 2',
+                       scale_counts=True, order_by_count=False):
     # Count frequencies
     counter1 = Counter(items_list1)
     counter2 = Counter(items_list2)
 
     # Get all unique labels
-    all_labels = sorted(set(counter1.keys()).union(set(counter2.keys())))
+    all_labels = list(set(counter1.keys()).union(set(counter2.keys())))
 
     # Total counts for normalization
     total1 = sum(counter1.values())
     total2 = sum(counter2.values())
 
     if scale_counts:
-        # Get frequencies (proportions) for each label (0 if not present)
-        freq1 = [counter1.get(label, 0) / total1 for label in all_labels]
-        freq2 = [counter2.get(label, 0) / total2 for label in all_labels]
+        # Frequencies (proportions)
+        freq1_dict = {label: counter1.get(label, 0) / total1 for label in all_labels}
+        freq2_dict = {label: counter2.get(label, 0) / total2 for label in all_labels}
     else:
-        # Get frequencies for each label (0 if not present)
-        freq1 = [counter1.get(label, 0) for label in all_labels]
-        freq2 = [counter2.get(label, 0) for label in all_labels]
+        # Raw counts
+        freq1_dict = {label: counter1.get(label, 0) for label in all_labels}
+        freq2_dict = {label: counter2.get(label, 0) for label in all_labels}
+
+    # Optionally reorder labels by highest total count/frequency
+    if order_by_count:
+        all_labels = sorted(
+            all_labels,
+            key=lambda lbl: freq1_dict[lbl] + freq2_dict[lbl],
+            reverse=True
+        )
+    else:
+        all_labels = sorted(all_labels)
+
+    # Get ordered frequencies
+    freq1 = [freq1_dict[label] for label in all_labels]
+    freq2 = [freq2_dict[label] for label in all_labels]
 
     # Set positions for bars
     x = np.arange(len(all_labels))
@@ -34,11 +54,7 @@ def compare_histograms(items_list1, items_list2, title, filename, label1='List 1
     plt.bar(x + width/2, freq2, width, label=label2, color='salmon')
 
     # Formatting
-    #plt.xlabel(xlabel, fontsize=18)
-    if scale_counts:
-        plt.ylabel('Frequency', fontsize=18)
-    else:
-        plt.ylabel('Count', fontsize=18)
+    plt.ylabel('Frequency' if scale_counts else 'Count', fontsize=18)
     plt.title(title, fontsize=22)
     plt.xticks(x, all_labels, rotation=45, ha='right', fontsize=18)
     plt.yticks(fontsize=18)
@@ -50,7 +66,71 @@ def compare_histograms(items_list1, items_list2, title, filename, label1='List 1
     plt.savefig(filename, dpi=300, facecolor='white', edgecolor='none')
     plt.show()
 
-# Set of U.S. states
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def line_time_plot(df_articles_with_results, nyt_mask, variable, title, filename, variable_label=None):
+    """
+    Plot two line charts of article counts per year, grouped by a categorical variable:
+    one for NYT and one for other publishers, with consistent colors.
+
+    Parameters
+    ----------
+    df_articles_with_results : pandas.DataFrame
+        DataFrame containing a 'year' column and the specified categorical variable.
+    nyt_mask : pandas.Series[bool]
+        Boolean mask selecting NYT articles.
+    variable : str
+        Column name of the categorical variable.
+    title : str
+        Base title for the plots.
+    variable_label : str, optional
+        Label to use for the variable in the legend. Defaults to `variable` if None.
+    """
+    if variable_label is None:
+        variable_label = variable
+
+    # Determine all categories
+    all_categories = df_articles_with_results[variable].dropna().unique()
+
+    # Use a clean, pretty color palette
+    palette = sns.color_palette("tab10", n_colors=len(all_categories))
+    colors = {cat: palette[i] for i, cat in enumerate(all_categories)}
+
+    fig, axes = plt.subplots(2, 1, figsize=(12, 10), sharex=True)
+
+    for ax, mask, subtitle in zip(
+        axes,
+        [nyt_mask, ~nyt_mask],
+        [f"NYT: {title}", f"Other Publishers: {title}"]
+    ):
+        grouped = (
+            df_articles_with_results[mask]
+            .groupby(["year", variable])
+            .size()
+            .unstack(fill_value=0)
+        )
+
+        # Reindex columns to match global category order
+        grouped = grouped.reindex(columns=all_categories, fill_value=0)
+
+        # Plot each category as a line
+        for cat in grouped.columns:
+            ax.plot(grouped.index, grouped[cat], label=cat, color=colors[cat], marker='o')
+
+        ax.set_ylabel("Frequency")
+        ax.set_title(subtitle)
+        ax.grid(True, linestyle="--", alpha=0.7)
+        ax.legend(title=variable_label, bbox_to_anchor=(1.05, 1), loc="upper left")
+
+    axes[-1].set_xlabel("Year")
+    plt.tight_layout()
+
+    # Save and show
+    plt.savefig(filename, dpi=300, facecolor='white', edgecolor='none')
+    plt.show()
+
 
 
 # Function to split states and countries
@@ -66,7 +146,7 @@ def split_locations(locations):
         'Wisconsin', 'Wyoming'
     }
 
-    world_countries = [c.name for c in pycountry.countries if c.name not in ["Jersey", "Georgia"]] + ["UK", "Britain", "England", "South Korea", "North Korea", "Iran", "Syria", "Venezuela", "Russia", "Taiwan", "Saint Martin", "Iran", "Lao", "Moldova", "Tanzania", "Vatican", "Venezuela", "Korea"]
+    world_countries = [c.name for c in pycountry.countries if c.name not in ["Jersey", "Georgia"]] + ["UK", "Britain", "England", "South Korea", "North Korea", "Iran", "Syria", "Venezuela", "Russia", "Taiwan", "Saint Martin", "Iran", "Lao", "Moldova", "Tanzania", "Vatican", "Venezuela", "Korea", "Turkey", "Czechoslovakia", "Congo"]
 
     states = []
     countries = []
@@ -131,9 +211,226 @@ def extract_region_mentions(text, regions=None):
         if re.search(r"\bMid-?Atlantic\b", text): # flags=re.IGNORECASE
             mentions.append("Northeast")
 
+        if re.search(r"\bSouthern states\b", text): # flags=re.IGNORECASE
+            mentions.append("South")
+
     for region in regions:
         pattern = r'\b' + re.escape(region) + r'\b'
         if re.search(pattern, text): # flags=re.IGNORECASE
             mentions.append(region)
 
     return mentions
+
+
+import json
+import time
+import pandas as pd
+from openai import OpenAI
+
+client = OpenAI()
+
+
+# --- Create batch ---
+def create_batch(df, system_prompt, response_format, model, temperature, reasoning_effort, batch_input_filename="batch_input.jsonl"):
+    """
+    Convert DataFrame into a JSONL file suitable for the OpenAI batch API.
+    Each row becomes one request.
+    """
+    with open(batch_input_filename, "w") as f:
+        for _, row in df.iterrows():
+            user_prompt = f"Title: {row['title']}\n\nBody: {row['body']}"
+            request = {
+                "custom_id": f"req-{row.name}",  # track back to row
+                "method": "POST",
+                "url": "/v1/chat/completions",
+                "body": {
+                    "model": model,
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt},
+                    ],
+                    "response_format": response_format,
+                    "temperature": temperature,
+                    "reasoning_effort": reasoning_effort
+                },
+            }
+            f.write(json.dumps(request) + "\n")
+    return batch_input_filename
+
+
+def submit_batch(batch_input_filename):
+    """
+    Upload batch file and create a batch job.
+    """
+    # Step 1: Upload file
+    with open(batch_input_filename, "rb") as f:
+        uploaded_file = client.files.create(file=f, purpose="batch")
+
+    # Step 2: Create batch using uploaded file id
+    batch = client.batches.create(
+        input_file_id=uploaded_file.id,
+        endpoint="/v1/chat/completions",
+        completion_window="24h"
+    )
+
+    print(f"Batch submitted. ID: {batch.id}")
+    return batch.id
+
+
+def retrieve_batch_results(batch_id, output_filename="batch_output.jsonl"):
+    """
+    Download completed batch results.
+    """
+    batch = client.batches.retrieve(batch_id)
+    if batch.status != "completed":
+        print(f"Batch not ready yet. Status: {batch.status}")
+        return None
+
+    output_file = client.files.retrieve(batch.output_file_id)
+    result_content = client.files.content(output_file.id).text
+
+    with open(output_filename, "w") as f:
+        f.write(result_content)
+
+    print(f"Results saved to {output_filename}")
+    return output_filename
+
+
+pricing_dict = {
+    'gpt-5-mini': {'Input': 0.25, 'Cached input': 0.025, 'Output': 2.00},
+    'gpt-5': {'Input': 1.25, 'Cached input': 0.125, 'Output': 10.00},
+    'gpt-4.1':  {'Input': 2.00, 'Cached input': 0.5, 'Output': 8.00}
+}
+
+def parse_batch_results(output_filename, model, pricing_dict=pricing_dict):
+    """
+    Parse JSONL batch output file into DataFrame of responses,
+    including token usage and cached inputs for cost calculation.
+    Uses pricing_dict to compute estimated cost (values are $ per 1M tokens).
+    """
+    responses = []
+    total_prompt_tokens = 0
+    total_completion_tokens = 0
+    total_cached_tokens = 0
+
+    with open(output_filename, "r") as f:
+        for line in f:
+            item = json.loads(line)
+            custom_id = item["custom_id"]
+
+            body = item["response"]["body"]
+            choice = json.loads(body["choices"][0]["message"]["content"])
+
+            # usage info
+            usage = body.get("usage", {})
+            prompt_tokens = usage.get("prompt_tokens", 0)
+            completion_tokens = usage.get("completion_tokens", 0)
+            cached_tokens = (
+                usage.get("prompt_tokens_details", {})
+                .get("cached_tokens", 0)
+            )
+
+            total_prompt_tokens += prompt_tokens
+            total_completion_tokens += completion_tokens
+            total_cached_tokens += cached_tokens
+
+             # Flatten choice dict into the response row
+            row = {
+                "custom_id": custom_id,
+                "prompt_tokens": prompt_tokens,
+                "completion_tokens": completion_tokens,
+                "cached_tokens": cached_tokens,
+                "total_tokens": usage.get("total_tokens", prompt_tokens + completion_tokens),
+            }
+            # Add each key from choice dict as a separate column
+            row.update(choice)
+            responses.append(row)
+
+    df = pd.DataFrame(responses)
+
+    # === Token summary ===
+    print("=== Token Usage Summary ===")
+    print(f"Prompt tokens:     {total_prompt_tokens}")
+    print(f"Completion tokens: {total_completion_tokens}")
+    print(f"Cached tokens:     {total_cached_tokens}")
+    print(f"Total tokens:      {total_prompt_tokens + total_completion_tokens}")
+
+    # === Cost calculation ===
+    if model not in pricing_dict:
+        raise ValueError(f"Model {model} not found in pricing_dict")
+
+    # Convert $ per 1M tokens to $ per token
+    rates = pricing_dict[model]
+    prompt_rate = rates["Input"] / 1_000_000
+    cached_rate = rates["Cached input"] / 1_000_000
+    completion_rate = rates["Output"] / 1_000_000
+
+    cost = (
+        (total_prompt_tokens - total_cached_tokens) * prompt_rate +
+        (total_cached_tokens * cached_rate) +
+        (total_completion_tokens * completion_rate)
+    ) / 2
+
+    print(f"Estimated cost for {model}: ${cost:.4f}")
+
+    return df
+
+
+
+
+
+
+
+
+
+# archive
+import matplotlib.pyplot as plt
+
+def stacked_time_plot(df_articles_with_results, nyt_mask, variable, title):
+    """
+    Plot two stacked bar charts of article counts per year, grouped by a categorical variable:
+    one for NYT and one for other publishers, with consistent color coding.
+    """
+    # Ensure consistent categories and color mapping
+    all_categories = (
+        df_articles_with_results[variable]
+        .value_counts()
+        .index
+    )
+
+    color_map = plt.colormaps.get_cmap("Set2").resampled(len(all_categories))
+    colors = {cat: color_map(i) for i, cat in enumerate(all_categories)}
+
+    fig, axes = plt.subplots(2, 1, figsize=(12, 10), sharex=True)
+
+    for ax, mask, subtitle in zip(
+        axes,
+        [nyt_mask, ~nyt_mask],
+        [f"NYT: {title}", f"Other Publishers: {title}"],
+    ):
+        grouped = (
+            df_articles_with_results[mask]
+            .groupby(["year", variable])
+            .size()
+            .unstack(fill_value=0)
+        )
+
+        # Reorder columns to match global order
+        grouped = grouped.reindex(columns=all_categories, fill_value=0)
+
+        grouped.plot(
+            kind="bar",
+            stacked=True,
+            ax=ax,
+            color=[colors[cat] for cat in grouped.columns],
+        )
+
+        ax.set_ylabel("Frequency")
+        ax.set_title(subtitle)
+        ax.tick_params(axis="x", rotation=45)
+        ax.grid(axis="y", linestyle="--", alpha=0.7)
+        ax.legend(title=variable, bbox_to_anchor=(1.05, 1), loc="upper left")
+
+    axes[-1].set_xlabel("Year")
+    plt.tight_layout()
+    plt.show()
