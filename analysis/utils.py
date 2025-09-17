@@ -70,10 +70,18 @@ def compare_histograms(items_list1, items_list2, title, filename,
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def line_time_plot(df_articles_with_results, nyt_mask, variable, title, filename, variable_label=None):
+def line_time_plot(
+    df_articles_with_results,
+    nyt_mask,
+    variable,
+    title,
+    filename,
+    variable_label=None,
+    smooth_window=3  # rolling average window; set to None to disable
+):
     """
     Plot two line charts of article counts per year, grouped by a categorical variable:
-    one for NYT and one for other publishers, with consistent colors.
+    one for NYT and one for other publishers, with consistent colors. Optionally smooth lines.
 
     Parameters
     ----------
@@ -87,6 +95,8 @@ def line_time_plot(df_articles_with_results, nyt_mask, variable, title, filename
         Base title for the plots.
     variable_label : str, optional
         Label to use for the variable in the legend. Defaults to `variable` if None.
+    smooth_window : int or None, optional
+        Rolling window size for smoothing lines. If None, no smoothing is applied.
     """
     if variable_label is None:
         variable_label = variable
@@ -115,14 +125,25 @@ def line_time_plot(df_articles_with_results, nyt_mask, variable, title, filename
         # Reindex columns to match global category order
         grouped = grouped.reindex(columns=all_categories, fill_value=0)
 
+        # Optionally smooth with rolling average
+        if smooth_window is not None and smooth_window > 1:
+            grouped = grouped.rolling(window=smooth_window, min_periods=1).mean()
+
         # Plot each category as a line
         for cat in grouped.columns:
-            ax.plot(grouped.index, grouped[cat], label=cat, color=colors[cat], marker='o')
+            ax.plot(
+                grouped.index,
+                grouped[cat],
+                label=cat,
+                color=colors[cat],
+                linewidth=2,
+                alpha=0.9
+            )
 
         ax.set_ylabel("Frequency")
         ax.set_title(subtitle)
         ax.grid(True, linestyle="--", alpha=0.7)
-        ax.legend(title=variable_label, bbox_to_anchor=(1.05, 1), loc="upper left")
+        ax.legend(title=variable_label, bbox_to_anchor=(1.05, 1), loc="upper left", ncol=2)
 
     axes[-1].set_xlabel("Year")
     plt.tight_layout()
@@ -369,7 +390,7 @@ def parse_batch_results(output_filename, model, pricing_dict=pricing_dict):
         (total_prompt_tokens - total_cached_tokens) * prompt_rate +
         (total_cached_tokens * cached_rate) +
         (total_completion_tokens * completion_rate)
-    ) / 2
+    ) / 2 # 50% for batch processing
 
     print(f"Estimated cost for {model}: ${cost:.4f}")
 
