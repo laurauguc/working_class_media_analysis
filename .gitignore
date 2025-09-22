@@ -1,6 +1,10 @@
 # Ignore the processed data folder and its contents
 data/processed/
 
+# large files
+analysis/batch_input.jsonl
+analysis/batch_output.jsonl
+
 # Ignore jupyter notebook checkpoints
 .ipynb_checkpoints/
 
