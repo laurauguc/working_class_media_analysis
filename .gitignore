@@ -11,3 +11,4 @@ data/processed/
 
 #__pycache__
 data_preparation/__pycache__/
+data/categorized/dataset_with_category.pkl
