@@ -182,8 +182,9 @@ def match_state_abbr(text, state, abbr):
     pattern = rf"(?:\(\s*{re.escape(abbr)}\s*\)|,\s*{re.escape(abbr)})"
     return re.search(pattern, text)
 
+# old version
 # --- Function to check countries/flags in text ---
-def find_country_flags(text):
+def find_country_flags_old(text):
     text_lower = text.lower()
 
     countries = [c.name for c in pycountry.countries if c.name not in ["Jersey", "Georgia"]] + ["Taiwan", "Saint Martin", "Iran", "Lao", "Moldova", "Tanzania", "Vatican", "Venezuela", "Korea"]
@@ -246,6 +247,111 @@ def find_country_flags(text):
         flag = "NONE"
 
     return flag, list(foreign_found), list(us_found)
+
+
+
+# version 2:
+import re
+import json
+import pycountry
+from pathlib import Path
+
+def find_country_flags(text):
+    text_lower = text.lower()
+
+    # === Country list (filtered and supplemented) ===
+    countries = [c.name for c in pycountry.countries if c.name not in ["Jersey", "Georgia"]] + [
+        "Taiwan", "Saint Martin", "Iran", "Lao", "Moldova", "Tanzania", "Vatican",
+        "Venezuela", "Korea"
+    ]
+
+    # === Load world capitals from a static JSON file ===
+    # Download: https://github.com/samayo/country-json/blob/master/src/country-by-capital-city.json
+    capitals_path = Path("country-by-capital-city.json")
+    WORLD_CAPITALS = []
+
+    if capitals_path.exists():
+        with open(capitals_path, encoding="utf-8") as f:
+            data = json.load(f)
+            WORLD_CAPITALS = [entry["city"] for entry in data if entry.get("city")]
+    else:
+        print("⚠️ Warning: country-by-capital-city.json not found. Capitals will be skipped.")
+
+    # === Geopolitical / regional groupings ===
+    REGIONS = [
+        "European Union", "EU", "Asia", "Middle East",
+        "Latin America", "Central America", "North Africa", "Southern Africa",
+        "Western Europe", "Eastern Europe", "Central Europe", "Scandinavia",
+        "Nordic countries", "Caribbean", "Pacific Islands", "South America",
+        "Africa", "Asia", "Europe", "Oceania", "Antarctica"
+    ]
+
+    foreign_found = set()
+    us_found = set()
+
+    # === Foreign countries ===
+    for country in countries:
+        if country == "Mexico":
+            pattern = r"(?<!new\s)\bmexico\b"
+        else:
+            pattern = r"\b" + re.escape(country.lower()) + r"\b"
+        if re.search(pattern, text_lower):
+            if country != "United States":
+                foreign_found.add(country)
+
+    # === Alternative names (if provided globally) ===
+    if 'ALT_NAMES' in globals():
+        for country, aliases in ALT_NAMES.items():
+            for alias in aliases:
+                if re.search(r"\b" + re.escape(alias.lower()) + r"\b", text_lower):
+                    foreign_found.add(country)
+
+    # === World capitals ===
+    for cap in WORLD_CAPITALS:
+        if re.search(r"\b" + re.escape(cap.lower()) + r"\b", text_lower):
+            foreign_found.add(cap + " (Capital)")
+
+    # === Regions ===
+    for region in REGIONS:
+        if re.search(r"\b" + re.escape(region.lower()) + r"\b", text_lower):
+            foreign_found.add(region)
+
+    # === US states (if available) ===
+    if 'US_STATES' in globals():
+        for state, abbr in US_STATES.items():
+            pattern = r"\b" + re.escape(state.lower()) + r"\b"
+            if state == "New York":
+                pattern = r"\bnew york\b(?!\s+times)"
+            if re.search(pattern, text_lower):
+                us_found.add(state)
+            if 'match_state_abbr' in globals() and callable(match_state_abbr):
+                if match_state_abbr(text, state, abbr):
+                    us_found.add(f"{state} ({abbr})")
+
+    # === US regions / indicators (if available) ===
+    if 'US_REGIONS' in globals():
+        for region in US_REGIONS:
+            if re.search(r"\b" + re.escape(region.lower()) + r"\b", text_lower):
+                us_found.add(region)
+
+    if 'US_INDICATORS' in globals():
+        for indicator in US_INDICATORS:
+            if re.search(r"\b" + re.escape(indicator.lower()) + r"\b", text_lower):
+                us_found.add(indicator)
+
+    # === Determine flag ===
+    if foreign_found and us_found:
+        flag = "BOTH"
+    elif foreign_found:
+        flag = "FOREIGN_ONLY"
+    elif us_found:
+        flag = "US_ONLY"
+    else:
+        flag = "NONE"
+
+    return flag, sorted(foreign_found), sorted(us_found)
+
+
 
 # --- Apply to DataFrame ---
 def flag_country(df):
