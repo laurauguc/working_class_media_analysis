@@ -122,7 +122,7 @@ def line_time_plot(
             .groupby(["year", variable])
             .size()
             .unstack(fill_value=0)
-        )
+        ) # divide my yearly size
 
         # Reindex columns to match global category order
         grouped = grouped.reindex(columns=all_categories, fill_value=0)
@@ -496,12 +496,13 @@ def save_examples_to_folder(var, df_articles_with_results, examples_dir, var_ori
             doc.add_paragraph(f"Publisher: {row.publisher}")
             doc.add_paragraph(f"Date: {row.date}")
             doc.add_paragraph(f"Section: {row.section}")
-            doc.add_paragraph(f"Source File: {row.source_file}")
+            doc.add_paragraph(f"Source file: {row.source_file}")
             if var_original is None:
-                doc.add_paragraph(f"Raw {var_abbr} result: {getattr(row, var_abbr)}")
+                doc.add_paragraph(f"Raw {var_abbr.replace("_", " ")} result, '{var_abbr}': {getattr(row, var_abbr)}")
+                doc.add_paragraph(f"Standardized {var_abbr.replace("_", " ")} result, '{var}': {getattr(row, var)}")
             else:
-                doc.add_paragraph(f"Raw {var_original} result: {getattr(row, var_original)}")
-            doc.add_paragraph(f"{var} (Standardized): {getattr(row, var)}")
+                doc.add_paragraph(f"Raw {var_original.replace("_", " ")} result, '{var_original}': {getattr(row, var_original)}")
+                doc.add_paragraph(f"Standardized {var_original.replace("_", " ")} result, '{var}': {getattr(row, var)}")
             doc.add_paragraph("\nBody:\n")
             doc.add_paragraph(str(row.body))
 
