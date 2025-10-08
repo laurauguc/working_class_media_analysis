@@ -6,6 +6,8 @@ import pycountry
 from collections import Counter
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+from docx import Document
 
 def compare_histograms(items_list1, items_list2, title, filename,
                        label1='List 1', label2='List 2',
@@ -455,3 +457,60 @@ def stacked_time_plot(df_articles_with_results, nyt_mask, variable, title):
     axes[-1].set_xlabel("Year")
     plt.tight_layout()
     plt.show()
+
+def save_examples_to_folder(var, df_articles_with_results, examples_dir, var_original = None):
+
+    var_abbr = var.removesuffix("_stand_flat")
+
+    base_folder = os.path.join(examples_dir, var_abbr)
+    if not os.path.exists(base_folder):
+        os.makedirs(base_folder)
+
+    # 2️⃣ Iterate over each unique value in race_ethnicity_stand_flat
+    for val in set(df_articles_with_results[var]):
+        # Create subfolder for this race/ethnicity if it doesn't exist
+        subfolder_path = os.path.join(base_folder, str(val))
+        if not os.path.exists(subfolder_path):
+            os.makedirs(subfolder_path)
+
+        # 3️⃣ Select 3 New York Times and 3 Other publisher articles for this category
+        nyt_articles = df_articles_with_results[
+            (df_articles_with_results[var] == val) &
+            (df_articles_with_results['publisher'] == "New York Times")
+        ].head(3)
+
+        other_articles = df_articles_with_results[
+            (df_articles_with_results[var] == val) &
+            (df_articles_with_results['publisher'] != "New York Times")
+        ].head(3)
+
+        # Combine both selections
+        selected_articles = pd.concat([nyt_articles, other_articles], ignore_index=True)
+
+        # 4️⃣ Save each article as a .docx file
+        for n, row in enumerate(selected_articles.itertuples(), start=1):
+            doc = Document()
+
+            # Add fields to document
+            doc.add_heading(str(row.title), level=1)
+            doc.add_paragraph(f"Publisher: {row.publisher}")
+            doc.add_paragraph(f"Date: {row.date}")
+            doc.add_paragraph(f"Section: {row.section}")
+            doc.add_paragraph(f"Source File: {row.source_file}")
+            if var_original is None:
+                doc.add_paragraph(f"Raw {var_abbr} result: {getattr(row, var_abbr)}")
+            else:
+                doc.add_paragraph(f"Raw {var_original} result: {getattr(row, var_original)}")
+            doc.add_paragraph(f"{var} (Standardized): {getattr(row, var)}")
+            doc.add_paragraph("\nBody:\n")
+            doc.add_paragraph(str(row.body))
+
+            # Create filename
+            safe_publisher = row.publisher.replace(" ", "_")
+            filename = f"{n}.{var_abbr}_{val}_{safe_publisher}.docx"
+            filepath = os.path.join(subfolder_path, filename)
+
+            # Save document
+            doc.save(filepath)
+
+    print("✅ Articles saved successfully.")
