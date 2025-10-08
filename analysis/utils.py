@@ -460,7 +460,7 @@ def stacked_time_plot(df_articles_with_results, nyt_mask, variable, title):
 
 def save_examples_to_folder(var, df_articles_with_results, examples_dir, var_original = None):
 
-    var_abbr = var.removesuffix("_stand_flat")
+    var_abbr = var.removesuffix("_stand_flat").removesuffix("_stand")
 
     base_folder = os.path.join(examples_dir, var_abbr)
     if not os.path.exists(base_folder):
