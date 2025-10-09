@@ -69,7 +69,7 @@ import numpy as np
 start = time.time()
 start0 = start
 
-threshold = 0.80
+threshold = 0.50
 
 seen_bodies = []
 seen_indices = []
@@ -117,4 +117,4 @@ end = time.time()
 print("Found all duplicates")
 print(f"Total execution time: {end - start0:.4f} seconds")
 
-df_articles.to_pickle("../../data/processed/duplicates_analysis_80.pkl")
+df_articles.to_pickle("../../data/processed/duplicates_analysis_50.pkl")
