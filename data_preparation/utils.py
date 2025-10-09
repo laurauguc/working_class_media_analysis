@@ -615,57 +615,57 @@ KEYWORD_MAP = {
     "watching": "Arts/Culture",
     "life & arts": "Arts/Culture",
 
-    # Style / Life / Fashion
-    "life": "Style/Life/Fashion",
-    "lifestyles": "Style/Life/Fashion",
-    "lifestyle": "Style/Life/Fashion",
-    "travel": "Style/Life/Fashion",
-    "magazine": "Style/Life/Fashion",
-    "style": "Style/Life/Fashion",
-    "dining": "Style/Life/Fashion",
-    "features weekend": "Style/Life/Fashion",
-    "weekender": "Style/Life/Fashion",
-    "escapes": "Style/Life/Fashion",
-    "food": "Style/Life/Fashion",
-    "suburban living": "Style/Life/Fashion",
-    "real estate": "Style/Life/Fashion",
-    "t magazine": "Style/Life/Fashion",
-    "t: women's fashion magazine": "Style/Life/Fashion",
-    "t: men's fashion magazine": "Style/Life/Fashion",
-    "t: travel magazine": "Style/Life/Fashion",
-    "features magazine": "Style/Life/Fashion",
-    "features": "Style/Life/Fashion",
-    "features lifestyle": "Style/Life/Fashion",
-    "features image": "Style/Life/Fashion",
-    "features magazine: lifestyle": "Style/Life/Fashion",
-    "features magazine: home & design": "Style/Life/Fashion",
-    "features home & design": "Style/Life/Fashion",
-    "features travel": "Style/Life/Fashion",
-    "thursday styles": "Style/Life/Fashion",
-    "tstyle": "Style/Life/Fashion",
-    "styles of the times": "Style/Life/Fashion",
-    "parenting": "Style/Life/Fashion",
-    "going places": "Style/Life/Fashion",
-    "what to do": "Style/Life/Fashion",
-    "leisure": "Style/Life/Fashion",
-    "then & now": "Style/Life/Fashion",
-    "summer times supplement": "Style/Life/Fashion",
-    "spring times supplement": "Style/Life/Fashion",
-    "live life love": "Style/Life/Fashion",
-    "key magazine": "Style/Life/Fashion",
-    "craig laban s ultimate dining": "Style/Life/Fashion",
-    "road less traveled": "Style/Life/Fashion",
-    "automobiles": "Style/Life/Fashion",
-    "motoring": "Style/Life/Fashion",
-    "cars": "Style/Life/Fashion",
-    "auto showcase": "Style/Life/Fashion",
-    "auto": "Style/Life/Fashion",
-    "realestate": "Style/Life/Fashion",
-    "t-magazine": "Style/Life/Fashion",
-    "fashion": "Style/Life/Fashion",
-    "sophisticated traveler magazine": "Style/Life/Fashion",
-    "variety / freetime": "Style/Life/Fashion",
-    "freetime": "Style/Life/Fashion",
+    # LifeStyle
+    "life": "LifeStyle",
+    "lifestyles": "LifeStyle",
+    "lifestyle": "LifeStyle",
+    "travel": "LifeStyle",
+    "magazine": "LifeStyle",
+    "style": "LifeStyle",
+    "dining": "LifeStyle",
+    "features weekend": "LifeStyle",
+    "weekender": "LifeStyle",
+    "escapes": "LifeStyle",
+    "food": "LifeStyle",
+    "suburban living": "LifeStyle",
+    "real estate": "LifeStyle",
+    "t magazine": "LifeStyle",
+    "t: women's fashion magazine": "LifeStyle",
+    "t: men's fashion magazine": "LifeStyle",
+    "t: travel magazine": "LifeStyle",
+    "features magazine": "LifeStyle",
+    "features": "LifeStyle",
+    "features lifestyle": "LifeStyle",
+    "features image": "LifeStyle",
+    "features magazine: lifestyle": "LifeStyle",
+    "features magazine: home & design": "LifeStyle",
+    "features home & design": "LifeStyle",
+    "features travel": "LifeStyle",
+    "thursday styles": "LifeStyle",
+    "tstyle": "LifeStyle",
+    "styles of the times": "LifeStyle",
+    "parenting": "LifeStyle",
+    "going places": "LifeStyle",
+    "what to do": "LifeStyle",
+    "leisure": "LifeStyle",
+    "then & now": "LifeStyle",
+    "summer times supplement": "LifeStyle",
+    "spring times supplement": "LifeStyle",
+    "live life love": "LifeStyle",
+    "key magazine": "LifeStyle",
+    "craig laban s ultimate dining": "LifeStyle",
+    "road less traveled": "LifeStyle",
+    "automobiles": "LifeStyle",
+    "motoring": "LifeStyle",
+    "cars": "LifeStyle",
+    "auto showcase": "LifeStyle",
+    "auto": "LifeStyle",
+    "realestate": "LifeStyle",
+    "t-magazine": "LifeStyle",
+    "fashion": "LifeStyle",
+    "sophisticated traveler magazine": "LifeStyle",
+    "variety / freetime": "LifeStyle",
+    "freetime": "LifeStyle",
 
     # Opinion / Editorial / Letters
     "opinion": "Opinion/Editorial/Letters",
@@ -700,40 +700,39 @@ KEYWORD_MAP = {
     "health": "Science/Health/Tech",
 }
 
-# ---------- single-value classifier ----------
+# ======================
+# Classifier: Desk-first, then Keyword , else None
+# ======================
 def classify_section(section_text: str) -> str | None:
-    """
-    Desk-first, then keyword fallback. Returns one of CATEGORIES or None.
-    - Split by ';'
-    - Filter layout/packaging noise (NOISE_RE)
-    - Canonicalize tokens via _normalize_token
-    - If exactly one DESK_MAP hit -> that category
-    - Else if keyword hits:
-        * if includes "books/podcast" -> "books/podcast"
-        * if exactly one keyword category -> that category
-        * else None (conflict)
-    """
-    tokens = _split_tokens(section_text)
+    if pd.isna(section_text) or not str(section_text).strip():
+        return None
+
+    tokens = [t.strip() for t in str(section_text).split(";") if t.strip()]
     if not tokens:
         return None
 
-    toks = _filter_and_normalize(tokens)
-    if not toks:
-        return None
-
     desk_hits, kw_hits = set(), set()
-    for k in toks:
+
+    for t in tokens:
+        # filter layout/packaging noise
+        if NOISE_RE.match(t.strip()):
+            continue
+        k = normalize_token(t)
+        if not k:
+            continue
         if k in DESK_MAP:
             desk_hits.add(DESK_MAP[k])
         if k in KEYWORD_MAP:
             kw_hits.add(KEYWORD_MAP[k])
 
+    # Desk-first
     if len(desk_hits) == 1:
         return next(iter(desk_hits))
     if len(desk_hits) > 1:
-        return None  # conflicting desks → abstain
+        return None   # conflicting desks → abstain
 
-    if kw_hits:
+    # Keyword fallback (books/podcast priority)
+    if len(kw_hits) >= 1:
         if "books/podcast" in kw_hits:
             return "books/podcast"
         return next(iter(kw_hits)) if len(kw_hits) == 1 else None
