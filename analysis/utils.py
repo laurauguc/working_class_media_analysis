@@ -9,9 +9,13 @@ import matplotlib.pyplot as plt
 import os
 from docx import Document
 
+from collections import Counter
+import numpy as np
+import matplotlib.pyplot as plt
+
 def compare_histograms(items_list1, items_list2, title, filename,
                        label1='List 1', label2='List 2',
-                       scale_counts=True, order_by_count=False):
+                       scale_counts=True, order_by_count=False, ylabel = None):
     # Count frequencies
     counter1 = Counter(items_list1)
     counter2 = Counter(items_list2)
@@ -24,15 +28,15 @@ def compare_histograms(items_list1, items_list2, title, filename,
     total2 = sum(counter2.values())
 
     if scale_counts:
-        # Frequencies (proportions)
-        freq1_dict = {label: counter1.get(label, 0) / total1 for label in all_labels}
-        freq2_dict = {label: counter2.get(label, 0) / total2 for label in all_labels}
+        # Frequencies as percentages
+        freq1_dict = {label: (counter1.get(label, 0) / total1) * 100 for label in all_labels}
+        freq2_dict = {label: (counter2.get(label, 0) / total2) * 100 for label in all_labels}
     else:
         # Raw counts
         freq1_dict = {label: counter1.get(label, 0) for label in all_labels}
         freq2_dict = {label: counter2.get(label, 0) for label in all_labels}
 
-    # Optionally reorder labels by highest total count/frequency
+    # Optionally reorder labels by highest total frequency or count
     if order_by_count:
         all_labels = sorted(
             all_labels,
@@ -56,7 +60,9 @@ def compare_histograms(items_list1, items_list2, title, filename,
     plt.bar(x + width/2, freq2, width, label=label2, color='salmon')
 
     # Formatting
-    plt.ylabel('Frequency' if scale_counts else 'Count', fontsize=18)
+    if ylabel = None:
+        ylabel = 'Percentage of Articles (%)' if scale_counts else 'Count'
+    plt.ylabel(ylabel, fontsize=18)
     plt.title(title, fontsize=22)
     plt.xticks(x, all_labels, rotation=45, ha='right', fontsize=18)
     plt.yticks(fontsize=18)
@@ -67,6 +73,7 @@ def compare_histograms(items_list1, items_list2, title, filename,
     # Save and show
     plt.savefig(filename, dpi=300, facecolor='white', edgecolor='none')
     plt.show()
+
 
 
 import matplotlib.pyplot as plt
@@ -82,7 +89,7 @@ def line_time_plot(
     smooth_window=3  # rolling average window; set to None to disable
 ):
     """
-    Plot two line charts of article counts per year, grouped by a categorical variable:
+    Plot two line charts showing the percentage of articles per year, grouped by a categorical variable:
     one for NYT and one for other publishers, with consistent colors. Optionally smooth lines.
 
     Parameters
@@ -117,15 +124,19 @@ def line_time_plot(
         [nyt_mask, ~nyt_mask],
         [f"NYT: {title}", f"Other Publishers: {title}"]
     ):
+        # Count articles per (year, variable)
         grouped = (
             df_articles_with_results[mask]
             .groupby(["year", variable])
             .size()
             .unstack(fill_value=0)
-        ) # divide my yearly size
+        )
 
-        # Reindex columns to match global category order
+        # Reindex columns to ensure consistent category order
         grouped = grouped.reindex(columns=all_categories, fill_value=0)
+
+        # Convert to yearly percentages
+        grouped = grouped.div(grouped.sum(axis=1), axis=0) * 100
 
         # Optionally smooth with rolling average
         if smooth_window is not None and smooth_window > 1:
@@ -142,7 +153,7 @@ def line_time_plot(
                 alpha=0.9
             )
 
-        ax.set_ylabel("Frequency")
+        ax.set_ylabel("Percentage of Articles (%)")
         ax.set_title(subtitle)
         ax.grid(True, linestyle="--", alpha=0.7)
         ax.legend(title=variable_label, bbox_to_anchor=(1.05, 1), loc="upper left", ncol=2)
@@ -153,6 +164,7 @@ def line_time_plot(
     # Save and show
     plt.savefig(filename, dpi=300, facecolor='white', edgecolor='none')
     plt.show()
+
 
 
 
@@ -469,7 +481,7 @@ def save_examples_to_folder(var, df_articles_with_results, examples_dir, var_ori
     # 2️⃣ Iterate over each unique value in race_ethnicity_stand_flat
     for val in set(df_articles_with_results[var]):
         # Create subfolder for this race/ethnicity if it doesn't exist
-        subfolder_path = os.path.join(base_folder, str(val))
+        subfolder_path = os.path.join(base_folder, str(val).replace("/","-"))
         if not os.path.exists(subfolder_path):
             os.makedirs(subfolder_path)
 
@@ -508,7 +520,7 @@ def save_examples_to_folder(var, df_articles_with_results, examples_dir, var_ori
 
             # Create filename
             safe_publisher = row.publisher.replace(" ", "_")
-            filename = f"{n}.{var_abbr}_{val}_{safe_publisher}.docx"
+            filename = f"{n}.{var_abbr}_{str(val).replace("/","-")}_{safe_publisher}.docx"
             filepath = os.path.join(subfolder_path, filename)
 
             # Save document
