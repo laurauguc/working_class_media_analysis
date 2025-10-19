@@ -9,9 +9,13 @@ import matplotlib.pyplot as plt
 import os
 from docx import Document
 
+from collections import Counter
+import numpy as np
+import matplotlib.pyplot as plt
+
 def compare_histograms(items_list1, items_list2, title, filename,
                        label1='List 1', label2='List 2',
-                       scale_counts=True, order_by_count=False):
+                       scale_counts=True, order_by_count=False, ylabel = None):
     # Count frequencies
     counter1 = Counter(items_list1)
     counter2 = Counter(items_list2)
@@ -24,15 +28,15 @@ def compare_histograms(items_list1, items_list2, title, filename,
     total2 = sum(counter2.values())
 
     if scale_counts:
-        # Frequencies (proportions)
-        freq1_dict = {label: counter1.get(label, 0) / total1 for label in all_labels}
-        freq2_dict = {label: counter2.get(label, 0) / total2 for label in all_labels}
+        # Frequencies as percentages
+        freq1_dict = {label: (counter1.get(label, 0) / total1) * 100 for label in all_labels}
+        freq2_dict = {label: (counter2.get(label, 0) / total2) * 100 for label in all_labels}
     else:
         # Raw counts
         freq1_dict = {label: counter1.get(label, 0) for label in all_labels}
         freq2_dict = {label: counter2.get(label, 0) for label in all_labels}
 
-    # Optionally reorder labels by highest total count/frequency
+    # Optionally reorder labels by highest total frequency or count
     if order_by_count:
         all_labels = sorted(
             all_labels,
@@ -56,7 +60,9 @@ def compare_histograms(items_list1, items_list2, title, filename,
     plt.bar(x + width/2, freq2, width, label=label2, color='salmon')
 
     # Formatting
-    plt.ylabel('Frequency' if scale_counts else 'Count', fontsize=18)
+    if ylabel is None:
+        ylabel = 'Percentage of Articles (%)' if scale_counts else 'Count'
+    plt.ylabel(ylabel, fontsize=18)
     plt.title(title, fontsize=22)
     plt.xticks(x, all_labels, rotation=45, ha='right', fontsize=18)
     plt.yticks(fontsize=18)
@@ -67,6 +73,7 @@ def compare_histograms(items_list1, items_list2, title, filename,
     # Save and show
     plt.savefig(filename, dpi=300, facecolor='white', edgecolor='none')
     plt.show()
+
 
 
 import matplotlib.pyplot as plt
@@ -82,7 +89,7 @@ def line_time_plot(
     smooth_window=3  # rolling average window; set to None to disable
 ):
     """
-    Plot two line charts of article counts per year, grouped by a categorical variable:
+    Plot two line charts showing the percentage of articles per year, grouped by a categorical variable:
     one for NYT and one for other publishers, with consistent colors. Optionally smooth lines.
 
     Parameters
@@ -117,15 +124,19 @@ def line_time_plot(
         [nyt_mask, ~nyt_mask],
         [f"NYT: {title}", f"Other Publishers: {title}"]
     ):
+        # Count articles per (year, variable)
         grouped = (
             df_articles_with_results[mask]
             .groupby(["year", variable])
             .size()
             .unstack(fill_value=0)
-        ) # divide my yearly size
+        )
 
-        # Reindex columns to match global category order
+        # Reindex columns to ensure consistent category order
         grouped = grouped.reindex(columns=all_categories, fill_value=0)
+
+        # Convert to yearly percentages
+        grouped = grouped.div(grouped.sum(axis=1), axis=0) * 100
 
         # Optionally smooth with rolling average
         if smooth_window is not None and smooth_window > 1:
@@ -142,7 +153,7 @@ def line_time_plot(
                 alpha=0.9
             )
 
-        ax.set_ylabel("Frequency")
+        ax.set_ylabel("Percentage of Articles (%)")
         ax.set_title(subtitle)
         ax.grid(True, linestyle="--", alpha=0.7)
         ax.legend(title=variable_label, bbox_to_anchor=(1.05, 1), loc="upper left", ncol=2)
@@ -153,6 +164,7 @@ def line_time_plot(
     # Save and show
     plt.savefig(filename, dpi=300, facecolor='white', edgecolor='none')
     plt.show()
+
 
 
 
@@ -398,6 +410,150 @@ def parse_batch_results(output_filename, model, pricing_dict=pricing_dict):
 
     return df
 
+batch_data_path = os.path.join("..", "data", "processed", "batch_data")
+
+# --- 1. Prepare and split DataFrame ---
+def prepare_batches(df_articles, n_batches, BATCH_INFO_FILE):
+    """Split df_articles into 5 non-overlapping batches and create batch_info.pkl.
+       If batches already exist, load them instead of recreating."""
+
+    if os.path.exists(BATCH_INFO_FILE):
+        print(f"⚠️ {BATCH_INFO_FILE} already exists. Loading existing batch definitions.")
+        batch_info = pd.read_pickle(BATCH_INFO_FILE)
+        dfs = [pd.read_pickle(os.path.join(batch_data_path, f"batch_{i}_data.pkl")) for i in batch_info["batch_number"]]
+        return dfs, batch_info
+
+    # --- Only runs if no prior batch info file found ---
+    df_articles = df_articles.reset_index(drop=True)
+    #df_articles["row_id"] = range(len(df_articles))
+    df_articles = df_articles.sample(frac=1, random_state=42).reset_index(drop=True)
+
+    n = len(df_articles)
+    part_size = n // n_batches
+    dfs = []
+
+    for i in range(n_batches):
+        start_idx = i * part_size
+        end_idx = (i + 1) * part_size if i < n_batches - 1 else n
+        df_part = df_articles.iloc[start_idx:end_idx].copy()
+        df_part["batch_number"] = i + 1
+        dfs.append(df_part)
+
+    batch_info = pd.DataFrame({
+        "batch_number": range(1, n_batches + 1),
+        "n_rows": [len(d) for d in dfs],
+        "status": ["pending"] * n_batches,
+        "batch_id": [None] * n_batches,
+        "input_file": [os.path.join(batch_data_path, f"batch_{i+1}_input.jsonl") for i in range(n_batches)],
+        "output_file": [os.path.join(batch_data_path, f"batch_{i+1}_output.jsonl") for i in range(n_batches)],
+        "result_file": [os.path.join(batch_data_path, f"batch_{i+1}_results.pkl") for i in range(n_batches)],
+    })
+
+    # Save split dataframes
+    for i, d in enumerate(dfs, start=1):
+        d.to_pickle(os.path.join(batch_data_path, f"batch_{i}_data.pkl"))
+
+    batch_info.to_pickle(BATCH_INFO_FILE)
+    print(f"✅ Created {n_batches} batches and saved {BATCH_INFO_FILE}")
+    return dfs, batch_info
+
+
+# --- 2. Run one batch at a time ---
+def run_batch(batch_to_run, system_prompt, response_format, model, temperature, reasoning_effort, client, BATCH_INFO_FILE):
+    # Load batch info and data
+    batch_info = pd.read_pickle(BATCH_INFO_FILE)
+    df_sampled = pd.read_pickle(os.path.join(batch_data_path, f"batch_{batch_to_run}_data.pkl"))
+
+    input_file = batch_info.loc[batch_info.batch_number == batch_to_run, "input_file"].iloc[0]
+    output_file = batch_info.loc[batch_info.batch_number == batch_to_run, "output_file"].iloc[0]
+    result_file = batch_info.loc[batch_info.batch_number == batch_to_run, "result_file"].iloc[0]
+
+    print(f"🚀 Running batch {batch_to_run} with {len(df_sampled)} rows")
+
+    if not os.path.exists(input_file):
+        # Step 1: Create batch input
+        create_batch(df_sampled, system_prompt, response_format, model, temperature, reasoning_effort, input_file)
+        # Step 2: Submit the batch input
+        batch_id = submit_batch(batch_input_filename=input_file)
+        batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"] = batch_id
+        print(f"📤 Submitted batch {batch_to_run} → Batch ID: {batch_id}")
+        batch_status = client.batches.retrieve(batch_id)
+        batch_info.loc[batch_info.batch_number == batch_to_run, "status"] = batch_status
+        batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"] = batch_id
+        batch_info.to_pickle(BATCH_INFO_FILE)
+
+    else:
+        batch_id = batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"].iloc[0]
+        print(f"⚠️ Output already exists for batch {batch_to_run}. Skipping submission. Batch ID: {batch_id}")
+
+
+def check_batch(batch_to_run, BATCH_INFO_FILE, model):
+    batch_info = pd.read_pickle(BATCH_INFO_FILE)
+    batch_id = batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"].iloc[0]
+    input_file = batch_info.loc[batch_info.batch_number == batch_to_run, "input_file"].iloc[0]
+    output_file = batch_info.loc[batch_info.batch_number == batch_to_run, "output_file"].iloc[0]
+    result_file = batch_info.loc[batch_info.batch_number == batch_to_run, "result_file"].iloc[0]
+    batch_status = batch_info.loc[batch_info.batch_number == batch_to_run, "input_file"].iloc[0]
+
+    # Step 3: Wait/check status
+
+    #print(client.batches.retrieve(batch_id)) # uncomment for more details
+    if batch_id:
+        new_batch_status = client.batches.retrieve(batch_id).status
+        if new_batch_status != batch_status:
+            batch_status = new_batch_status
+            batch_info.loc[batch_info.batch_number == batch_to_run, "status"] = batch_status
+            batch_info.to_pickle(BATCH_INFO_FILE)
+            print("Batch status:", batch_status)
+
+        if batch_status == "completed":
+            if not os.path.exists(output_file):
+                output_file = retrieve_batch_results(batch_id, output_file)
+                print("📥 Batch results downloaded.")
+            else:
+                print("Results arlready downloaded.")
+
+        # Step 4: Parse batch output
+        if os.path.exists(output_file):
+            df_responses = parse_batch_results(output_file, model)
+
+            # Step 5: Merge with original
+            df_sampled = pd.read_pickle(os.path.join(batch_data_path, f"batch_{batch_to_run}_data.pkl"))
+            df_with_results = pd.concat([df_sampled, df_responses], axis=1)
+            df_with_results.to_pickle(result_file)
+            print(f"✅ Saved merged results to {result_file}")
+
+            batch_info.loc[batch_info.batch_number == batch_to_run, "status"] = "completed"
+            batch_info.to_pickle(BATCH_INFO_FILE)
+            print("🗂️ Updated batch_info.pkl")
+
+        else:
+            print(f"⚠️ Output file not found for batch {batch_to_run}")
+    else:
+        print("No batch id found.")
+
+# --- 3. Combine all completed results ---
+def combine_all_batches(BATCH_INFO_FILE):
+    batch_info = pd.read_pickle(BATCH_INFO_FILE)
+    completed = batch_info[batch_info.status == "completed"]
+
+    if completed.empty:
+        print("⚠️ No completed batches to combine.")
+        return None
+
+    dfs = []
+    for result_file in completed["result_file"]:
+        if os.path.exists(result_file):
+            dfs.append(pd.read_pickle(result_file))
+
+    if dfs:
+        df_all = pd.concat(dfs, ignore_index=True)
+        #df_all.to_pickle("all_batches_combined.pkl")
+        print(f"✅ Combined {len(dfs)} completed batches")# → all_batches_combined.pkl")
+        return df_all
+    else:
+        print("⚠️ No result files found.")
+        return None
 
 
 
@@ -469,7 +625,7 @@ def save_examples_to_folder(var, df_articles_with_results, examples_dir, var_ori
     # 2️⃣ Iterate over each unique value in race_ethnicity_stand_flat
     for val in set(df_articles_with_results[var]):
         # Create subfolder for this race/ethnicity if it doesn't exist
-        subfolder_path = os.path.join(base_folder, str(val))
+        subfolder_path = os.path.join(base_folder, str(val).replace("/","-"))
         if not os.path.exists(subfolder_path):
             os.makedirs(subfolder_path)
 
@@ -508,7 +664,7 @@ def save_examples_to_folder(var, df_articles_with_results, examples_dir, var_ori
 
             # Create filename
             safe_publisher = row.publisher.replace(" ", "_")
-            filename = f"{n}.{var_abbr}_{val}_{safe_publisher}.docx"
+            filename = f"{n}.{var_abbr}_{str(val).replace("/","-")}_{safe_publisher}.docx"
             filepath = os.path.join(subfolder_path, filename)
 
             # Save document
