@@ -522,7 +522,7 @@ CATEGORIES = [
     "Business/Finance",
     "Sports",
     "Arts/Culture",
-    "Style/Life/Fashion",
+    "LifeStyle",
     "Opinion/Editorial/Letters",
     "books/podcast",
     "Science/Health/Tech",
@@ -566,17 +566,17 @@ DESK_MAP = {
     "movies, performing arts/weekend desk": "Arts/Culture",
     "dining, dining out/cultural desk": "Arts/Culture",
 
-    # Style / Life / Fashion
-    "style desk": "Style/Life/Fashion",
-    "real estate desk": "Style/Life/Fashion",
-    "travel desk": "Style/Life/Fashion",
-    "dining in, dining out/style desk": "Style/Life/Fashion",
-    "dining in, dining out / style desk": "Style/Life/Fashion",
-    "house & home/style desk": "Style/Life/Fashion",
-    "living desk": "Style/Life/Fashion",
-    "home desk": "Style/Life/Fashion",
-    "society desk": "Style/Life/Fashion",
-    "magazine desk": "Style/Life/Fashion",
+    # LifeStyle
+    "style desk": "LifeStyle",
+    "real estate desk": "LifeStyle",
+    "travel desk": "LifeStyle",
+    "dining in, dining out/style desk": "LifeStyle",
+    "dining in, dining out / style desk": "LifeStyle",
+    "house & home/style desk": "LifeStyle",
+    "living desk": "LifeStyle",
+    "home desk": "LifeStyle",
+    "society desk": "LifeStyle",
+    "magazine desk": "LifeStyle",
 
     # Opinion / Editorial / Letters
     "editorial desk": "Opinion/Editorial/Letters",
