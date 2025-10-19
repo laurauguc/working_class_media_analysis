@@ -60,7 +60,7 @@ def compare_histograms(items_list1, items_list2, title, filename,
     plt.bar(x + width/2, freq2, width, label=label2, color='salmon')
 
     # Formatting
-    if ylabel = None:
+    if ylabel is None:
         ylabel = 'Percentage of Articles (%)' if scale_counts else 'Count'
     plt.ylabel(ylabel, fontsize=18)
     plt.title(title, fontsize=22)
@@ -410,6 +410,150 @@ def parse_batch_results(output_filename, model, pricing_dict=pricing_dict):
 
     return df
 
+batch_data_path = os.path.join("..", "data", "processed", "batch_data")
+
+# --- 1. Prepare and split DataFrame ---
+def prepare_batches(df_articles, n_batches, BATCH_INFO_FILE):
+    """Split df_articles into 5 non-overlapping batches and create batch_info.pkl.
+       If batches already exist, load them instead of recreating."""
+
+    if os.path.exists(BATCH_INFO_FILE):
+        print(f"⚠️ {BATCH_INFO_FILE} already exists. Loading existing batch definitions.")
+        batch_info = pd.read_pickle(BATCH_INFO_FILE)
+        dfs = [pd.read_pickle(os.path.join(batch_data_path, f"batch_{i}_data.pkl")) for i in batch_info["batch_number"]]
+        return dfs, batch_info
+
+    # --- Only runs if no prior batch info file found ---
+    df_articles = df_articles.reset_index(drop=True)
+    #df_articles["row_id"] = range(len(df_articles))
+    df_articles = df_articles.sample(frac=1, random_state=42).reset_index(drop=True)
+
+    n = len(df_articles)
+    part_size = n // n_batches
+    dfs = []
+
+    for i in range(n_batches):
+        start_idx = i * part_size
+        end_idx = (i + 1) * part_size if i < n_batches - 1 else n
+        df_part = df_articles.iloc[start_idx:end_idx].copy()
+        df_part["batch_number"] = i + 1
+        dfs.append(df_part)
+
+    batch_info = pd.DataFrame({
+        "batch_number": range(1, n_batches + 1),
+        "n_rows": [len(d) for d in dfs],
+        "status": ["pending"] * n_batches,
+        "batch_id": [None] * n_batches,
+        "input_file": [os.path.join(batch_data_path, f"batch_{i+1}_input.jsonl") for i in range(n_batches)],
+        "output_file": [os.path.join(batch_data_path, f"batch_{i+1}_output.jsonl") for i in range(n_batches)],
+        "result_file": [os.path.join(batch_data_path, f"batch_{i+1}_results.pkl") for i in range(n_batches)],
+    })
+
+    # Save split dataframes
+    for i, d in enumerate(dfs, start=1):
+        d.to_pickle(os.path.join(batch_data_path, f"batch_{i}_data.pkl"))
+
+    batch_info.to_pickle(BATCH_INFO_FILE)
+    print(f"✅ Created {n_batches} batches and saved {BATCH_INFO_FILE}")
+    return dfs, batch_info
+
+
+# --- 2. Run one batch at a time ---
+def run_batch(batch_to_run, system_prompt, response_format, model, temperature, reasoning_effort, client, BATCH_INFO_FILE):
+    # Load batch info and data
+    batch_info = pd.read_pickle(BATCH_INFO_FILE)
+    df_sampled = pd.read_pickle(os.path.join(batch_data_path, f"batch_{batch_to_run}_data.pkl"))
+
+    input_file = batch_info.loc[batch_info.batch_number == batch_to_run, "input_file"].iloc[0]
+    output_file = batch_info.loc[batch_info.batch_number == batch_to_run, "output_file"].iloc[0]
+    result_file = batch_info.loc[batch_info.batch_number == batch_to_run, "result_file"].iloc[0]
+
+    print(f"🚀 Running batch {batch_to_run} with {len(df_sampled)} rows")
+
+    if not os.path.exists(input_file):
+        # Step 1: Create batch input
+        create_batch(df_sampled, system_prompt, response_format, model, temperature, reasoning_effort, input_file)
+        # Step 2: Submit the batch input
+        batch_id = submit_batch(batch_input_filename=input_file)
+        batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"] = batch_id
+        print(f"📤 Submitted batch {batch_to_run} → Batch ID: {batch_id}")
+        batch_status = client.batches.retrieve(batch_id)
+        batch_info.loc[batch_info.batch_number == batch_to_run, "status"] = batch_status
+        batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"] = batch_id
+        batch_info.to_pickle(BATCH_INFO_FILE)
+
+    else:
+        batch_id = batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"].iloc[0]
+        print(f"⚠️ Output already exists for batch {batch_to_run}. Skipping submission. Batch ID: {batch_id}")
+
+
+def check_batch(batch_to_run, BATCH_INFO_FILE, model):
+    batch_info = pd.read_pickle(BATCH_INFO_FILE)
+    batch_id = batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"].iloc[0]
+    input_file = batch_info.loc[batch_info.batch_number == batch_to_run, "input_file"].iloc[0]
+    output_file = batch_info.loc[batch_info.batch_number == batch_to_run, "output_file"].iloc[0]
+    result_file = batch_info.loc[batch_info.batch_number == batch_to_run, "result_file"].iloc[0]
+    batch_status = batch_info.loc[batch_info.batch_number == batch_to_run, "input_file"].iloc[0]
+
+    # Step 3: Wait/check status
+
+    #print(client.batches.retrieve(batch_id)) # uncomment for more details
+    if batch_id:
+        new_batch_status = client.batches.retrieve(batch_id).status
+        if new_batch_status != batch_status:
+            batch_status = new_batch_status
+            batch_info.loc[batch_info.batch_number == batch_to_run, "status"] = batch_status
+            batch_info.to_pickle(BATCH_INFO_FILE)
+            print("Batch status:", batch_status)
+
+        if batch_status == "completed":
+            if not os.path.exists(output_file):
+                output_file = retrieve_batch_results(batch_id, output_file)
+                print("📥 Batch results downloaded.")
+            else:
+                print("Results arlready downloaded.")
+
+        # Step 4: Parse batch output
+        if os.path.exists(output_file):
+            df_responses = parse_batch_results(output_file, model)
+
+            # Step 5: Merge with original
+            df_sampled = pd.read_pickle(os.path.join(batch_data_path, f"batch_{batch_to_run}_data.pkl"))
+            df_with_results = pd.concat([df_sampled, df_responses], axis=1)
+            df_with_results.to_pickle(result_file)
+            print(f"✅ Saved merged results to {result_file}")
+
+            batch_info.loc[batch_info.batch_number == batch_to_run, "status"] = "completed"
+            batch_info.to_pickle(BATCH_INFO_FILE)
+            print("🗂️ Updated batch_info.pkl")
+
+        else:
+            print(f"⚠️ Output file not found for batch {batch_to_run}")
+    else:
+        print("No batch id found.")
+
+# --- 3. Combine all completed results ---
+def combine_all_batches(BATCH_INFO_FILE):
+    batch_info = pd.read_pickle(BATCH_INFO_FILE)
+    completed = batch_info[batch_info.status == "completed"]
+
+    if completed.empty:
+        print("⚠️ No completed batches to combine.")
+        return None
+
+    dfs = []
+    for result_file in completed["result_file"]:
+        if os.path.exists(result_file):
+            dfs.append(pd.read_pickle(result_file))
+
+    if dfs:
+        df_all = pd.concat(dfs, ignore_index=True)
+        df_all.to_pickle("all_batches_combined.pkl")
+        print(f"✅ Combined {len(dfs)} completed batches → all_batches_combined.pkl")
+        return df_all
+    else:
+        print("⚠️ No result files found.")
+        return None
 
 
 
