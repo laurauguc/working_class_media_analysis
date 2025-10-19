@@ -548,8 +548,8 @@ def combine_all_batches(BATCH_INFO_FILE):
 
     if dfs:
         df_all = pd.concat(dfs, ignore_index=True)
-        df_all.to_pickle("all_batches_combined.pkl")
-        print(f"✅ Combined {len(dfs)} completed batches → all_batches_combined.pkl")
+        #df_all.to_pickle("all_batches_combined.pkl")
+        print(f"✅ Combined {len(dfs)} completed batches")# → all_batches_combined.pkl")
         return df_all
     else:
         print("⚠️ No result files found.")
