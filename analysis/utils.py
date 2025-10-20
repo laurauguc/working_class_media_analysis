@@ -478,7 +478,7 @@ def run_batch(batch_to_run, system_prompt, response_format, model, temperature, 
         batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"] = batch_id
         print(f"📤 Submitted batch {batch_to_run} → Batch ID: {batch_id}")
         batch_status = client.batches.retrieve(batch_id)
-        batch_info.loc[batch_info.batch_number == batch_to_run, "status"] = batch_status
+        batch_info.loc[batch_info.batch_number == batch_to_run, "status"] = batch_status.status
         batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"] = batch_id
         batch_info.to_pickle(BATCH_INFO_FILE)
 
