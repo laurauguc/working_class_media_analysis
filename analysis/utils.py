@@ -407,7 +407,6 @@ def parse_batch_results(output_filename, model, pricing_dict=pricing_dict):
     ) / 2 # 50% for batch processing
 
     print(f"Estimated cost for {model}: ${cost:.4f}")
-
     return df
 
 batch_data_path = os.path.join("..", "data", "processed", "batch_data")
@@ -518,7 +517,7 @@ def check_batch(batch_to_run, BATCH_INFO_FILE, model):
             df_responses = parse_batch_results(output_file, model)
 
             # Step 5: Merge with original
-            df_sampled = pd.read_pickle(os.path.join(batch_data_path, f"batch_{batch_to_run}_data.pkl"))
+            df_sampled = pd.read_pickle(os.path.join(batch_data_path, f"batch_{batch_to_run}_data.pkl")).reset_index(drop = True)
             df_with_results = pd.concat([df_sampled, df_responses], axis=1)
             df_with_results.to_pickle(result_file)
             print(f"✅ Saved merged results to {result_file}")
