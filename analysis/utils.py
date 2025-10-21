@@ -2,16 +2,15 @@ import matplotlib.pyplot as plt
 from collections import Counter
 import numpy as np
 import pycountry
-
-from collections import Counter
-import numpy as np
-import matplotlib.pyplot as plt
 import os
 from docx import Document
-
-from collections import Counter
-import numpy as np
-import matplotlib.pyplot as plt
+import re
+import seaborn as sns
+from itertools import chain
+import json
+import time
+import pandas as pd
+from openai import OpenAI
 
 def compare_histograms(items_list1, items_list2, title, filename,
                        label1='List 1', label2='List 2',
@@ -73,11 +72,6 @@ def compare_histograms(items_list1, items_list2, title, filename,
     # Save and show
     plt.savefig(filename, dpi=300, facecolor='white', edgecolor='none')
     plt.show()
-
-
-
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 def line_time_plot(
     df_articles_with_results,
@@ -165,9 +159,6 @@ def line_time_plot(
     plt.savefig(filename, dpi=300, facecolor='white', edgecolor='none')
     plt.show()
 
-
-
-
 # Function to split states and countries
 def split_locations(locations):
     us_states = {
@@ -200,24 +191,9 @@ def split_locations(locations):
 
     return states, countries, other
 
-
-# Flatten and filter location lists
-#def flatten_and_filter(locations_column):
- #   return [item for sublist in locations_column for item in sublist if item != "NA"]
-
-from itertools import chain
-
-# Flatten and filter location lists
-#def flatten_and_filter(series, exclude="NA"):
-#    """Flatten lists in a pandas Series and filter out unwanted values."""
-#    return [item for item in chain.from_iterable(series.dropna()) if item != exclude]
-
 def flatten(series):
     """Flatten lists in a pandas Series"""
     return [item for item in chain.from_iterable(series.dropna())]
-
-
-import re
 
 def extract_region_mentions(text, regions=None):
     """
@@ -256,14 +232,7 @@ def extract_region_mentions(text, regions=None):
 
     return mentions
 
-
-import json
-import time
-import pandas as pd
-from openai import OpenAI
-
 client = OpenAI()
-
 
 # --- Create batch ---
 def create_batch(df, system_prompt, response_format, model, temperature, reasoning_effort, batch_input_filename="batch_input.jsonl"):
@@ -292,7 +261,6 @@ def create_batch(df, system_prompt, response_format, model, temperature, reasoni
             f.write(json.dumps(request) + "\n")
     return batch_input_filename
 
-
 def submit_batch(batch_input_filename):
     """
     Upload batch file and create a batch job.
@@ -311,7 +279,6 @@ def submit_batch(batch_input_filename):
     print(f"Batch submitted. ID: {batch.id}")
     return batch.id
 
-
 def retrieve_batch_results(batch_id, output_filename="batch_output.jsonl"):
     """
     Download completed batch results.
@@ -329,7 +296,6 @@ def retrieve_batch_results(batch_id, output_filename="batch_output.jsonl"):
 
     print(f"Results saved to {output_filename}")
     return output_filename
-
 
 pricing_dict = {
     'gpt-5-mini': {'Input': 0.25, 'Cached input': 0.025, 'Output': 2.00},
@@ -485,7 +451,6 @@ def run_batch(batch_to_run, system_prompt, response_format, model, temperature, 
         batch_id = batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"].iloc[0]
         print(f"⚠️ Output already exists for batch {batch_to_run}. Skipping submission. Batch ID: {batch_id}")
 
-
 def check_batch(batch_to_run, BATCH_INFO_FILE, model):
     batch_info = pd.read_pickle(BATCH_INFO_FILE)
     batch_id = batch_info.loc[batch_info.batch_number == batch_to_run, "batch_id"].iloc[0]
@@ -495,7 +460,6 @@ def check_batch(batch_to_run, BATCH_INFO_FILE, model):
     batch_status = batch_info.loc[batch_info.batch_number == batch_to_run, "input_file"].iloc[0]
 
     # Step 3: Wait/check status
-
     #print(client.batches.retrieve(batch_id)) # uncomment for more details
     if batch_id:
         new_batch_status = client.batches.retrieve(batch_id).status
@@ -554,65 +518,7 @@ def combine_all_batches(BATCH_INFO_FILE):
         print("⚠️ No result files found.")
         return None
 
-
-
-
-
-
-
-
-# archive
-import matplotlib.pyplot as plt
-
-def stacked_time_plot(df_articles_with_results, nyt_mask, variable, title):
-    """
-    Plot two stacked bar charts of article counts per year, grouped by a categorical variable:
-    one for NYT and one for other publishers, with consistent color coding.
-    """
-    # Ensure consistent categories and color mapping
-    all_categories = (
-        df_articles_with_results[variable]
-        .value_counts()
-        .index
-    )
-
-    color_map = plt.colormaps.get_cmap("Set2").resampled(len(all_categories))
-    colors = {cat: color_map(i) for i, cat in enumerate(all_categories)}
-
-    fig, axes = plt.subplots(2, 1, figsize=(12, 10), sharex=True)
-
-    for ax, mask, subtitle in zip(
-        axes,
-        [nyt_mask, ~nyt_mask],
-        [f"NYT: {title}", f"Other Publishers: {title}"],
-    ):
-        grouped = (
-            df_articles_with_results[mask]
-            .groupby(["year", variable])
-            .size()
-            .unstack(fill_value=0)
-        )
-
-        # Reorder columns to match global order
-        grouped = grouped.reindex(columns=all_categories, fill_value=0)
-
-        grouped.plot(
-            kind="bar",
-            stacked=True,
-            ax=ax,
-            color=[colors[cat] for cat in grouped.columns],
-        )
-
-        ax.set_ylabel("Frequency")
-        ax.set_title(subtitle)
-        ax.tick_params(axis="x", rotation=45)
-        ax.grid(axis="y", linestyle="--", alpha=0.7)
-        ax.legend(title=variable, bbox_to_anchor=(1.05, 1), loc="upper left")
-
-    axes[-1].set_xlabel("Year")
-    plt.tight_layout()
-    plt.show()
-
+# save examples for folder
 def save_examples_to_folder(var, df_articles_with_results, examples_dir, var_original = None):
 
     var_abbr = var.removesuffix("_stand_flat").removesuffix("_stand")
