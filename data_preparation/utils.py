@@ -429,92 +429,72 @@ def find_near_duplicates_same_publisher(df_articles, threshold):
 
 
 # =================================================================================================================================
-# Section Cleaning & Classification Utilities (Guo)
+# Section Cleaning & Classification （Guo）
 #================================================================================================================================
 
+import re
+import pandas as pd
 
-# ---------- Canonicalization helpers ----------
-_NBSP = "\xa0"
-_LEAD_QUOTES_RE  = re.compile(r'^[\"\'“”‘’]+')
-_TRAIL_PUNCT_RE  = re.compile(r'[,\.;:!\?\"\'“”‘’]+$')
+# ---------- Prep Tool ----------
+_NBSP = "\xa0" #non-breaking space
+_LEAD_QUOTES_RE = re.compile(r'^[\"\'“”‘’]+') #deal with different style of quotes 
+_TRAIL_PUNCT_RE = re.compile(r'[,\.;:!\?\"\'“”‘’]+$') #deal with other marks
+
+
+# ---------- Step A: Normalize ----------
 _CANON_REPL = [
-    (re.compile(r"\bliesure\b", flags=re.I), "leisure"),
-    (re.compile(r"\bweschester\b", flags=re.I), "westchester"),
-    (re.compile(r"[_]+$", flags=re.I), ""),         # drop trailing underscores
-    (re.compile(r"[–—]", flags=re.I), "-"),         # normalize en/em-dash
-    (re.compile(r"\s+/\s+", flags=re.I), "/"),      # normalize spaces around '/'
-    (re.compile(r"\s*&\s*", flags=re.I), " & "),    # normalize & spacing
-    (re.compile(r"\s+", flags=re.I), " "),          # collapse spaces
+    (re.compile(r"\bliesure\b", re.I), "leisure"),
+    (re.compile(r"\bweschester\b", re.I), "westchester"),
+    (re.compile(r"[_]+$", re.I), ""),           # drop trailing underscores
+    (re.compile(r"[–—]", re.I), "-"),           # normalize en/em-dash to "-"
+    (re.compile(r"\s*-\s*", re.I), "-"),        # unify spaces around '-'
+    (re.compile(r"\s*/\s*", re.I), "/"),        # unify spaces around '/'
+    (re.compile(r"\s*&\s*", re.I), " & "),      # unify spaces around '&'
+    (re.compile(r"\s+", re.I), " "),            # collapse spaces
 ]
 
-def _clean_nbsp_and_spaces(text: str) -> str:
-    """Replace NBSP with spaces, collapse whitespace, strip ends. Safe for non-str/NaN."""
-    if text is None or (isinstance(text, float) and pd.isna(text)):
+def _clean_nbsp_and_spaces(text) -> str:
+    """NORM · NA-safe → NBSP replace → whitespace collapse."""
+    try:
+        if pd.isna(text):
+            return ""
+    except TypeError:
+        pass
+    if text is None:
         return ""
     s = str(text).replace(_NBSP, " ")
     s = re.sub(r"\s+", " ", s).strip()
     return s
 
 def _normalize_token(tok: str) -> str:
-    """Strip leading quotes, trailing punctuation, canonical replacements; lowercase (casefold)."""
-    s = str(tok)
+    """NORM · per-token clean → trim quotes/punct → canonicalize → casefold."""
+    s = _clean_nbsp_and_spaces(tok)
+    if not s:
+        return ""
     s = _LEAD_QUOTES_RE.sub("", s)
     s = _TRAIL_PUNCT_RE.sub("", s).strip()
     for patt, repl in _CANON_REPL:
         s = patt.sub(repl, s)
     return s.casefold()
 
-# ---------- single-value cleaner ----------
-def clean_section(section: str) -> str | None:
-    """
-    Clean a single section string (format-level cleaning only).
-    Returns None if empty after cleaning.
-    """
-    s = _clean_nbsp_and_spaces(section)
-    if not s:
-        return None
-    s = _normalize_token(s)
-    return s if s else None
-
-# ---------- Tokenization & noise filtering ----------
+# ---------- Step B: FILTERING ----------
 NOISE_RE = re.compile(
     r"(?i)^(?:"
-    r"column\s*\d+|"                          # column 0/1/2...
-    r"pg$|"                                   # bare 'pg'
-    r"pg\.?\s*(?:[A-Z]?-?[0-9]+[A-Z]*|web)|"  # pg. 1a / pg. a-1 / pg. 3 / pg. web
-    r"page\s+\d+|"                            # page 1
-    r"section(?:\s+[A-Z0-9]+)?|"              # section / section A / section 1
-    r"asection|"                              # asection
-    r"front[_ ]page|web|"                     # front_page / front page / web
-    r"submitted content|cover story|specialsections|fence post|"  # packaging
-    r"timeout|time\s*out!?|go!|"              # time out!, go!
-    r"part\s+\d+"                             # part 1/2...
+    r"column\s*\d+|"
+    r"pg$|"
+    r"pg\.?\s*(?:[A-Z]?-?[0-9]+[A-Z]*|web)|"
+    r"page\s+\d+|"
+    r"section(?:\s+[A-Z0-9]+)?|"
+    r"asection|"
+    r"front[_ ]page|web|"
+    r"submitted content|cover story|specialsections|fence post|"
+    r"timeout|time\s*out!?|go!|"
+    r"part\s+\d+"
     r")$"
 )
 
-def _split_tokens(section_text: str) -> list[str]:
-    """Split by ';', trim, drop empties (string in → list out)."""
-    s = _clean_nbsp_and_spaces(section_text)
-    if not s:
-        return []
-    tokens = [t.strip() for t in s.split(";")]
-    return [t for t in tokens if t]
 
-def _filter_and_normalize(tokens: list[str]) -> list[str]:
-    """Remove layout/packaging noise with NOISE_RE; normalize each token."""
-    out: list[str] = []
-    for t in tokens:
-        t = re.sub(r"_+$", "", t)
-        t = re.sub(r"\s+", " ", t).strip()
-        t = _TRAIL_PUNCT_RE.sub("", t).strip()
-        if not t or NOISE_RE.match(t):
-            continue
-        k = _normalize_token(t)
-        if k:
-            out.append(k)
-    return out
-
-# ---------- Categories & mappings (desk-first, then keyword) ----------
+# ---------- Step C: Categories & mappings dictionary (desk-first, then keyword) ----------
 CATEGORIES = [
     "World/International",
     "US/National",
@@ -522,13 +502,13 @@ CATEGORIES = [
     "Business/Finance",
     "Sports",
     "Arts/Culture",
-    "LifeStyle",
+    "LifeStyle", 
     "Opinion/Editorial/Letters",
-    "books/podcast",
-    "Science/Health/Tech",
+    "Science/Health/Tech", #number really small, might remove and try to reduce more
 ]
 
-DESK_MAP = {
+# DESK map (books → Arts/Culture; no 'podcast' category)
+_DESK_MAP_RAW = {
     # Metro / Local
     "metropolitan desk": "Metro/Local",
     "nyregion": "Metro/Local",
@@ -561,14 +541,15 @@ DESK_MAP = {
     "arts & ideas/cultural desk": "Arts/Culture",
     "cultural desk": "Arts/Culture",
     "cultural desk - summertimes supplement": "Arts/Culture",
-    "leisure/weekend desk": "Arts/Culture",
-    "weekend desk": "Arts/Culture",
     "movies, performing arts/weekend desk": "Arts/Culture",
     "dining, dining out/cultural desk": "Arts/Culture",
+    "book review desk": "Arts/Culture",  # changed from books/podcast
 
     # LifeStyle
     "style desk": "LifeStyle",
     "real estate desk": "LifeStyle",
+    "leisure/weekend desk": "LifeStyle",
+    "weekend desk": "LifeStyle",
     "travel desk": "LifeStyle",
     "dining in, dining out/style desk": "LifeStyle",
     "dining in, dining out / style desk": "LifeStyle",
@@ -583,20 +564,18 @@ DESK_MAP = {
     "sunday review desk": "Opinion/Editorial/Letters",
     "week in review desk": "Opinion/Editorial/Letters",
 
-    # books / podcast
-    "book review desk": "books/podcast",
-
     # Science / Tech / Health
     "science desk": "Science/Health/Tech",
 }
 
-KEYWORD_MAP = {
+# KEYWORD map (no 'podcast'/'podcasts'/'transcript'; 'books' → Arts/Culture)
+_KEYWORD_MAP_RAW = {
     # US / National
     "us": "US/National",
     "national": "US/National",
     "politics": "US/National",
     "the upshot": "US/National",
-    "upshot": "US/National",
+    "upshot": "US/National", #https://www.nytimes.com/section/upshot
     "nytnow": "US/National",
     "minnesota poll": "US/National",
     "state": "US/National",
@@ -642,8 +621,8 @@ KEYWORD_MAP = {
     "marketplace": "Business/Finance",
     "money": "Business/Finance",
     "biz ledger": "Business/Finance",
-    "classified": "Business/Finance",
-    "classifieds": "Business/Finance",
+    "classified": "Business/Finance", #ads
+    "classifieds": "Business/Finance", #ads
     "job market": "Business/Finance",
     "your-money": "Business/Finance",
     "retirement": "Business/Finance",
@@ -656,7 +635,7 @@ KEYWORD_MAP = {
     "sportsweekend": "Sports",
     "sportsxtra": "Sports",
 
-    # Arts / Culture
+    # Arts / Culture (all movies/books go here
     "arts & entertainment": "Arts/Culture",
     "arts and entertainment": "Arts/Culture",
     "arts": "Arts/Culture",
@@ -678,8 +657,9 @@ KEYWORD_MAP = {
     "play": "Arts/Culture",
     "watching": "Arts/Culture",
     "life & arts": "Arts/Culture",
+    "books": "Arts/Culture",  
 
-    # LifeStyle
+    # LifeStyle : travel & home decor & cars & fashion & food
     "life": "LifeStyle",
     "lifestyles": "LifeStyle",
     "lifestyle": "LifeStyle",
@@ -712,7 +692,6 @@ KEYWORD_MAP = {
     "going places": "LifeStyle",
     "what to do": "LifeStyle",
     "leisure": "LifeStyle",
-    "then & now": "LifeStyle",
     "summer times supplement": "LifeStyle",
     "spring times supplement": "LifeStyle",
     "live life love": "LifeStyle",
@@ -724,7 +703,7 @@ KEYWORD_MAP = {
     "cars": "LifeStyle",
     "auto showcase": "LifeStyle",
     "auto": "LifeStyle",
-    "realestate": "LifeStyle",
+    "realestate": "LifeStyle", # could go to business?
     "t-magazine": "LifeStyle",
     "fashion": "LifeStyle",
     "sophisticated traveler magazine": "LifeStyle",
@@ -749,12 +728,6 @@ KEYWORD_MAP = {
     "ideas voices": "Opinion/Editorial/Letters",
     "p-com opinion": "Opinion/Editorial/Letters",
 
-    # books / podcast
-    "books": "books/podcast",
-    "transcript": "books/podcast",
-    "podcast": "books/podcast",
-    "podcasts": "books/podcast",
-
     # Science / Tech / Health
     "well": "Science/Health/Tech",
     "technology": "Science/Health/Tech",
@@ -764,60 +737,96 @@ KEYWORD_MAP = {
     "health": "Science/Health/Tech",
 }
 
-# ======================
-# Classifier: Desk-first, then Keyword , else None
-# ======================
-def classify_section(section_text: str) -> str | None:
-    if pd.isna(section_text) or not str(section_text).strip():
-        return None
+def _normalize_map_keys(raw: dict) -> dict:
+    """NORM · apply the same normalization to mapping keys (built once at import)."""
+    out: dict[str, str] = {}
+    for k, v in raw.items():
+        nk = _normalize_token(k)
+        if nk:
+            out[nk] = v
+    return out
 
-    tokens = [t.strip() for t in str(section_text).split(";") if t.strip()]
-    if not tokens:
-        return None
+# Build normalized maps ONCE to align key-space with token normalization
+DESK_MAP = _normalize_map_keys(_DESK_MAP_RAW)
+KEYWORD_MAP = _normalize_map_keys(_KEYWORD_MAP_RAW)
 
-    desk_hits, kw_hits = set(), set()
-
-    for t in tokens:
-        # filter layout/packaging noise
-        if NOISE_RE.match(t.strip()):
-            continue
-        k = _normalize_token(t)
-        if not k:
-            continue
-        if k in DESK_MAP:
-            desk_hits.add(DESK_MAP[k])
-        if k in KEYWORD_MAP:
-            kw_hits.add(KEYWORD_MAP[k])
-
-    # Desk-first
-    if len(desk_hits) == 1:
-        return next(iter(desk_hits))
-    if len(desk_hits) > 1:
-        return None   # conflicting desks → abstain
-
-    # Keyword fallback (books/podcast priority)
-    if len(kw_hits) >= 1:
-        if "books/podcast" in kw_hits:
-            return "books/podcast"
-        return next(iter(kw_hits)) if len(kw_hits) == 1 else None
-
-    return None
-
-# ---------- DataFrame entry point ----------
+# ---------- Step D: add category column to dataset ----------
 def add_section_category(
     df: pd.DataFrame,
     source_col: str = "section",
     dest_col: str = "category",
-    cleaned_col: str | None = None
+    return_cleaned: bool = False,
+    cleaned_col: str = "section_cleaned"
 ) -> pd.DataFrame:
     """
-    Add a category column to df using classify_section.
-    - If cleaned_col exists, use it; else use source_col.
-    Returns a new DataFrame; original is not modified.
+    Apply desk-first-then-keyword classification to a DataFrame column.
+
+    Logic:
+      - Normalize the cell text (NA-safe, NBSP, trim, canonicalize, casefold)
+      - Split on ';' to candidate tokens
+      - Normalize each token, then drop layout/packaging noise (NOISE_RE)
+      - Desk-first decision; if none, keyword fallback with deterministic order
+      - Return None if ambiguous or no signal
+      - Optionally emit a normalized column for QA (return_cleaned=True)
     """
+    if source_col not in df.columns:
+        raise KeyError(f"Column '{source_col}' not in DataFrame")
+
+    def _classify_cell(text) -> str | None:
+        # Normalize the raw cell (coarse level)
+        s = _clean_nbsp_and_spaces(text)
+        if not s:
+            return None
+
+        # Split into tokens
+        raw_tokens = [t for t in (tok.strip() for tok in s.split(";")) if t]
+        if not raw_tokens:
+            return None
+
+        # Normalize tokens and filter layout noise
+        norm_tokens: list[str] = []
+        for t in raw_tokens:
+            k = _normalize_token(t)
+            if not k or NOISE_RE.match(k):
+                continue
+            norm_tokens.append(k)
+        if not norm_tokens:
+            return None
+
+        # Mapping & resolution
+        desk_hits: set[str] = set()
+        kw_hits: set[str] = set()
+        for k in norm_tokens:
+            if k in DESK_MAP:
+                desk_hits.add(DESK_MAP[k])
+            if k in KEYWORD_MAP:
+                kw_hits.add(KEYWORD_MAP[k])
+
+        # Desk-first
+        if len(desk_hits) == 1:
+            return next(iter(desk_hits))
+        if len(desk_hits) > 1:
+            return None  # conflicting desks → abstain
+
+        # If no desk match, then move to Keyword match
+        if kw_hits:
+            for cat in CATEGORIES:
+                if cat in kw_hits:
+                    return cat
+            return sorted(kw_hits)[0]
+
+        return None
+
     d = df.copy()
-    input_col = cleaned_col if (cleaned_col and cleaned_col in d.columns) else source_col
-    d[dest_col] = d[input_col].apply(classify_section)
+
+    # Optional audit column with normalized text
+    if return_cleaned:
+        d[cleaned_col] = d[source_col].apply(_normalize_token)
+        input_col = cleaned_col
+    else:
+        input_col = source_col
+
+    d[dest_col] = d[input_col].apply(_classify_cell)
     return d
 
-__all__ = ["clean_section", "classify_section", "add_section_category"]
+__all__ = ["add_section_category"]
