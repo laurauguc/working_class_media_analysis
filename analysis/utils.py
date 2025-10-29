@@ -433,9 +433,8 @@ def run_batch(batch_to_run, system_prompt, response_format, model, temperature, 
     output_file = batch_info.loc[batch_info.batch_number == batch_to_run, "output_file"].iloc[0]
     result_file = batch_info.loc[batch_info.batch_number == batch_to_run, "result_file"].iloc[0]
 
-    print(f"🚀 Running batch {batch_to_run} with {len(df_sampled)} rows")
-
     if not os.path.exists(input_file):
+        print(f"🚀 Running batch {batch_to_run} with {len(df_sampled)} rows")
         # Step 1: Create batch input
         create_batch(df_sampled, system_prompt, response_format, model, temperature, reasoning_effort, input_file)
         # Step 2: Submit the batch input
@@ -576,3 +575,123 @@ def save_examples_to_folder(var, df_articles_with_results, examples_dir, var_ori
             doc.save(filepath)
 
     print("✅ Articles saved successfully.")
+
+# classifying other occupations
+def create_batch_other(unclassified_items, occupation_categories, batch_input_filename = "classify_other_occupation_batch.jsonl"):
+    with open(batch_input_filename, "w") as f:
+        for i, sublist in enumerate(unclassified_items):
+            if sublist:
+                request = {
+                    "custom_id": f"classify_{i}",
+                    "method": "POST",
+                    "url": "/v1/chat/completions",
+                    "body": {
+                        "model": "gpt-5",
+                        "messages": [
+                            {"role": "system", "content": (
+                                "Classify each user-provided occupation into one of the following categories, using 'Other' sparingly only if item cannot be classified. "
+                                f"Occupation categories: {occupation_categories}"
+                            )},
+                            {"role": "user", "content": f"{sublist}"}
+                        ],
+                        "reasoning_effort": 'minimal',
+                        "response_format": {
+                            "type": "json_schema",
+                            "json_schema": {
+                                "name": "occupation_category_list",
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "categories": {
+                                            "type": "array",
+                                            "items": {"type": "string"},
+                                        }
+                                    },
+                                    "required": ["categories"],
+                                },
+                            },
+                        },
+                    }
+                }
+                f.write(json.dumps(request) + "\n")
+    return batch_input_filename
+
+def standardize_occupation(values_list, categories):
+    stand_list = []
+    unclassified_list = []
+
+    if values_list == ["NA"]:
+        return [], []
+
+    for value in values_list:
+        cat_found = False
+
+        for cat in categories:
+            if cat.lower() in value.lower():
+                stand_list.append(cat)
+                cat_found = True
+                break
+
+        if not cat_found:
+            if "administrative" in value.lower() or "clerical" in value.lower():
+                stand_list.append('Administrative/Clerical')
+
+            elif "unspecified" not in value.lower() and "no specific" not in value.lower() and "general" not in value.lower() and "not specific" not in value.lower():
+                unclassified_list.append(value)
+    # Remove duplicates from stand_list
+    stand_list = list(set(stand_list))
+
+    return stand_list, unclassified_list
+
+
+# delete??
+def classify_other(other_list, occupation_categories):
+
+    response_format = {"type": "json_schema",
+                      "json_schema":
+                        {
+                      "name": "occupation_category_list",
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "categories": {
+                            "type": "array",
+                            "description": "List of occupation categories, one per user-provided occupation, corresponding in order. Only allowed values: 'Service', 'Manufacturing', 'Construction', 'Administrative/Clerical', 'Transportation', 'Farming', or 'Other'.",
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "Service",
+                                "Manufacturing",
+                                "Construction",
+                                "Administrative/Clerical",
+                                "Transportation",
+                                "Farming",
+                                "Other"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "categories"
+                        ],
+                        "additionalProperties": False
+                      },
+                      "strict": True
+                    }}
+
+
+    response = client.chat.completions.create(
+        model= "gpt-5",
+        messages=[
+            {"role": "system", "content":
+                    ("Classify each user-provided occupation into one of the following categories, using 'Other' sparingly only if item cannot be classified. Output only the category without any rationale, reasoning, or justification. "
+                     f"Occupation categories: {occupation_categories}")
+            },
+            {"role": "user", "content": f"{other_list}"}
+        ],
+        temperature=temperature,
+        reasoning_effort=reasoning_effort,
+        response_format = response_format
+    )
+
+    return response.choices[0].message.content
