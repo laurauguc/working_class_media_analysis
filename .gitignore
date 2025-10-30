@@ -17,3 +17,4 @@ analysis/batch_output.jsonl
 data_preparation/__pycache__/
 data/categorized/dataset_with_category.pkl
 data/cleaned/cleaned_articles (2).pkl
+data_exploration/__pycache__/
