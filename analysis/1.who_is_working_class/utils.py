@@ -375,7 +375,7 @@ def parse_batch_results(output_filename, model, pricing_dict=pricing_dict):
     print(f"Estimated cost for {model}: ${cost:.4f}")
     return df
 
-batch_data_path = os.path.join("..", "data", "processed", "batch_data")
+batch_data_path = os.path.join("..", "..", "data", "processed", "batch_data")
 
 # --- 1. Prepare and split DataFrame ---
 def prepare_batches(df_articles, n_batches, BATCH_INFO_FILE):
