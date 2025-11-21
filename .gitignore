@@ -19,3 +19,5 @@ data/categorized/dataset_with_category.pkl
 data/cleaned/cleaned_articles (2).pkl
 data_exploration/__pycache__/
 analysis/2.topic_analaysis/corex_anchor_topic_details.csv
+data/topic modeling data/nyt.pkl
+data/topic modeling data/other.pkl
