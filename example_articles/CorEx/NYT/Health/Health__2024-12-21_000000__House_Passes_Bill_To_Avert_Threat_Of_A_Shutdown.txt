@@ -1,0 +1,41 @@
+TITLE: House Passes Bill To Avert Threat Of A Shutdown
+TOPIC: Health
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-12-21 00:00:00
+SECTION: Section A; Column 0; National Desk; Pg. 1
+SOURCE_FILE: NYT/1.DOCX
+
+BODY:
+The Senate passed the measure, sending it to President Biden's desk, shortly after the midnight deadline for funding to lapse.
+The Senate approved a spending measure early Saturday to keep government money flowing through mid-March, sending it to President Biden for his expected signature and closing a chaotic endgame in Congress minutes after federal funding had lapsed. 
+  The 85-to-11 Senate vote followed earlier House passage of the legislation, which also provided $100 billion in disaster relief for parts of the nation still reeling from storms. The action pushed major spending decisions into 2025 and the first months of the incoming Trump administration and a fully Republican-controlled Congress.
+  The White House said that President Biden would sign the measure on Saturday and that no agencies would shut down despite the technical lapse in funding.
+  The end to days of shutdown drama came after House Republicans stripped out a provision demanded by President-elect Donald J. Trump to suspend the federal debt limit and spare him the usually politically charged task of doing so when he takes office. But that demand sparked a revolt by dozens of Republicans on Thursday and led to a major defeat on the House floor.
+  The measure that ultimately passed kept dollars flowing to federal agencies and prevented a prolonged funding lapse that could have led to government disruptions just days before the holidays.
+  Senator Chuck Schumer, Democrat of New York and the majority leader, said the final product was not all Democrats wanted, but avoided a crisis.
+  ''Though this bill does not include everything Democrats fought for, there are major victories in this bill for American families,'' Mr. Schumer said, citing ''emergency aid for communities battered by natural disasters'' as well as no suspension of the limits on federal borrowing. He added that it would ''keep the government open with no draconian cuts.''
+  The legislation also extends farm programs for one year and provides $10 billion in direct aid for farmers.
+  The vote in the House capped an extraordinary week of Republican chaos and dysfunction in which Speaker Mike Johnson cut a deal with Democrats to avert a shutdown, only to see it torpedoed by the billionaire Elon Musk and Mr. Trump, who demanded a different plan, which was promptly defeated by Republicans with help from Democrats.
+  After the vote, Mr. Johnson, who faced questions about his ability to continue as speaker next year after the tumult of the past few days, said he had been in constant contact with Mr. Trump and had talked with Mr. Musk, whom Mr. Trump named to help lead an effort to cut government spending, as well.
+  ''He knew exactly what we were doing and why,'' Mr. Johnson said of the president-elect. ''This is a good outcome for the country.''
+  Still, the vote illustrated the limits of the president-elect's power to keep fractious House Republicans in line. Mr. Trump failed in his effort to win a debt-limit suspension even after threatening primary campaigns against Republicans who voted for a stopgap bill that did not address it. The internal divisions over spending and debt foreshadowed potential difficulties for Republicans next year as they try to navigate their narrow House margin and accomplish an ambitious domestic agenda including complex tax and spending issues.
+  The government funding measure was a stripped-down version of an earlier proposal negotiated between Republican and Democratic leaders of the House and Senate that was filled with policy priorities for both parties as well as a cost-of-living pay adjustment for members of the House and Senate.
+  But as soon as it was rolled out by Mr. Johnson on Tuesday, it ran into fierce criticism from members of his own party as a bloated legislative Christmas tree of the sort Mr. Johnson had pledged to avoid. Mr. Musk piled on with an onslaught of criticism on his social media platform X, and Mr. Trump warned Republicans not to support any deal without a debt-ceiling suspension. Mr. Johnson quickly withdrew the bill and never put it to a vote.
+  That outcome angered Democrats, who savaged Mr. Johnson for reneging on the deal they had reached. It also meant that some of the provisions they sought on health care and trade, among other issues, would fall by the wayside. Democrats weighed opposing the stripped-down measure that Mr. Johnson hastily cobbled together on Friday, but ultimately decided to back it rather than risk being blamed for a shutdown.
+  ''House Democrats have successfully stopped extreme MAGA Republicans from shutting down the government, crashing the economy and hurting working-class Americans all across the land,'' said Representative Hakeem Jeffries of New York, the Democratic leader. ''House Democrats have successfully stopped the billionaire boys' club, which wanted a $4 trillion blank check by suspending the debt ceiling.''
+  To mollify both Mr. Trump and conservatives, House Republican leaders floated a pledge to cut spending and raise the debt limit in separate legislation next year. Republicans have been preparing to pass party-line legislation through a fast-track process called reconciliation -- a procedure leaders said on Friday could be used next year to address Mr. Trump's demand to raise the debt limit.
+  ''House Republicans agree to raise the debt limit by $1.5 trillion in the first reconciliation package, with an agreement that we will cut $2.5 trillion in net mandatory spending in the reconciliation process,'' the proposal from the Republican leadership said.
+  Those promises will join cutting taxes, cracking down on immigration and allowing for more oil drilling on the G.O.P. agenda for next year. Republicans in the House and Senate have been at odds over how to tackle their policy priorities, with some senators pushing for multiple party-line bills and House members demanding one huge effort.
+  The shutdown turmoil made it clear that even one such vote is likely to be a heavy lift for Republicans.
+  Congress had flirted repeatedly with shutdowns over the past two years with Republicans in control of the House and Democrats the Senate. But lawmakers pulled back from the brink each time, fearing election fallout.
+  With the elections over and the holidays coming next week, lawmakers had initially expected a fairly smooth path to funding the government into next year, but they instead found themselves enmeshed in one final episode of disarray to cap a tumultuous Congress.
+  Maya C. Miller contributed reporting.Maya C. Miller contributed reporting.
+
+https://www.nytimes.com/2024/12/20/us/politics/congress-shutdown-budget-deadline.html
+
+Graphic
+
+ 
+PHOTOS: Speaker Mike Johnson saw ''a good outcome for the country.'' (PHOTOGRAPH BY KENNY HOLSTON/THE NEW YORK TIMES) (A1)
+ Speaker Mike Johnson on Friday as G.O.P. leaders raced to reach a deal. The vote in the House capped an extraordinary week of Republican chaos and dysfunction. (PHOTOGRAPH BY PETE KIEHART FOR THE NEW YORK TIMES) (A14) This article appeared in print on page A1, A14.

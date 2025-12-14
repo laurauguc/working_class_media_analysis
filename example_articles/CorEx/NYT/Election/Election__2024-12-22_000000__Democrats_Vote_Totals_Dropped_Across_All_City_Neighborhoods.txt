@@ -1,0 +1,32 @@
+TITLE: Democrats' Vote Totals Dropped Across All City Neighborhoods
+TOPIC: Election
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-12-22 00:00:00
+SECTION: Section MB; Column 0; Metropolitan Desk; Pg. 4
+SOURCE_FILE: NYT/1.DOCX
+
+BODY:
+Donald J. Trump won 30 percent of the votes cast in New York City in this year's presidential election. It was a seven-point jump from his performance in 2020, and a higher share of the vote than any Republican nominee has won in the city since George H.W. Bush in 1988.
+But his improved vote share was driven more by the votes Democrats lost than by the votes he gained. 
+  In every neighborhood in New York City, from Red Hook in Brooklyn to Riverdale in the Bronx, Vice President Kamala Harris received fewer votes than Joseph R. Biden, Jr. did in 2020, while in most neighborhoods, Mr. Trump notched modest increases compared with his last run.
+  Overall, the downturn in votes for the Democratic candidate was nearly three times the size of Mr. Trump's gains when compared with 2020.
+  In total, about three million ballots were cast in New York City in the 2020 election, and about 2.8 million were cast in 2024. Many New Yorkers moved out of the city during the pandemic, and by the 2022 midterms, the total number of registered voters here had already started to drop. As of this month, there were about 230,000 fewer active registered Democrats in the city than there were in 2020, and about 12,000 more registered Republicans.
+  It is not clear how much that contributed to the outcome of the election, but the pattern of Democratic losses and Republican gains was clear across all income levels and ethnic groups in the city. The drop-off was most pronounced among working-class immigrant groups who live outside Manhattan, many of them in the neighborhoods that were hit the hardest by the pandemic and the economic disruption that followed.
+  Several of the neighborhoods where the Democratic Party lost the most ground were in Queens, including some with large populations of working-class Latino immigrants.
+  In Corona, a neighborhood in Queens, Ms. Harris won about 6,000 fewer votes than Mr. Biden won in 2020, and Mr. Trump gained about 3,000 votes.
+  In Flushing, one of the hubs of Asian life in the city, Democrats lost about 8,500 votes compared with 2020, and Ms. Harris won just 60 more votes than Mr. Trump.
+  Some of the neighborhoods where the Democratic Party saw the biggest losses were in Upper Manhattan and in the Bronx, the city's poorest borough.
+  In University Heights, a neighborhood in the Bronx with a large Latino population, Mr. Biden won 84 percent of 12,000 votes in 2020, and Ms. Harris won just 66 percent of the 10,000 votes cast in 2024.
+  In East Harlem, a racially diverse neighborhood that is among the lowest income sections of Manhattan, Ms. Harris received about 6,000 fewer votes than Mr. Biden four years ago, and Mr. Trump won about 1,700 more than in 2020.
+  Ms. Harris held up best in high-income neighborhoods known for expensive brownstones and highly educated residents, like Clinton Hill in Brooklyn. About 13,400 votes were cast here in both 2020 and 2024, with Ms. Harris winning 94 percent in 2024, and Mr. Biden winning 97 percent in 2020.
+  Among income groups in the city, the precincts with the lowest median incomes saw the largest drop in support for the Democratic candidate, and the largest increase in support for Mr. Trump.
+  Ms. Harris lost substantial support in precincts with larger populations of Latino and Asian voters. Asian voters have been shifting rightward in recent years because of a mix of concerns about crime, city education policies and the economy.
+  Mr. Trump made significant gains in precincts where a majority of residents were Latino or Black.
+
+https://www.nytimes.com/2024/12/11/multimedia/trump-gained-150000-votes-in-new-york-city-democrats-lost-nearly-three-times-that.html
+
+Graphic
+
+ 
+This article appeared in print on page MB4, MB5.

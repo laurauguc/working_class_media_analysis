@@ -1,0 +1,64 @@
+TITLE: WHAT YOU NEED TO KNOW ABOUT POLITICAL POLLS; THE MARGIN OF ERROR MUST BE TAKEN INTO ACCOUNT
+TOPIC: Religion
+SCORE: 0.999999
+PUBLISHER: Other publisher
+DATE: 2024-10-06 00:00:00
+SECTION: LOCAL; Pg. C-1
+SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+
+BODY:
+With the 2024 election just over a month away, the race between former President Donald Trump and Vice President Kamala Harris is as tight as ever. Most major polls show Ms. Harris slightly in the lead, but - statistically - that could be a mirage, because of a well-worn but little-heeded term: the margin of error.
+The margin of error is how pollsters indicate the number of percentage points a poll could be skewed in one direction or another as a result of randomly sampling voters.
+"When you're using a sample of the population to estimate what the whole population believes, there's going to be some error in that, because you're not talking to everybody," said Mark Mellman, a pollster and Democratic consultant.
+Pollsters often describe the margin of error as the difference in political views between the people surveyed and the actual population of the country. Because it is not possible to survey everyone, there's a chance that in doing a random sample, polls inadvertently talk to more Democrats than Republicans, or more people in one demographic group compared to its counterparts.
+Final poll releases and their resulting press coverage should be emphasizing their margins of error more, especially in swing states like Pennsylvania where races are likely to be close, said Jonathan Cervas, an assistant professor of politics at Carnegie Mellon University.
+"If Harris is up by three and the margin of error is three, it's still a statistical tie," he said. "We don't know whether she's actually up by three or she's up by two, or one, or zero."
+The margin of error for two candidates is also double the margin of error for a single candidate, so if Ms. Harris polls at 48% and Trump at 47% with a margin of error of 3 points, comparing the two has a margin or error of 6 points. Some news outlets report this, some don't.
+A recent poll from Muhlenberg College/ Morning Call had both Ms. Harris and Trump at 48%, with a margin of error of plus or minus 6 percentage points. Either candidate could be in the lead.
+A common misconception is that if candidates have a slight lead within the margin of error, it is equally as possible that they could actually be losing by a small margin in that poll, said Mr. Mellman. When results fall within the margin of error, there is a higher likelihood that the leading candidate is actually ahead, but it doesn't rule out a smaller likelihood that the person is behind by a few points.
+"The most likely outcome is what the poll says," he said. "It's a little less likely that it's one point off, and it's a little less likely than that that it's two points off."
+Other considerations: 2016 and 2020
+But the margin of error, which is a statistical calculation, doesn't account for things like respondents lying to pollsters, a certain type of voter consistently refusing to speak to pollsters, or results being skewed because the poll methodology is flawed.
+What's more, the presidential election is not simply a national popularity contest: The electoral college will once again be instrumental in deciding the winner. National polls - and national results - do not necessarily predict a winner.
+Hillary Clinton won the popular vote by more than two points in 2016 but lost the election when the Democrats' "Blue Wall" of electoral votes in Wisconsin, Michigan, and Pennsylvania collapsed, handing the Electoral College advantage to Trump.
+The 2020 polls were particularly faulty due to a combination of pandemic fallout and Trump declaring that the polls were fake, which decreased participation from Republican voters, said Douglas Rivers, a pollster and professor of political science at Stanford University. Overall, he estimated that they were two points too high on Joe Biden and two points too low on Trump.
+"That's not a huge error for most kinds of survey research, but it's a big deal in an election," he said.
+Pollsters still have not properly calibrated their polls for unspoken Trump support in Pennsylvania and the Midwest, said Mike Bailey, a polling expert and professor of American government at Georgetown University.
+"White, working-class people - it's hard to get them on the phone," he said. "And when you do get someone of that demographic on the phone, you tend to get someone who's more liberal. You get the barista and not the construction worker."
+Polling is like trying to hit a moving target, said Republican political analyst and consultant Keith Naughton, who wrote regular polling analysis for The Hill through the 2020 election.
+"The polls are trying to fix things so that they can get … a more accurate result," he said. "We won't know if they've fixed it, unfortunately, until Election Day."
+During an election year full of rapid-fire media coverage and campaign updates, voters are naturally going to gravitate toward the so-called "horse race" presidential polls to see who is in the lead, said Mr. Rivers.
+The Franklin&Marshall College Poll is designed to discourage voters who only want to weigh in on the "horse race" by mixing in presidential questions with national and state policy questions.
+Berwood Yost, the director of Franklin&Marshall's Center for Opinion Research, said he thinks his non-election polls, like a recent one about Sunday hunting laws in Pennsylvania, are better indicators of the country's attitudes than overly broad presidential questions.
+He only includes presidential polls in his releases - at the very end, to de-emphasize their importance - for a simple reason: "No one would cover our work if we didn't."
+In the current political climate, presidential polling might not tell voters much more than they have observed in the results of the last few close-run elections, said Mr. Cervas at CMU.
+"What's happened in America is that party loyalty is at a near all-time high," he said. "There's almost no split ticket voting. If you really want to know how people are going to vote in 2024, you should look at how they voted in 2022 and in 2020."
+Thinning numbers
+Poll results have become complicated even further by a sharp drop in responses during the internet age.
+"In 1989 everybody had a landline, and people picked up their telephones," said Mr. Yost, an industry veteran who conducted his first statewide survey that year. "People were willing to participate, and so it was a pretty straightforward process at the time."
+Today, far fewer people answer their phones, and many have services set up to block unknown callers, he said.
+The response rate in the late 1990s was about 40% but had declined to between 4% and 5% by 2018, according to Mr. Bailey's book, "Polling at a Crossroads: Rethinking Modern Survey Research." In 2024, response rates are as low as 1%, he said.
+Mr. Bailey said surveys with such low response rates generally have "optimistic" margins of error that should be at least doubled.
+"So much can go wrong when only 1% of people respond," he said.
+Polls with low response rates can hardly claim to be random sampling since they are likely to be heavily influenced by the demographics of respondents, said Mr. Cervas.
+"If older people are more likely to answer the phone than younger people, then whoever older people prefer are going to be overweighted in the polls," he said.
+But the advent of technology hasn't been all bad news for polling. Mr. Yost said he now has easy access to publicly available voter registration rolls thanks to online platforms like Aristotle that are often supplemented with voters' addresses and other personal information. While the response rate is much lower than it used to be, Mr. Yost is starting with a larger list of potential contacts.
+Mr. Yost, like Mr. Cervas, is mindful of non-random sample bias. He pointed out that the refusal rate - voters who explicitly tell him that they don't want to be contacted - is about 5%, roughly the same as when he first started polling. What's different now is that most people simply aren't getting Franklin&Marshall's message in the first place.
+"It just takes more effort to reach them, which is why we do so many more kinds of outreach," he said.
+Today, Franklin&Marshall is using a tried-and-true method: snail mail. The polling agency sends out postcards inviting participants to complete the survey however they want to, whether it is a phone call or an online survey. If they don't get a response, they follow up with as many as four phone calls, two text messages, and two emails.
+According to Franklin&Marshall's most recent poll, one-quarter of respondents completed the survey online, and just over two-thirds of phone respondents used a cell phone, not a landline.
+It's a similar story for Mr. Mellman, who has been in the business since 1982. Mr. Mellman said he reaches out to potential respondents by calling their cellphones and landlines, and sending them text messages to ensure that he is getting a politically diverse survey sample.
+"If we excluded any one of those methods of contacting people, we end up with results that are skewed," he said.
+Mr. Yost aims for a minimum of 400 study participants - ideally 800, depending on how much time and money he has. Mr. Bailey sets his minimum at 1,000, which is possible in Pennsylvania, but harder to achieve in states that are not hotly contested like Florida where there is less polling interest.
+'A step beyond polling'
+Another emerging issue is the sizable increase in bad-faith polls that use poor sourcing like internet pop-ups to push narratives, said Mr. Bailey.
+Popular aggregators like Nate Silver and FiveThirtyEight have a lot of smart ideas, but they dilute their models by including these polls despite their partisan origins, he said.
+"You take the average of biased experts, you still get a biased result," he said. "Aggregating bias doesn't solve things."
+Mr. Yost said there is an important distinction between traditional polling and Mr. Silver's model, which incorporates assumptions like a "Post-convention bump" of support and forecasts the winner of the election.
+"When you go from polling that describes a population to projecting a winner, you're going from description to prediction, which involves some kind of modeling about how the world works and will work," he said. "It's a step beyond polling."
+
+Graphic
+
+ 
+PHOTO: ASSOCIATED PRESS: Viewers gather to watch a debate between Democratic presidential nominee Vice President Kamala Harris and Republican presidential nominee former President Donald Trump at the Angry Elephant Bar and Grill, Tuesday, Sept. 10, 2024, in San Antonio.
+PHOTO: Matt Slocum/Associated Press: A recent poll from Muhlenberg College/Morning Call had both Vice President Kamala Harris and former President Donald Trump at 48%, with a margin of error of plus or minus 6 percentage points. That means either candidate could be in the lead. In 2020, polls were particularly faulty due to a combination of pandemic fallout and Trump declaring that the polls were fake.

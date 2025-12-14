@@ -1,0 +1,29 @@
+TITLE: 36 Hours
+TOPIC: Sports
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-12-21 00:00:00
+SECTION: Section C; Column 0; Travel Desk; Pg. 8
+SOURCE_FILE: NYT/1.DOCX
+
+BODY:
+Key stops
+The seaside gardens of Chiesa del Santissimo Redentore, a 16th-century church, are now open to the public for the first time.   Il Palazzo Experimental and Nolinski Venezia, two new hotels, contain bars that are reinvigorating Venice's cocktail scene.
+  Ca' Pesaro art museum exhibits works by Gustav Klimt, Egon Schiele, Marina Abramovic and other heavyweights.
+  Where to Eat
+  Il Refettorio, a stylish contemporary restaurant, serves grilled meats and inventive seafood dishes.
+  La Bottiglia makes overstuffed gourmet panini.
+  Pietra Rossa specializes in intricate one-bite dishes, Adriatic seafood and garden-fresh produce.
+  La Sete, Estro Pane e Vino and Bea Vita are part of a new crop of natural-wine bars.
+  Where to stay
+  Venice Venice, an upmarket design hotel opened in 2022 in a 13th-century palazzo, offers views of the Grand Canal from many of its 43 rooms. The hotel also has an indoor-outdoor restaurant, a lifestyle boutique, and a private bar-club for guests and members. Rooms in winter start at 600 euros, or about $634.
+  Opened this year after a nearly decade-long renovation, Palazzo dei Mori occupies a discreet 1400s mansion in a quiet passage. The salon and six rooms are decorated in old-world Venetian style, with gilded wood, Murano-glass chandeliers and long drapes. Rooms in winter start at ?182.
+  Titian and Tintoretto are your neighbors at Combo, a 255-bed hostel occupying a former Jesuit convent alongside Santa Maria Assunta ai Gesuiti church (which contains works by the two artists). In addition to shared rooms, double rooms, lofts and apartments, the building contains a cafe-bar and public co-working space (from ?8 per day). Rooms in winter start at ?88.
+  Short-term rental apartments abound in all of Venice's six zones (known as sestieri). For a tranquil stay, consider one of the more peripheral districts. Castello, on the north side, is a mix of working-class residential neighborhoods and bustling pockets of restaurants and bars. An island unto itself, Giudecca has a more local and village-y feel in spots, along with plenty of dining, historical and cultural options.
+
+https://www.nytimes.com/2024/12/18/travel/21hours-venice-box.html
+
+Graphic
+
+ 
+This article appeared in print on page C8.
