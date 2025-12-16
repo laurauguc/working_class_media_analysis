@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-11-25 00:00:00
 SECTION: Section A; Column 0; National Desk; Pg. 18
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Crime']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 Michael Blake, a former state assemblyman and a veteran of the Obama administration, joins a crowded field of candidates running against Mayor Eric Adams.

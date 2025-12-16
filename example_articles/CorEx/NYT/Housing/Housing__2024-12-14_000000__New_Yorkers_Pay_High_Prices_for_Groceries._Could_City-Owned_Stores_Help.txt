@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-14 00:00:00
 SECTION: Section A; Column 0; National Desk; Pg. 10
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Housing', 'Union', 'Election']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 A New York City mayoral candidate wants the city to open its own, more affordable grocery stores. The idea has gained momentum in Chicago and other cities.

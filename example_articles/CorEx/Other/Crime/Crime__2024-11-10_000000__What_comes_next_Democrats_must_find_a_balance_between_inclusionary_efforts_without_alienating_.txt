@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-10 00:00:00
 SECTION: EDITORIAL; Pg. E4
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Crime', 'Religion']
+LABEL: [0.999999, 0.999999, 0.9999200883696937]
 
 BODY:
 ABSTRACT

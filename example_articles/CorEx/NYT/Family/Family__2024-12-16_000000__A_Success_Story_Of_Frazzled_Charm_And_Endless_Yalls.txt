@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-16 00:00:00
 SECTION: Section C; Column 0; The Arts/Cultural Desk; Pg. 1; NONFICTION
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Family', 'Art', 'Books']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Leanne Morgan went from helping her husband sell mobile homes to sudden success in her 50s.

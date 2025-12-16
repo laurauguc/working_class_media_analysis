@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-09 00:00:00
 SECTION: BUSINESS
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Union', 'Military', 'Indebtedness']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 BYD and other manufacturers are importing cars from China and scouting factory sites in Mexico as part of a global expansion that, for now, excludes the United States.

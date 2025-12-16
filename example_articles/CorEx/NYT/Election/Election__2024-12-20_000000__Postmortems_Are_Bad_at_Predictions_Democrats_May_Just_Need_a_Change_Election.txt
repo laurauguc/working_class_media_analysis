@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-20 00:00:00
 SECTION: UPSHOT
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Health']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 An opening will probably emerge for Democrats in four years, but it may not be what the party and pundits expect today.

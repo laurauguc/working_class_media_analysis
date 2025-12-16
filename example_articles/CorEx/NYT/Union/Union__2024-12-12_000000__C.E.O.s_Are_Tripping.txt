@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-12 00:00:00
 SECTION: BRIEFING
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Union', 'Election', 'Military']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Why executives are using psychedelics to get ahead.

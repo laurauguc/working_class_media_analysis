@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-07-24 00:00:00
 SECTION: NEWS; Pg. A1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Housing', 'Military', 'Sports']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 PARIS   Abou is on the move. So is Mamadou. Isaac soon could be. Like characters in "Emily in Paris," they're all can-do young people, though their lives don't fit the fantasy version of Paris portrayed in the Netflix show.

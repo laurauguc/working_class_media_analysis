@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-06 00:00:00
 SECTION: SIL; Pg. 10
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Sports']
+LABEL: [0.999999]
 
 BODY:
 May 2, 1948, and won by the Pirates, 6-4. In that box score, I found that Ralph Kiner had hit two home runs off Ewell Blackwell. When I saw that Pirates game in 1948, America was only months away from a presidential election, but I had no awareness of politics at my age and only a passing interest in politics when I was growing up in the 1950s. I voted for Adlai Stevenson in mock presidential elections in high school because Pittsburgh was a Democratic town, but my working class parents never discussed politics or voted in an election. In 1960 I turned twenty-one and was eligible to vote for the first time in a presidential election, but I couldn't have cared less about politics because the 1960 Pirates were in a pennant race. When Mazeroski hit his miraculous World Series winning home run less than a month before the election, he transformed Pittsburgh into a baseball heaven in the midst of a hellish political campaign. 

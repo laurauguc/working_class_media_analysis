@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-11-15 00:00:00
 SECTION: US; elections
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Business Ownership']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 Representative Jared Golden, a three-term Democrat, defeated Austin Theriault, a former NASCAR driver, in one of a handful of districts held by Democrats that Donald J. Trump won in 2020.

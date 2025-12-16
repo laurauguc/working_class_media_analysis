@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-10-12 00:00:00
 SECTION: MAIN NEWS; Pg. A1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Business Ownership', 'Health']
+LABEL: [0.999999, 0.999999, 0.9989304725901162]
 
 BODY:
 ABSTRACT

@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-05-08 00:00:00
 SECTION: NEWS; Pg. 8
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Education', 'Art', 'Books']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Zac Efron and Jeremy Allen White starring in the family wrestling dynasty in 'The Iron Claw†and Brooke Shields playing the unwitting title role in the romantic comedy 'Mother of the Bride†on Netflix are some of the new television, movies, music and games headed to a device near you. Also among the streaming offerings worth your time: Colombian musician Ryan Castro's new album 'El Cantante Del Ghetto,†the series 'Pretty Little Liars†returns on Max and a new documentary details the Indigo Girls' rise and subsequent marginalization. Movies • Whether or not you know anything about the tragedies that befell the Von Erich family wrestling dynasty, 'The Iron Claw†is well worth a watch. Zac Efron stars as one of the brothers, Kevin, in an ensemble cast that includes Harris Dickinson and Jeremy Allen White as his brothers, Lily James as his wife, and Holt McCallany and Maura Tierney as his parents. It'll be available on MAX on Friday, May 10. • Brooke Shields is the titular mother of the bride in a new romantic comedy coming to Netflix on Thursday. 

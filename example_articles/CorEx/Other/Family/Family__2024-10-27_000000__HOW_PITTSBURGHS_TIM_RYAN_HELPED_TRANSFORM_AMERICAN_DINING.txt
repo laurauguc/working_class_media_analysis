@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-10-27 00:00:00
 SECTION: FOOD; Pg. J-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Education', 'Family', 'Health']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 On a Tuesday afternoon in early October, Tim Ryan cruised through the Rocky Mountains with his wife, Lynne. The couple was deep into a classic great American road trip, spending a few weeks criss-crossing the United States to visit friends and see the sights before settling down in their new home in Birmingham, Ala.

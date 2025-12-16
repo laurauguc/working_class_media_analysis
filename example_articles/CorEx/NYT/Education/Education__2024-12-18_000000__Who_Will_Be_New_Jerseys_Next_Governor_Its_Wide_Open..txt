@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-18 00:00:00
 SECTION: NYREGION
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Education', 'Election', 'Indebtedness']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 At least 10 candidates are vying for attention, including two members of Congress, two mayors, a far-right radio host and a former state senator known as "Ed the Trucker."

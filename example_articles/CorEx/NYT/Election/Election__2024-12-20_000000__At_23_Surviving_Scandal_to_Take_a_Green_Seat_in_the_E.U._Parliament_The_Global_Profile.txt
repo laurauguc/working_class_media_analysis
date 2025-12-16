@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-20 00:00:00
 SECTION: WORLD; europe
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Education', 'Election', 'Military']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Lena Schilling, the youngest lawmaker in Brussels, faced a harsh questioning of her character and credibility before winning a chance to fight against climate change in the halls of power.

@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-06-23 00:00:00
 SECTION: SPORTS; Pg. C1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Housing', 'Family', 'Sports']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 A truck rolled through Avalon 50 years ago and squirted oil onto some of the unpaved streets as a way to prevent dust clouds from blowing all over town. It was a different place in the 1970s, as the prestigious South Jersey Shore point that is "Cooler by a mile" was mostly old homes and cottages. A few roads were still dirt and sidewalks were rare.

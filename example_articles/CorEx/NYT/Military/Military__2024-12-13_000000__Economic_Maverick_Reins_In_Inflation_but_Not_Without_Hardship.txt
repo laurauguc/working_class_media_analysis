@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-13 00:00:00
 SECTION: Section A; Column 0; Foreign Desk; Pg. 4
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Military', 'Indebtedness']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 A year after becoming president, Javier Milei has been praised inside and outside Argentina for reining in galloping inflation. But his economic policies have inflicted widespread hardship.

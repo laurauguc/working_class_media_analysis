@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-13 00:00:00
 SECTION: NEWS; Pg. A1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Education', 'Election', 'Indebtedness']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Among voters without college degrees, Kamala Harris fared worse than Joe Biden four years ago.

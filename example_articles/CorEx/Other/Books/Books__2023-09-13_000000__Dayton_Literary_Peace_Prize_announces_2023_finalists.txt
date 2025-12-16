@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2023-09-13 00:00:00
 SECTION: WHAT TO KNOW
 SOURCE_FILE: Other publishers/Files (500) (2).DOCX
+LABEL: ['Books']
+LABEL: [0.999999]
 
 BODY:
 The Dayton Literary Peace Prize Foundation has announced its 2023 fiction and nonfiction finalists in addition to naming Sandra Cisneros as recipient of the Ambassador Richard C. Holbrooke Distinguished Achievement Award.

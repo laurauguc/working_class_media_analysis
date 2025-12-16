@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-10 00:00:00
 SECTION: NEWS; Pg. 8
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Crime']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 RIO GRANDE CITY, Texas "" Jorge Bazán's family has lived on the U.S.-Mexico border for generations and voted for Democrats as long as he can remember. He broke the family tradition this year and voted for Donald Trump because he doesn't trust the Democratic Party's economic policies. "I think they forgot about the middle class," said Bazán, who works for the utility company in Rio Grande City, seat of the most Latino county in the nation. "People are suffering right now. 

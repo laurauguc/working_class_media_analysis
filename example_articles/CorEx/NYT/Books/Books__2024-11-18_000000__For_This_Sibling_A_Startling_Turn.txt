@@ -1,0 +1,53 @@
+TITLE: For This Sibling, A Startling Turn
+TOPIC: Books
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-11-18 00:00:00
+SECTION: Section C; Column 0; The Arts/Cultural Desk; Pg. 1
+SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Family', 'Art', 'Books']
+LABEL: [0.999999, 0.999999, 0.999999]
+
+BODY:
+Anne-Marie Duff, who won a BAFTA for her performance in this black comedy last season, discusses her character's darker turn in Season 2.
+This article includes spoilers for the first two episodes of the new season of ''Bad Sisters.'' 
+  The first time Anne-Marie Duff applied to drama school in London, it turned her away. When she applied a second time, she received a spot on the wait-list, and she called the school every day until it admitted her.
+  ''I think they just gave me a place to shut me up,'' said Duff, the 54-year-old actress who describes herself as ''London Irish.''
+  Tenacity and grit characterize many of the women Duff has portrayed throughout her decades-long career, including the indomitable Fiona Gallagher in the British version of ''Shameless'' and the headstrong Queen Elizabeth I in the BBC mini-series ''The Virgin Queen.''
+  But those qualities are particularly evident in Duff's depiction of Grace Williams, the troubled housewife at the center of an elaborate whodunit in the Apple TV+ black comedy ''Bad Sisters.''
+  For much of the first season, Grace trembles under the heavy hand of her husband, John Paul (Claes Bang), a jerk known by an unprintable nickname to her sisters. But beneath her timid exterior and obsequious demeanor, frustration builds and boils as her husband belittles and badgers her -- until she finally erupts in a climactic scene that ends with her strangling him.
+  Duff's performance won her best supporting actress at the EE British Academy Film Awards and helped secure a second season of the show, which had a two-episode premiere on Wednesday.
+  Duff extends that same mix of outward docility and inward steeliness to Season 2, which opens as Grace waltzes into a new, joyous marriage that swiftly devolves into tragedy.
+  ''She brings a fragility and a strength,'' Dearbhla Walsh, a director of the series, said of Duff. ''Anne-Marie presents like a delicate flower, like a delicate bird. But she has the strength of an eagle.''
+  In a recent video call, Duff, in a black shirt and gold hoop earrings, was still chipper after a packed day of rehearsals. She has been preparing for her lead role in a new production of ''The Little Foxes,'' the Lillian Hellman play about a scheming Southern family, that will be staged at the Young Vic in London.
+  ''It's been heavenly to be back in the rehearsal room,'' Duff said.
+  Anyone who has seen the first two episodes of the new season of ''Bad Sisters'' knows why Duff is able to take on a new play: In a shocking twist, Grace is killed off in a freak car crash at the end of Episode 2. When Sharon Horgan, who developed the series with Dave Finkel and Brett Baer, came up with the idea for Grace to die early this season, Duff quickly embraced the idea.
+  ''It had a sort of classic inevitability about it,'' Duff said. ''Her shame around what she did -- she murdered him, and she's covered in his blood. So it feels sort of like a Greek play, doesn't it?''
+  Walsh said Duff's ''motivation is not to be in a long-running successful series.''
+  ''She is prepared as an actress to sacrifice the paycheck for what's the most interesting and truthful thing for the character,'' Walsh continued.
+  Theater has always been Duff's first love. Raised in west London by two working-class, Irish immigrants -- her father was a house painter, and her mother worked at a shoe shop -- she was a voracious reader and extremely shy.
+  Her parents signed her up for youth theater to try to push her out of her shell. There, in the midst of performing silly renditions of ''Dracula,'' she became bewitched. Acting became her refuge, her shyness swallowed up by larger-than-life personas.
+  When Duff applied eventually for drama school, she looked extremely young for her age and was rejected. Two years later, she secured admission to the Drama Center in London, a school some former students call ''the trauma center'' because of its extreme environment. Although Duff struggled at first, landing only small roles and receiving frequent criticism from instructors, quitting never crossed her mind.
+  ''I had that kernel of self-belief that young people have when they're standing on the diving board,'' Duff said. ''I was like, I will, I will, I will. I was the little train that could. And so despite the battering that I was getting, I still held on to that little faith in myself.''
+  She sent dozens of letters to people across the industry, imploring them for work. One casting director gave her a tiny role in a stage adaptation of the French film ''Les Enfants du Paradis,'' directed by Mike Alfreds. She had about five lines, but the part helped her land a lead role in Alfreds's next play, ''Uncle Silas,'' an adaptation of the novel by Sheridan Le Fanu.
+  Her breakthrough came with an appearance in the 2002 film ''The Magdalene Sisters'' and then later with ''Shameless,'' which earned her two BAFTA nominations for best actress and led to a marriage to her co-star James McAvoy. (They divorced in 2016 and co-parent their teenage son.)
+  Duff's performance in ''Garage,'' a 2007 Irish film about a lonely gas station attendant, caught Horgan's eye years later. She knew Duff would be the right choice to portray Grace.
+  ''She has this dance with the main character, and she goes through like five different emotions during the course of this dance,'' Horgan said. ''That was why I wanted her. I knew that she had depths of emotion that we were going to need.''
+  When Duff received her first scripts for ''Bad Sisters,'' she relished the gallows humor of the series -- the opening scene shows Grace peering into her husband's coffin and trying to cover up his erection -- and the fact that it featured five leading women, each distinct and colorful. Having grown up as the only girl in her family, she felt drawn to the idea of temporarily embracing sisterhood.
+  ''A lot of my best friends have sisters, and I've always been jealous,'' she said. ''Because I thought while at times it can be a bit toxic or a bit messy, you have this blood-tied best friend.''
+  Through her work with Women's Aid, an organization that works to prevent domestic abuse, Duff had met many women like Grace, who came from middle-class households and had suffered from emotional manipulation. She saw the character as a way to amplify those women's stories.
+  ''It's very difficult for a lot of women to speak up, right?'' she said. ''The television is a very political medium. You're inside people's homes. You get to whisper in the ears of people.''
+  Grace spends most of Season 1 constricted and cut off by John Paul; many of Duff's scenes were filmed separately from those with the rest of the cast, and she sometimes felt isolated from the other lead actresses.
+  That changes in Season 2 as Grace embarks on a new, expansive life -- with laughter in her eyes, a fresh swing in her step -- until her recovery is snuffed out by the car crash.
+  ''There was no escape for her,'' Duff said, referring to Grace's tragic end. ''It was only one way out.''
+  Having exited ''Bad Sisters,'' Duff has relished the chance to return to theater after a two-year hiatus. Since her first foray into theater as a shy, unassuming girl, the stage has remained her safe place.
+  ''I feel so comfortable in a rehearsal room, in a way that I wouldn't feel if I were in another professional environment,'' she said. ''We get to hide more than anyone because we get to go onstage and be somebody else -- someone else has created our life and our story and our words and our costume.''
+
+https://www.nytimes.com/2024/11/14/arts/television/bad-sisters-anne-marie-duff.html
+
+Graphic
+
+ 
+PHOTOS: Anne-Marie Duff, who is a troubled housewife in ''Bad Sisters,'' often plays tenacious women. (PHOTOGRAPH BY ALICE ZOO FOR THE NEW YORK TIMES) (C1)
+Top, Anne-Marie Duff in London, and, above left, with Sharon Horgan in the Season 2 premiere of ''Bad Sisters'' on Apple TV+. (PHOTOGRAPHS BY ALICE ZOO FOR THE NEW YORK TIMES
+ NATALIE SEERY/APPLE TV+) (C7) This article appeared in print on page C1, C7.

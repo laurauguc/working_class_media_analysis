@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-09 00:00:00
 SECTION: ARTS; design
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Education', 'Art', 'Religion']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Allison Berg has established a foundation to elevate the careers of six emerging visual arts curators, educators and administrators each year.

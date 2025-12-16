@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-14 00:00:00
 SECTION: TECHNOLOGY
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Health', 'Business Ownership']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 It was a week of frenzied activity, as Silicon Valley billionaires and their companies brandished checks and compliments for the President-elect.

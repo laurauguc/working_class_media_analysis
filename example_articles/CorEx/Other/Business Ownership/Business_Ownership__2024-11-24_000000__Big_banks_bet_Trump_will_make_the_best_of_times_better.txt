@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-24 00:00:00
 SECTION: BUSINESS; Pg. 2
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Indebtedness', 'Business Ownership']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 You wouldn't have known JPMorgan Chase & Co. had just reported its best quarter by the way Jamie Dimon talked about his competition in July 2023. "They're dancing in the streets," the chief executive officer said, referring to hedge funds and private equity firms that were piling into the lending business as banks like his faced higher capital requirements. When Donald Trump won a return to the White House, it was the financiers' turn to boogie. "A lot of bankers, they're, like, dancing in the street," Dimon told CEOs at a global summit on Nov. 

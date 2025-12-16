@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-03 00:00:00
 SECTION: NEWS; Pg. 1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Union', 'Election', 'Military']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 A music school owner, a software consultant and a real estate agent are among the Republicans hoping to unseat Democratic congressional representatives serving the North, West and Northwest suburbs. Even though state lawmakers deliberately drew the borders for the suburban congressional districts to favor Democratic candidates, none of the incumbents is getting a free pass to reelection. Every one of them has a challenger. Here's a final look at those matchups. 10th District Democratic U.S. Rep. 

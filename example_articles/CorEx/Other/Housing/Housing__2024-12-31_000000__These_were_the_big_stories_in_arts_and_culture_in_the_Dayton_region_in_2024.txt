@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-31 00:00:00
 SECTION: WHAT TO KNOW
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Housing', 'Education', 'Military']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 The arts in Dayton continued to thrive in 2024. From the exciting debut of a new arts center to a former U.S. president's influential literary and peace-driven legacy, here are the stories that framed a memorable year.

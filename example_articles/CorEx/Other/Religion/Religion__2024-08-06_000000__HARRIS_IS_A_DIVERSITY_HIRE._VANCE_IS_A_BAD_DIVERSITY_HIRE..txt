@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-08-06 00:00:00
 SECTION: OPINION; Pg. A-16
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Religion']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 Donald Trump is in a weird place - for a solid week, he did not dictate the discourse. The former president is used to influencing front pages, with liberal and conservative media devoting thousands of inches to his antics.

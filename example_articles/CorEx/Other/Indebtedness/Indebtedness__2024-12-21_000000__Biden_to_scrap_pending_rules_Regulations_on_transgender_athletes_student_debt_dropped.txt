@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-21 00:00:00
 SECTION: AGD; Pg. 2
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Indebtedness']
+LABEL: [0.999999]
 
 BODY:
 WASHINGTON "" President Joe Biden is abandoning his efforts to provide some protections for transgender student athletes and cancel student loans for more than 38 million Americans, the first steps in an administration-wide plan to jettison pending regulations to prevent President-elect Donald Trump from retooling them to achieve his own aims. The White House expects to pull back unfinished rules across several agencies if there isn't enough time to finalize them before Trump takes office. If the proposed regulations were left in their current state, the next administration would be able to rewrite them and advance its agenda more quickly. 

@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-11-22 00:00:00
 SECTION: REALESTATE
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Housing', 'Business Ownership']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 The Orchard is set to be the tallest building in Queens, after topping out at 823 feet this summer. The amenity-rich rental tower in Long Island City is expected to open in early 2026, with 824 units, a third of which will be designated as affordable housing.

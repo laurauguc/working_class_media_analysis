@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-10-09 00:00:00
 SECTION: FEATURES; Pg. D1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Family', 'Art', 'Education']
+LABEL: [0.999999, 0.999999, 0.9999740981755926]
 
 BODY:
 NEW YORK - Adam Pearson is a real man about town.  After shooting "A Different Man" around Brooklyn and Manhattan in 2022, the British actor is back in the city promoting his absurdist new dark comedy. In his spare time, he's doing "all the touristy things": getting rocky road cookies at Levain Bakery ("phenomenal") and going to the "Friends" museum ("My friend wants a Central Perk sign").  "I'm going to a cat café tomorrow called Meow Parlour," he says, sipping a Coke at a hotel restaurant. "I've never felt more like a child in my life." With "A Different Man" (in theaters now), Pearson, 39, is finally getting his movie-star moment. The film follows Edward (Sebastian Stan), a struggling actor with neurofibromatosis (NF), who undergoes experimental surgery to get rid of the rampant tumors growing on his face. But even with them gone, he still lacks the easy charisma of Oswald (Pearson), an affable hotshot with the same medical condition.

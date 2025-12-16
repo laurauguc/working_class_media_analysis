@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-10 00:00:00
 SECTION: ASECTION; Pg. A-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Health', 'Religion']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 When 31-year-old Brigid Colligan walked into the voting booth Tuesday afternoon, she was hopeful.

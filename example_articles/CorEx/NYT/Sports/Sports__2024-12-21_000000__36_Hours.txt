@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-21 00:00:00
 SECTION: Section C; Column 0; Travel Desk; Pg. 8
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Sports']
+LABEL: [0.999999]
 
 BODY:
 Key stops

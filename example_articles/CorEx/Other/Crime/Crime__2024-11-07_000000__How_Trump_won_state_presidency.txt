@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-07 00:00:00
 SECTION: MAIN NEWS; Pg. A1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Health', 'Crime']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 President-elect Donald Trump won Pennsylvania the same way he won much of the rest of the country: He bolstered his support in rural areas while tamping down Vice President Kamala Harris' advantage in urban and suburban Democratic strongholds.

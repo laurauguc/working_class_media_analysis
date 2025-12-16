@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-26 00:00:00
 SECTION: FEATURES; Pg. D1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Art', 'Family']
+LABEL: [0.999999, 0.9950651070858102]
 
 BODY:
 Spoiler alert! The following story contains major plot details about "Blitz" (now streaming on Apple TV+).

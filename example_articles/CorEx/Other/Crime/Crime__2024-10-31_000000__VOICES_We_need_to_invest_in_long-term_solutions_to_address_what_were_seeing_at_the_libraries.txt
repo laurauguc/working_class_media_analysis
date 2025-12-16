@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-10-31 00:00:00
 SECTION: IDEAS VOICES
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Education', 'Crime']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 I want to address the recent incidents at our cherished Dayton Metro Libraries, particularly at the Downtown and Southeast Branches. These libraries have long been more than buildings with books; they are safe spaces, pillars of learning, and hubs for community connection and reflection. However, recent incidents have reminded us that when the foundation of home, where values, morals, and character are supported to be taught, becomes weakened or eradicated, these disruptions find their way into our shared spaces and are no longer safe. If we are honest, much of what we witness today reflects what has gone missing from homes and communities for many years.

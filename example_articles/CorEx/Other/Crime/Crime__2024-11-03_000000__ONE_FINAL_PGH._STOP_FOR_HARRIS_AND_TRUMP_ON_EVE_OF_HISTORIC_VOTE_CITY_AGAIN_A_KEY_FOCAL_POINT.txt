@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-03 00:00:00
 SECTION: ASECTION; Pg. A-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Crime', 'Health']
+LABEL: [0.999999, 0.999999, 0.9997269355985892]
 
 BODY:
 As Vice President Kamala Harris and former President Donald Trump make their final pitches to voters at the end of a contentious and tumultuous campaign that is effectively deadlocked, according to the polls, both have chosen Pittsburgh as crucial to their final Monday push.

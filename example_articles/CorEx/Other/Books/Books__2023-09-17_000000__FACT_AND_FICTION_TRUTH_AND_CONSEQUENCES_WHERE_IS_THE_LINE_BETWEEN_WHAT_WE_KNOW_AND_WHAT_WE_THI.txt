@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2023-09-17 00:00:00
 SECTION: FORUM; Pg. D-5
 SOURCE_FILE: Other publishers/Files (500) (2).DOCX
+LABEL: ['Books']
+LABEL: [0.999999]
 
 BODY:
 In the 1860s and '70s, Victorian England was obsessed with "The Tichborne Claim." In 1854, 25-year-old Roger Tichborne, heir to the title and fortune of an aristocratic family that traced its lineage to the Norman Conquest, was thought to have died in a shipwreck off the coast of Australia. When rumors of survivors reached England, Roger's mother placed advertisements in Australian newspapers, offering a reward for information.

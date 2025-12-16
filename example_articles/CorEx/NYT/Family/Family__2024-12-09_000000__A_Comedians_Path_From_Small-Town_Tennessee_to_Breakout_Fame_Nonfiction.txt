@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-09 00:00:00
 SECTION: BOOKS; review
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Family', 'Art', 'Education']
+LABEL: [0.999999, 0.999999, 0.9947733785603909]
 
 BODY:
 Leanne Morgan went from helping her husband sell mobile homes to sudden success in her 50s.

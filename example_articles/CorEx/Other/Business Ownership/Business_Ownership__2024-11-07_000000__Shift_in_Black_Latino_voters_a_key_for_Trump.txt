@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-07 00:00:00
 SECTION: NEWS; Pg. A3
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Business Ownership', 'Religion']
+LABEL: [0.999999, 0.999999, 0.9986980218219278]
 
 BODY:
 WASHINGTON   A realignment among Latino voters - and a smaller shift among Black voters in key swing states   helped catapult Donald Trump to his victory over Kamala Harris as the Republican nominee expanded his support by peeling off voters from two core Democratic constituencies.

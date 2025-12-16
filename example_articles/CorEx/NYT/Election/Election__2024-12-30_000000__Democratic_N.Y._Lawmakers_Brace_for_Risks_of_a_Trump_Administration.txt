@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-30 00:00:00
 SECTION: NYREGION
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Union', 'Election', 'Indebtedness']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 After President-elect Donald J. Trump's gains in New York, lawmakers plan to focus on high costs and crime while safeguarding policies about immigration and abortion.

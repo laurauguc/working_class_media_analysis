@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-02-25 00:00:00
 SECTION: VARIETY; Pg. 7E
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Books', 'Sports', 'Military']
+LABEL: [0.999999, 0.9999035853549052, 0.9941986865475306]
 
 BODY:
 Special to the Star Tribune

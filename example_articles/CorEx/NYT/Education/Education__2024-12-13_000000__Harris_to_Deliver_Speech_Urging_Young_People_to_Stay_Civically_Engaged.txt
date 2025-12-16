@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-13 00:00:00
 SECTION: US; politics
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Education']
+LABEL: [0.999999]
 
 BODY:
 Vice President Kamala Harris, who has kept a relatively low profile since she lost the election, will speak in Maryland on Tuesday.

@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-10-23 00:00:00
 SECTION: AGD; Pg. 7
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Business Ownership']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 MIAMI â€" Democratic presidential nominee Kamala Harris on Tuesday said she would work to bring more funds to community banks to help Latino men secure small business loans, while Republican Donald Trump's economic roundtable aimed at Latino voters devolved into a tirade of insults against his opponent. Harris said in an interview with Telemundo that "we need to construct a strong economy that supports the working class.†"I know that Hispanic men often have more difficulty securing loans from banks because of their connections and the fact that things aren't necessarily set up so that they will qualify,†she said in an interview in English that was translated into Spanish. "For that reason, I'm focused on seeing what we can do to bring more capital to community banks that better understand the community so we can give them that kind of loans.†In response to Trump's claims that she was a socialist, she said: "I'm a capitalist. 

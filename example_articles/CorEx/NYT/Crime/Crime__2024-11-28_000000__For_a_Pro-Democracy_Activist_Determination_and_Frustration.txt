@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-11-28 00:00:00
 SECTION: Section A; Column 0; Foreign Desk; Pg. 11
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Military', 'Crime', 'Union']
+LABEL: [0.999999, 0.999999, 0.9991227045122227]
 
 BODY:
 When a court in Hong Kong sentenced 45 pro-democracy politicians and activists to prison sentences of up to 10 years, it took down the city's once-vocal opposition in one fell swoop, making clear the risks of dissent.

@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2023-09-08 00:00:00
 SECTION: OPINION; Pg. A-17
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Books']
+LABEL: [0.999999]
 
 BODY:
 Folk singer Oliver Anthony exploded onto the scene with "Rich Men North of Richmond," a song bursting with enough working-class righteousness that the Conservative Rich Men of Washington, D.C. somehow didn't think it was about them.

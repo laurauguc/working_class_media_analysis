@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-15 00:00:00
 SECTION: Section ; Column 0; Graphics
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Housing', 'Election', 'Religion']
+LABEL: [0.999999, 0.999999, 0.9930770446146205]
 
 BODY:
 Donald J. Trump won 30 percent of the votes cast in New York City this month. It was a seven-point jump from his performance in 2020, and a higher share of the vote than any Republican nominee has won in the city since George H.W. Bush in 1988.

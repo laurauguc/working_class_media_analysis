@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-02 00:00:00
 SECTION: Section C; Column 0; The Arts/Cultural Desk; Pg. 1
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Books']
+LABEL: [0.999999]
 
 BODY:
 It's not just you. Oxford University Press, the publisher of the august Oxford English Dictionary, is also going a bit fuzzy between the ears. 

@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-14 00:00:00
 SECTION: Section C; Column 0; Travel Desk; Pg. 8
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Housing', 'Art', 'Sports']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Friday

@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-11-07 00:00:00
 SECTION: US; politics
 SOURCE_FILE: NYT/2.DOCX
+LABEL: ['Election', 'Health', 'Religion']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Donald Trump has won the 2024 presidential election. Follow live updates here.

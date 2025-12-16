@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-15 00:00:00
 SECTION: Section A; Column 0; National Desk; Pg. 23; POLITICAL MEMO
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Health']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 Some leaders have begun to put a sunnier spin on the November outcome by pointing to down-ballot victories -- a possible sign that Democrats may not tear down their party after all.

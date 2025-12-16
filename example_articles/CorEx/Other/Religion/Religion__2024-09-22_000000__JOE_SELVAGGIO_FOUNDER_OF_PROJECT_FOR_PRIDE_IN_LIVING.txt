@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-09-22 00:00:00
 SECTION: NEWS; Pg. 1M
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Indebtedness', 'Business Ownership', 'Religion']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 In 1968, Joe Selvaggio, a young civil rights activist who had just resigned from the priesthood to work on social justice causes, got a job on the assembly line at a Honeywell plant in the Twin Cities. But he was aghast to learn he was making anti-personnel bombs that the United States was using in the Vietnam War, which he opposed.

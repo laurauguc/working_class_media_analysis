@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-24 00:00:00
 SECTION: ASECTION; Pg. A-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Military', 'Indebtedness']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 WASHINGTON - Clad in jeans and a winter jacket, David McCormick stood in front of the U.S. Steel Tower in Downtown Pittsburgh last December to call the iconic American company's potential sale to Japan's largest steel manufacturer a tragedy.

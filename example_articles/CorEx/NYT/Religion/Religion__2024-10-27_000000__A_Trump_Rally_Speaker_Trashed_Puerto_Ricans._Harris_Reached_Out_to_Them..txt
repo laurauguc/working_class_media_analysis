@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-10-27 00:00:00
 SECTION: US; politics
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Religion']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 Her campaign moved swiftly to highlight that even as a speaker at Donald Trump's rally in New York made offensive remarks about Puerto Rico and Latinos, she was visiting Puerto Rican voters in Philadelphia.

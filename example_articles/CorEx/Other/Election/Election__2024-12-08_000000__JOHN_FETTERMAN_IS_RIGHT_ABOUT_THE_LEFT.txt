@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-08 00:00:00
 SECTION: FORUM; Pg. D-3
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election']
+LABEL: [0.999999]
 
 BODY:
 There is a phrase in Spanish that I love, "no tiene pelos en la lengua," which translates to "that person has no hair on their tongue." There is nothing to impede frank and brusque words from escaping - there is no filter.

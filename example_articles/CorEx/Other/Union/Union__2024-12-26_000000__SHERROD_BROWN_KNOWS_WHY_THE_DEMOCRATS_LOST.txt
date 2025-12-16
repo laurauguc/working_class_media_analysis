@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-26 00:00:00
 SECTION: OPINION; Pg. A-11
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Union', 'Election']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 Had John F. Kerry taken roughly 60,000 more Ohio votes from George W. Bush in 2004, he would have been president. Four years later, Barack Obama won the state by nearly five percentage points; he did it again in 2012, but by less than half that margin.

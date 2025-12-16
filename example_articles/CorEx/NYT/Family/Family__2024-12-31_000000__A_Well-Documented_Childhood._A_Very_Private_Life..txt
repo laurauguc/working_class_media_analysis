@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-31 00:00:00
 SECTION: Section A; Column 0; National Desk; Pg. 16
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Education', 'Family', 'Religion']
+LABEL: [0.999999, 0.999999, 0.9999821029114275]
 
 BODY:
 Jimmy Carter's daughter had an extraordinary and well-documented childhood in the White House. Since then she has for the most part lived a very private life.

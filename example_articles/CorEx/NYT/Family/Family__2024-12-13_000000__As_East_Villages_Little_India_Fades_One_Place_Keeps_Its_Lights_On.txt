@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-13 00:00:00
 SECTION: NYREGION
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Housing', 'Education', 'Family']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Three neighboring South Asian restaurants with string light-filled windows survived for decades. Only one remains as Sixth Street's "Curry Row" moniker fades.

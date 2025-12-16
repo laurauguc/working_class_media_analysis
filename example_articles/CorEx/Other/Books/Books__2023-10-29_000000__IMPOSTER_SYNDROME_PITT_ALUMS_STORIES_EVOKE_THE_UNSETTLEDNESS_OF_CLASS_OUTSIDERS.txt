@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2023-10-29 00:00:00
 SECTION: FORUM; Pg. D-5
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Religion', 'Books', 'Education']
+LABEL: [0.999999, 0.999999, 0.9994043768504425]
 
 BODY:
 Basically, I'm just so sick and tired of feeling like an imposter every single second of every single day," writes Salvatore Pane, a University of Pittsburgh MFA alum, in his Autumn House Fiction Prize-winning story collection, "The Neorealist in Winter."

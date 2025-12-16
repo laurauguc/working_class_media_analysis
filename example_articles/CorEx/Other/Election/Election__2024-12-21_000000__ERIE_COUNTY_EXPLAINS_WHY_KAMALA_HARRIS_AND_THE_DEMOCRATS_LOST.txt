@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-21 00:00:00
 SECTION: OPINION; Pg. A-13
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Education', 'Religion']
+LABEL: [0.999999, 0.9999883624573302, 0.9998162704952553]
 
 BODY:
 June gleefully shouted to anyone within earshot, "We are going to make history tonight!" On election night, the Kamala Harris staffer was beyond jubilant. "The vibes were very good. We were hitting and surpassing our expected turnout," June (not her real name) confided. "Around 9:30 it turned. It was very sudden. We were all blindsided."

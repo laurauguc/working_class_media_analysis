@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-02 00:00:00
 SECTION: NEWS; Pg. 1A
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Education', 'Union', 'Election']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Omar Fateh was the first Somali American elected to serve in the Minnesota state Senate and is believed to be the first such state senator in the U.S.

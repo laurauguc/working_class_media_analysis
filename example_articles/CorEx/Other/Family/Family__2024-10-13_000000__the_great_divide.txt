@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-10-13 00:00:00
 SECTION: NEWS; Pg. 1A
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Union', 'Election', 'Family']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 MOUNTAIN IRON, MINN. - There's only one political sign inside BG's Bar and Grill on Minnesota's Iron Range.

@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-08 00:00:00
 SECTION: Section BR; Column 0; Book Review Desk; Pg. 48; NONFICTION
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Family', 'Art', 'Books']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 From Shakespeare to Strindberg to ''Scarface'': The actor remembers all of it and talks about some of it in ''Sonny Boy.''

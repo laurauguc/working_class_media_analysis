@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2023-08-31 00:00:00
 SECTION: FEATURES; Pg. D1
 SOURCE_FILE: Other publishers/Files (500) (2).DOCX
+LABEL: ['Art', 'Books', 'Crime']
+LABEL: [0.999999, 0.999999, 0.9999914954313552]
 
 BODY:
 First there was "Barbenheimer." But are you prepared for "Saw Patrol"? As a same-day, double-feature sensation, the next brutal chapter in the "Saw" horror franchise and a kid-friendly animated adventure with talking superhero dogs is an even more improbable pairing. But they do symbolize the wide variety of films arriving in the next couple of months as the weather gets a little colder and the pumpkin spice lattes start flowing: a new Oscar-ready Martin Scorsese/Leonardo DiCaprio collaboration, a Priscilla Presley biopic, another round of "The Exorcist," a Netflix crime drama starring Emily Blunt and Chris Evans, and much more. Here's an exclusive peek at the 10 movies you absolutely, positively must see this fall:

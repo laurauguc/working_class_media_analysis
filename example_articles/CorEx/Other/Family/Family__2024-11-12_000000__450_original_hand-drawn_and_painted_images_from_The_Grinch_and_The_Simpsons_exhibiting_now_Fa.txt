@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-12 00:00:00
 SECTION: WHAT TO KNOW
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Family', 'Art', 'Sports']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 A neighbor who had just been to the Dayton Art Institute stopped me a couple of weeks ago to say how much she loved the museum's new exhibition.

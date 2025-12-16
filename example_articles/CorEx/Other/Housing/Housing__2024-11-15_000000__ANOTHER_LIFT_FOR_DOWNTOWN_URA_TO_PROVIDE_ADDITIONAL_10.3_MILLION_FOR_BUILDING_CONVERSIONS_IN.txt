@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-15 00:00:00
 SECTION: ASECTION; Pg. A-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Housing', 'Indebtedness', 'Business Ownership']
+LABEL: [0.999999, 0.999999, 0.9985800630876506]
 
 BODY:
 Pittsburgh Urban Redevelopment Authority board members have authorized another $10.3 million for office-to-residential conversions in Downtown while moving to establish a new fund to support such ventures in the future.

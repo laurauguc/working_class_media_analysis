@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-17 00:00:00
 SECTION: OPINION
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Union', 'Election', 'Military']
+LABEL: [0.999999, 0.999999, 0.9999923093853568]
 
 BODY:
 It's been more than nine years since I first denounced Donald Trump as a "loudmouth vulgarian appealing to quieter vulgarians." I've called myself a Never Trump conservative ever since, even when I agreed with his policies from time to time. I also opposed him throughout his run this year.

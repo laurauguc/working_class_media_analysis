@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-17 00:00:00
 SECTION: US
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Union', 'Election', 'Indebtedness']
+LABEL: [0.999999, 0.999999, 0.9999964473853282]
 
 BODY:
 Ohio's senior Democratic senator told colleagues that despite his defeat, he was not done with politics just yet.

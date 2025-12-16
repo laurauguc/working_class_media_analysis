@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-08 00:00:00
 SECTION: FEATURES; Pg. 15
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Art', 'Education']
+LABEL: [0.999999, 0.831362392794723]
 
 BODY:
 Anthony Robles' story seems almost tailor made for a Hollywood film. Born with only one leg, his right, he overcame the prejudices of those around him and his own physical limitations to become a champion wrestler. Though coaches at the top wrestling programs couldn't see his potential, he was undeterred, coasting on his own determination and his mother Judy's (Jennifer Lopez) unwavering belief in him. The film version is aptly titled "Unstoppable," and it's getting a limited theatrical release starting Friday before it streams on Prime Video on Jan. 

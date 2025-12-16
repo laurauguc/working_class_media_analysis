@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-12 00:00:00
 SECTION: Section F; Column 0; SpecialSections; Pg. 6
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Health', 'Crime']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 A lively DealBook Summit task force agreed on little except that the electorate is restless.

@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-16 00:00:00
 SECTION: NYREGION
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Housing', 'Indebtedness']
+LABEL: [0.999999, 0.999999]
 
 BODY:
 A law in New York City shifting broker fees from renters to landlords is set to take effect in June. Real estate leaders want to stop it.

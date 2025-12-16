@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-20 00:00:00
 SECTION: NEWS; Pg. A4
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Indebtedness', 'Health']
+LABEL: [0.999999, 0.999999, 0.999999]
 
 BODY:
 "A lot of folks have had second thoughts (on the bill) and
