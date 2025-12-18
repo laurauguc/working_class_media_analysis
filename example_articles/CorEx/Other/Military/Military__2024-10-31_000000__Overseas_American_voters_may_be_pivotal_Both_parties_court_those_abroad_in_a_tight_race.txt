@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-10-31 00:00:00
 SECTION: NEWS; Pg. A1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Union', 'Election', 'Military']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 LONDON - In mid-October, Greg Swenson, an American who has lived in London for the last decade, was doing what he described as "the banking circuit": Milan, Paris, Abu Dhabi.

@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-29 00:00:00
 SECTION: OPINION; Pg. A-17
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Union', 'Indebtedness', 'Business Ownership']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Union', 'Indebtedness']
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 Here is the reality," said Sen. Bernie Sanders in his analysis of Donald Trump's strong electoral victory and support from some traditional Democrats: "The working class of this country is angry, and they have reason to be angry. We are living in an economy today where the people on top are doing phenomenally well while 60 percent of our people are living paycheck to paycheck."

@@ -5,8 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-14 00:00:00
 SECTION: REALESTATE
 SOURCE_FILE: NYT/1.DOCX
-LABEL: ['Housing', 'Art', 'Business Ownership']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Housing', 'Art', 'Health']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Glass towers crowd the skyline in Manchester, encroaching a bit more each year on the legacy of this northern English city with a musical soul.

@@ -6,7 +6,7 @@ DATE: 2024-12-09 00:00:00
 SECTION: OPINION; Pg. A-15
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Union', 'Election', 'Indebtedness']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.9997091758062642]
 
 BODY:
 Whither the Democrats? What now? This is the cud currently being chewed by our incestuous punditocracy.

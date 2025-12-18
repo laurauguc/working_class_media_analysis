@@ -6,7 +6,7 @@ DATE: 2024-12-18 00:00:00
 SECTION: BUSINESS; dealbook
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Election', 'Health', 'Union']
-LABEL: [0.999999, 0.999999, 0.9998696617766852]
+LABEL SCORES: [0.999999, 0.999999, 0.9849670753632076]
 
 BODY:
 At the DealBook Summit, nine prominent political figures, advisers and journalists debated what drove Trump's victory and what it means for politics going forward. Here's what they said.

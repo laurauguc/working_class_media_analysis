@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-14 00:00:00
 SECTION: OPINION; Pg. A-10
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Religion', 'Family']
+LABEL SCORES: [0.999999, 0.9999924824278598]
 
 BODY:
 If anyone wants to start working on midterms (which Democrats need to already be thinking about honestly)," wrote a friend who lives in rural southern Texas, "they need to start booking flights to border towns and showing up in coffee shops and bars and listening to people about the reality of the border."

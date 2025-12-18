@@ -1,0 +1,40 @@
+TITLE: BLAST PROMPTS PA. LAWMAKERS TO CONSIDER REQUIRING GAS DETECTORS
+TOPIC: Crime
+SCORE: 0.999999
+PUBLISHER: Other publisher
+DATE: 2024-12-21 00:00:00
+SECTION: ASECTION; Pg. A-1
+SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Crime', 'Indebtedness']
+LABEL SCORES: [0.999999, 0.9392532085433274]
+
+BODY:
+On March 24, 2023, an explosion fueled by natural gas tore apart a candy company building in a working-class neighborhood in eastern Pennsylvania, killing seven people and injuring 11 others - and now some in the state Legislature believe the tragedy could provide a societal safety lesson.
+Following the explosion at the R.M. Palmer Co. factory in West Reading, Berks County, the lawmakers hope for a serious discussion on requiring the use of natural gas detectors in at least some types of buildings.
+"Why not add this extra layer of protection?" said Democratic Rep. Johanny Cepeda-Freytiz, whose district includes the blast site.
+A Republican whose district is nearby, Rep. Mark Gillen, called it a parallel to the generations-earlier realization of the usefulness of smoke alarms.
+Gas detectors, Mr. Gillen said, may be "something for the Legislature to look at."
+Their comments came in the aftermath of a lengthy public meeting of the National Transportation Safety Board on Dec. 10 at which its members reviewed a draft report on the Palmer explosion. The meeting was replete with positive references, and even draft recommendations, on natural gas detectors.
+At one point, NTSB Chair Jennifer Homendy held up one of the devices in a white box and said, "This year is natural gas detector year for everyone's Christmas presents in my family. This one is the two-in-one natural gas and carbon monoxide alarm. It cost me about a hundred dollars."
+A website for a detector manufacturer shows that 42 states, including Pennsylvania, have no laws on the books requiring detectors. Other states are considering them, and at least one - Maine - has enacted a requirement for an approved natural gas detector in every room with a gas-fueled appliance.
+McKeesport Fire Chief Jeffrey Tomovcsik, second vice president of the Pennsylvania Career Fire Chiefs Association, said having a requirement would be helpful, especially in commercial buildings. The fact that few jurisdictions have laws on the books, he said, is in part an illustration of how safety improvements evolve.
+"It is unfortunate that it would take a tragedy like this to bring it to the forefront, but that is how codes react," Chief Tomovcsik said.
+Should proposed legislation be floated in Harrisburg, he said, the association would likely support it.
+Not everyone is on board. One national fire safety expert, who declined to be identified in a story because he had not seen the NTSB presentation, said natural gas already has a built-in alarm: an additive that gives it a distinctive "rotten eggs" smell.
+That smell, he said, should trigger an immediate evacuation.
+"My initial gut reaction is that it is overkill," the expert said, referring to proposals for a natural gas alarm law.
+Mr. Gillen dismissed the notion that the built-in odor was sufficient to alert people to a leak. "When I had a serious case of COVID, I substantially lost my sense of smell," he said.
+According to the National Institute of Standards and Technology, part of the U.S. Commerce Department, the share of homes with a smoke alarm increased from about 10% in 1975 to about 92% in 2000. During the same time, fire deaths were reduced by about half.
+Ms. Cepeda-Freytiz's plan is to circulate a co-sponsor memo in Harrisburg, seeking support and co-sponsors among her fellow lawmakers.
+Her own feeling, she said, is that the detectors "should be in every residence and business" that uses gas.
+Separately, Ms. Cepeda-Freytiz said she planned to reintroduce another bill triggered by the Palmer disaster that failed to gain traction last session.
+In the midst of the investigation, the NTSB said it was unable to obtain proper access to unredacted inspection reports from the Pennsylvania Public Utility Commission, which said they were considered "confidential security information" under a state law. Ultimately, the NTSB removed the PUC as a party to the investigation and went to court to access the information.
+During last week's meeting, Ms. Homendy, the NTSB chair, said she had "great" exchanges with the PUC chairperson. Other NTSB staff praised the work of PUC in the field.
+But Ms. Homendy said Pennsylvania should change its law on releasing information.
+"Tomorrow, we could experience the exact same thing, and while we have subpoena authority and have the [Department of Justice], it took up significant staff time, it extended the time of our investigation, and really limited our ability to move forward," Ms. Homendy said.
+Ms. Cepeda-Freytiz's bill from last session, which stalled in committee, would allow for documents with confidential security information to be released if requested by a federal or state agency like the NTSB.
+
+Graphic
+
+ 
+PHOTO: WPVI-TV/6ABC via AP: An explosion fueled by natural gas killed seven people last year at the R.M. Palmer Co. plant in West Reading, Berks County. As a result, state lawmakers have begun discussions about requiring gas detectors in some buildings.

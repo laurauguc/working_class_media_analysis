@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-09-22 00:00:00
 SECTION: AD; Pg. 35
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Art', 'Books']
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 This season, bring your friends and family to a live show to relax, connect and celebrate the transformative power of theater. The 2024-2025 season at Paramount Theatre in Downtown Aurora has everything you'd want: a year's worth of comedy, drama and music to satisfy every taste. With three theaters â€" Paramount, Copley and Stolp Island â€" there's plenty of magic to explore! This season's Broadway Series The award-winning Broadway Series at Paramount Theatre balances beloved and time-tested musicals with adventurous and contemporary tales. 

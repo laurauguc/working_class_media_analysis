@@ -1,0 +1,63 @@
+TITLE: The Climate Generation
+TOPIC: Sports
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-11-10 00:00:00
+SECTION: Section MM; Column 0; Magazine Desk; Pg. 38
+SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Family', 'Sports', 'Education']
+LABEL SCORES: [0.999999, 0.999999, 0.9981579244278074]
+
+BODY:
+Lucy Currie, 14 
+  Jasper, Alberta
+  On seeing your home burn.
+  In June, after much negotiating with their parents, Lucy Currie and three of her friends went solo camping for the first time. Growing up in Jasper, Alberta, at the edge of a vast national park, Currie has explored the backcountry since she was a little kid, but never without adults. The group set up their tent, roasted hot dogs and played card games late into the night, while one friend's dad camped nearby just in case. ''It was so much fun,'' Currie says.
+  A few weeks later, wildfires swept through Jasper National Park, burning over 81,000 acres and ravaging the town of Jasper. Currie found out about the evacuation order while she and her family were on a weeklong vacation; soon after, she learned that the fire had consumed her home and her grandparents' house next door. ''I was in shock,'' she says. Normally an overpacker, Currie had been proud to bring just one backpack and one stuffed animal; now, everything else she owned was gone. ''It sounds kind of dumb, but I was just sad about what I had collected on my walls,'' she says. ''I had so many pictures, like Polaroids of me and my friends, and random cutouts from magazines.''
+  Currie is back at school now, although with about a third of the town's buildings destroyed, life doesn't feel back to normal. Her family is living in a rental that's half an hour outside town, which means she has to ask for a ride anytime she wants to meet up with friends. ''I have to plan everything ahead,'' she says. 
+  Currie is still grappling with what she lost, including her ability to turn away from climate change. ''I've always heard of other towns being affected,'' she says, ''but it was just a passing thought.'' 
+  By the 2050s, the abnormally hot and dry weather conditions that led to recent record fire seasons in Canada are likely to become common, which could lead to larger and more frequent wildfires. Currie will be in her 40s.
+  ⬤ Lucy Currie peering into the rubble that was once her home.
+  Photograph by Grant Harder for The New York Times
+  'I've used the word ''weird'' so much to describe everything, but I just don't know how else to say it.'
+  Photographs by Grant Harder for The New York Times
+  ⬤ Left: The twisted remains of Currie's mother's bicycle. Above: Currie at a trail summit near Jasper.
+  Ireoluwa Ajayi, 16
+  Ota, Nigeria
+  On feeling like one of the lucky ones. 
+  Ota, where Ireoluwa Ajayi lives, is a market town an hour's drive north of Lagos. In recent years, the region has experienced extreme heat and heavy rainfall. Around Nigeria, floods contaminate drinking water and create breeding grounds for malaria-carrying mosquitoes; the high temperatures can lead to heatstroke and rashes.
+  Ajayi emphasizes how lucky he feels. His family has fans that they use at night during heat waves, which are powered by a mini solar panel. They have a water purifier to use when water sources become contaminated. They used to live in an area of Lagos State where the flooding was much worse; they were able to move to safer ground, while many others were not. ''I think about the people that don't have a way to leave, especially children,'' he says. ''When the weather is so bad, I'll be thinking of how they do without food and without water.''
+  But Ajayi, for all his concern about others, is hardly unscathed himself. For a while he got heat rashes, which sometimes grew so painful that he wound up hospitalized. When it floods, the roads get so bad that Ajayi has to take off his shoes and walk in the water to get home from school. Other days, flooding forces his school to close and makes seeing friends impossible, leaving him isolated. ''I don't get to play outside or hang out with my friends because there'll be water everywhere,'' he says. Instead, he stays home and draws.
+  Ajayi believes that once people connect the dots on the effects of climate change, they'll start to take action. ''I feel like a lot of people are not taught about climate,'' he says, ''and that's why they keep burning up fossil fuels.''
+  By 2080, the number of heat-related deaths in Nigeria could increase fourfold. Ajayi will be 72.
+  ⬤ Right, top: In Ota, gutters help with rainwater flooding. Right, bottom: After school, Ireoluwa Ajayi usually does his chores, including washing dishes. Far right: The fans in Ajayi's home are solar-powered.
+  Photographs by Yagazie Emezi for The New York Times
+  Sara Saumanaia, 15
+  Christchurch, New Zealand, and Tuvalu
+  On losing your motherland to the ocean.
+  When Sara Saumanaia thinks about climate change, she thinks about both of her homes. She sees New Zealand, where she has lived her entire life, as her homeland. And she sees Tuvalu, where her family is from, as her motherland. ''It's hard to see one country doing so well,'' she says, ''and one country struggling.''
+  Saumanaia and her family live on the east side of Christchurch, a predominantly working-class neighborhood of Maori and Pacific Islander immigrants. The area is especially vulnerable to the effects of climate change; after a heavy rain, the streets around Saumanaia's home regularly flood. 
+  Once, during a lesson on climate change, Saumanaia's science teacher asked if anyone in the class was from Tuvalu. Everyone looked at Saumanaia, the only Tuvaluan in her grade. The teacher explained that the island might soon be subsumed by rising sea levels. Students oohed, as if she were in trouble; some classmates laughed. 
+  ''I'm a really confident, brave, strong person, and I know what I stand for,'' Saumanaia says. ''But there's also my family back home, who I pray for every day. They're just struggling, and here they are, mocking them, because their island is about to be gone.''
+  She wants to change the perception of Tuvaluans and those from other small Pacific islands. And she wants to foster pride among the next generation of Tuvaluans too. She practices the fatele, or traditional Tuvalu dance, and the Tuvaluan language in part so she can pass it on to her future children. ''Even if our country does end up going away,'' she says, ''that doesn't make our culture and who we are as people go away.''
+  ⬤ Sara Saumanaia on a street in the Residential Red Zone, an area of Christchurch near her home that became uninhabitable after the 2011 earthquake.
+  By 2050, it's estimated that half the land area of Funafuti, the main atoll of Tuvalu, will become flooded by tidal waters. Saumanaia will be 41.
+  Photograph by Tatsiana Chypsanava for The New York Times
+  'Why do people care so much for the things that they already have, when other countries are out there struggling?'
+  ⬤ Left: Saumanaia with her siblings and friends at a park near her home. Above: The Residential Red Zone in Christchurch.
+  Photographs by Tatsiana Chypsanava for The New York Times
+  Additional reporting by Alawi Masare and Bianca Padró Ocasio
+
+https://www.nytimes.com/2024/10/31/magazine/10mag-teenagerspart2.html
+
+Graphic
+
+ 
+PHOTOS: Lucy Currie peering into the rubble that was once her home. (MM38-MM39)
+Left: The twisted remains of Currie's mother's bicycle. Above: Currie at a trail summit near Jasper. (PHOTOGRAPHS BY GRANT HARDER FOR THE NEW YORK TIMES) (MM40
+MM41)
+Right, top: In Ota, gutters help with rainwater flooding. Right, bottom: After school, Ireoluwa Ajayi usually does his chores, including washing dishes. Far right: The fans in Ajayi's home are solar-powered. (PHOTOGRAPHS BY YAGAZIE EMEZI FOR THE NEW YORK TIMES) (MM42
+MM43)
+Sara Saumanaia on a street in the Residential Red Zone, an area of Christchurch near her home that became uninhabitable after the 2011 earthquake. (MM44-MM45)
+⬤ Left: Saumanaia with her siblings and friends at a park near her home. Above: The Residential Red Zone in Christchurch. (PHOTOGRAPH BY TATSIANA CHYPSANAVA FOR THE NEW YORK TIMES) (MM46
+ MM47) This article appeared in print on page MM38, MM39, MM40, MM41, MM42, MM43, MM44, MM45, MM46, MM47.

@@ -6,7 +6,7 @@ DATE: 2024-12-15 00:00:00
 SECTION: LOCAL; Pg. C-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Indebtedness', 'Business Ownership']
-LABEL: [0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 One day in October, Mark Gorman was scanning the daily newsletter from his local public radio station when a story caught his eye. Might an incoming Trump administration endanger a new residential solar leasing program being rolled out in southwestern Pennsylvania, the story asked?

@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-23 00:00:00
 SECTION: OPINION; Pg. A-12
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Union', 'Election', 'Education']
-LABEL: [0.999999, 0.999999, 0.8076590916689864]
+LABEL: ['Union', 'Election']
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 The Democrats, still shocked by Trump's victory and their many other election losses, have not begun to think about becoming the dominant American political party. There is an obvious way to do this.

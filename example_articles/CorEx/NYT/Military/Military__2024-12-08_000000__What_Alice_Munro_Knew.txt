@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-08 00:00:00
 SECTION: MAGAZINE
 SOURCE_FILE: NYT/2.DOCX
+LABEL: ['Housing', 'Education', 'Military']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 "My life has gone rosy, again," Alice Munro told a friend in a buoyant letter of March 1975. For Munro, who was then emerging as one of her generation's leading writers, the previous few years were blighted by heartbreak and upheaval: a painful separation from her husband of two decades; a retreat from British Columbia back to her native Ontario; a series of brief but bruising love affairs, in which, it seems, Munro could never quite make out the writing on the wall. "This time it's real," she wrote, speaking of a new romantic partner, the emphasis acknowledging that her friend had heard these words before. "He's 50, free, a good man if I ever saw one, tough and gentle like in the old tire ads, and this is the big thing — grown-up."

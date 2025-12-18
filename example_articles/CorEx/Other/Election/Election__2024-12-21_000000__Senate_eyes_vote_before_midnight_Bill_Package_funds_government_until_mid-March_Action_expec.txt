@@ -6,7 +6,7 @@ DATE: 2024-12-21 00:00:00
 SECTION: AGD; Pg. 1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Election', 'Indebtedness', 'Health']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 WASHINGTON "" Approaching a midnight government shutdown deadline, the Senate set up votes toward final passage late Friday of a new plan that would temporarily fund federal operations and disaster aid, but drops President-elect Donald Trump's demands for a debt-limit increase into the new year. House Speaker Mike Johnson had insisted Congress would "meet our obligations" and not allow federal operations to shutter ahead of the Christmas holiday season. But the day's outcome was uncertain after Trump doubled down on his insistence that a debt ceiling increase be included in any deal "" if not, he said in an early morning post, let the closures "start now." The House approved Johnson's new bill overwhelmingly, 366-34. As the Senate worked into the night, Majority Leader Chuck Schumer announced that senators had reached agreement that would skip past procedural hurdles and allow them to pass the funding bill "before the midnight deadline." "This is a good outcome for the country," Johnson said after the House vote, adding he had spoken with Trump and the president-elect "was certainly happy about this outcome, as well." It was the third attempt from Johnson, the beleaguered House speaker, to achieve one of the basic requirements of the federal government "" keeping it open. 

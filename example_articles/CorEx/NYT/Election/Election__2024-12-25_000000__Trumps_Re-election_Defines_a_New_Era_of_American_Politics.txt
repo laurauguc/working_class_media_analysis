@@ -5,8 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-25 00:00:00
 SECTION: UPSHOT
 SOURCE_FILE: NYT/1.DOCX
-LABEL: ['Election', 'Military', 'Indebtedness']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Election', 'Military', 'Health']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 The Obama-Romney race in 2012 was the last in a familiar pattern in U.S. politics, which has since become defined by Donald Trump's conservative populism.

@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-09 00:00:00
 SECTION: NEWS; Pg. A7
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Union', 'Military', 'Crime']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Military', 'Crime', 'Election']
+LABEL SCORES: [0.999999, 0.999999, 0.8745848468576134]
 
 BODY:
 On Tuesday, South Korean President Yoon Seok Yeol   who hosted a "Summit for Democracy" just months ago   shocked the world by declaring martial law on national television, making bizarre claims about threats from "North Korea's communist forces" and "anti-state elements."

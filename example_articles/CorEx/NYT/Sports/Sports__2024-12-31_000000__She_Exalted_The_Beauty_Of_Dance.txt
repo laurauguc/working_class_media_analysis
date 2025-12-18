@@ -6,7 +6,7 @@ DATE: 2024-12-31 00:00:00
 SECTION: Section C; Column 0; The Arts/Cultural Desk; Pg. 1; AN APPRAISAL
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Art', 'Sports', 'Books']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 She was The New Yorker's first dance critic. Her wit could be devastating but behind it was a belief in beauty.

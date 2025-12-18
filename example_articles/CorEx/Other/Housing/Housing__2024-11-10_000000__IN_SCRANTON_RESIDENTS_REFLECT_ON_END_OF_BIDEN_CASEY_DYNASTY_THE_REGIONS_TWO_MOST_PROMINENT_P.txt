@@ -6,7 +6,7 @@ DATE: 2024-11-10 00:00:00
 SECTION: ASECTION; Pg. A-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Housing', 'Election', 'Indebtedness']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 SCRANTON, Pa. - Walking up Wyoming Avenue downtown two days after Election Day, it's hard to miss small signals of the red wave that caught Democrats nationwide off guard: a looming series of "Make America Great Again" stickers on almost every street light encroaching Biden Street - a thoroughfare honoring President Joe Biden through the heart of the Democratic-led city where he was born.

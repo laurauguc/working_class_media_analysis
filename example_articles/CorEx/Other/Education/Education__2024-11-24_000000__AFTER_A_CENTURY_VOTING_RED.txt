@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-24 00:00:00
 SECTION: NEWS; Pg. 1A
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Education', 'Election', 'Sports']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Education', 'Election', 'Health']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 CLOQUET, MINN. - For as long as almost anyone here could remember, this working-class county just southwest of Duluth was a Democratic stronghold.

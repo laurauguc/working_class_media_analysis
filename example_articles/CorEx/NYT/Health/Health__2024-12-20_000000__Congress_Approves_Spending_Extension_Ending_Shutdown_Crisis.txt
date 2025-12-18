@@ -6,7 +6,7 @@ DATE: 2024-12-20 00:00:00
 SECTION: US; politics
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Election', 'Indebtedness', 'Health']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 The Senate passed the measure and sent it to President Biden's desk, shortly after the midnight deadline for funding to lapse.

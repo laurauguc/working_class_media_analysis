@@ -5,8 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-13 00:00:00
 SECTION: US; politics
 SOURCE_FILE: NYT/1.DOCX
-LABEL: ['Union', 'Election', 'Health']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Union', 'Election', 'Family']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 "We can't bring a policy book to a gunfight," said Representative Greg Casar of Texas, the incoming chair of the Congressional Progressive Caucus.

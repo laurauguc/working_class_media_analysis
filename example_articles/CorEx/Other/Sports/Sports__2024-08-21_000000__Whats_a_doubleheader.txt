@@ -6,7 +6,7 @@ DATE: 2024-08-21 00:00:00
 SECTION: SIL; Pg. 12
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Sports']
-LABEL: [0.999999]
+LABEL SCORES: [0.999999]
 
 BODY:
 When a recent game at Busch Stadium between the Cubs and the Cardinals was rained out, Cardinals management announced that the game would be made up at a later date as part of a day-night doubleheader. Now, in my many days as a baseball fan, I've been to all kinds of doubleheaders. I've attended Sunday doubleheaders, holiday doubleheaders, and twi-night doubleheaders. I've never, however, been to what's called a day-night doubleheader, which, according to definition and tradition, is not really a doubleheader at all. 

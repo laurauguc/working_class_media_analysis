@@ -1,0 +1,53 @@
+TITLE: Matt Gaetz and the D-word
+TOPIC: Crime
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-11-22 00:00:00
+SECTION: US; politics
+SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Health', 'Crime']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
+
+BODY:
+The former representative from Florida said he had become a "distraction." Perhaps that was the point.
+It seemed like a story that could unfold only on the eve of a second Trump era: A congressman, embattled by allegations of sex-trafficking a minor, was chosen to run the Department of Justice, the same agency that had once investigated him.
+Its end, though, came a little more conventionally. When gravity exerted its pull on that now-former congressman, Matt Gaetz, he reached for a tried-and-true excuse that has softened the landing of many nominees who failed before him, albeit for less shocking reasons.
+He used the D-word.
+"While the momentum was strong," Gaetz wrote on X, "it is clear that my confirmation was unfairly becoming a distraction to the critical work of the Trump/Vance Transition."
+The reason for aborted cabinet nominations — as well as failed judicial nominations and the early departure of elected officials — is often not, according to the nominees themselves, explained directly by scandal, errors in judgment or personal failure. The problem is not them.
+The issue, they say, is that the public has gotten distracted.
+To call oneself a distraction is to acknowledge a problem — a bump in the cabinet-forming road — without quite admitting guilt or responsibility. It is a way of minimizing the drama by chalking a failed nomination up to the news media and the collective attention span. It's a euphemism that covers all manner of sin in Washington, and one that Gaetz is now hoping will stretch to explain his problems, too.
+"It's like, 'Mistakes were made,'" said James Carville, the veteran Democratic strategist, referring to another boilerplate explanation for political misfortune. "Oh, really? Tell me about it!"
+Still, Carville said, when a cabinet pick is driving the story just two weeks after the election, that really, genuinely, counts as a distraction.
+"It might have been the only true thing he ever said," Carville said of Gaetz.
+A distracting history
+The D-word is an excuse with a long history in American politics, even as the threshold for distraction seems to have changed.
+In 2009, amid scrutiny of his unpaid taxes, former Senator Tom Daschle said he did not want to be a "distraction" and withdrew from consideration for President Barack Obama's cabinet. Nearly a decade later, it was Ronny Jackson, the White House doctor, who said that allegations about his alcohol use and lax oversight in distributing prescription drugs, which he said were false, had become a "distraction" for Trump, who had nominated him to lead the Department of Veterans Affairs. (It was not too distracting to keep him from getting elected to Congress in 2020.)
+Long before that, Judge Douglas Ginsburg alluded to distraction somewhat poetically when, in 1987, he withdrew his name from consideration for the Supreme Court, saying that his nomination had been "drowned out in the clamor" related to revelations about his use of marijuana.
+Clamor had given way to "distraction" by 2001, when Linda Chavez, a conservative columnist, withdrew from consideration to lead the Department of Labor under President George W. Bush, amid reports that she had sheltered an undocumented immigrant in her home.
+"All of you have made, I think, a great deal more of this story than need be," she said at a news conference. She added, "I have decided that I am becoming a distraction."
+Then, it was Bernard Kerik, best known these days as an ally to Trump and Rudolph Giuliani, who withdrew his name from consideration to run the Department of Homeland Security in 2004, after a scandal related to the immigration status of his own former household employee.
+"He didn't want to distract the president and distract the important mission that Homeland Security has," his lawyer said at the time.
+And during Trump's first administration, the short-lived communications director Anthony Scaramucci deleted some of his old tweets, declaring they would be a "distraction." (It was, of course, his profane and undisciplined approach to the job that actually became too distracting, 10 days after he'd accepted it.)
+President Biden had to deal with a so-called distraction, too, when the Democratic strategist Neera Tanden's nomination to direct the Office of Management and Budget seemed likely to fail because of tweets she had posted about lawmakers in both parties. "I do not want continued consideration of my nomination to be" — say it with me — "a distraction," she wrote as she withdrew.
+When distraction is the point
+The Oxford dictionary has two definitions of "distraction." The first one: a "thing that prevents someone from giving full attention to something else." That's the definition most failed nominees are reaching for. But here's the second one: "Extreme agitation of the mind or emotions."
+By that definition, the choice of Gaetz was always supposed to drive the country to distraction. His was a shock-and-awe pick that was intended to whip up attention, a choice so audacious that confirming him might have required the Senate to give up its basic power to advise and consent.
+Gaetz's problems, of course, were a lot more than mere distraction. They were laid out in Venmo transactions and diagramed by federal investigators, creating a damaging impression, even though he denied allegations of — and was never charged with — criminal activity.
+Trump's bet was that it wouldn't matter. And Gaetz's bet is that he can now cloak himself in the comforting vocabulary of the Washington establishment, and sanitize his troubles the way nominees who dealt with much more pedestrian scandals smoothed theirs.
+The question now is whether any of the controversies embroiling Trump's other nominees — including Pete Hegseth, Tulsi Gabbard and Robert F. Kennedy Jr. — will come to be considered distractions, too.
+Gavin Newsom's pitch to the working class
+Gavin Newsom, the California governor who is widely viewed as a potential Democratic presidential contender in 2028, headed out this week to a stretch of his state where working-class voters flipped to Donald Trump. And he gave an interview to my colleague Shawn Hubler. I asked Shawn to tell us more about Newsom's pitch to the voters who think his party is out of touch.
+Newsom is not a guy who comes immediately to mind when Americans think "man of the people." He's rich. He's connected. He looks like a movie star, even when he's just picking up trash at a homeless encampment. He's in the process of moving his family into a $9.1 million house in Marin County. His Aunt Barbara was married to Nancy Pelosi's brother-in-law.
+But he does spend a lot of time, for a Democrat in a blue state with a population of nearly 39 million, in Republican parts of California. His California Highway Patrol security detail seems to be constantly ferrying him to places like Merced to talk about flood protection and Bakersfield to tout Covid-19 boosters and Coalinga to rub elbows with cattlemen's organizations.
+On Thursday, the venue was an automotive apprenticeship program in Fresno County, one of more than a half-dozen California counties that shifted from blue to red in the election. But the message had a national target. California might be the world's fifth-largest economy, he noted, but that was "cold comfort" to those who felt left out of it.
+With his hair gelled, suit blue, shirt white and collar open, he said it was clear that Americans felt "on edge, unmoored, uneasy," and he promoted a statewide jobs initiative that would "leave no region behind."
+"You know, some people talk about this economy is booming, inflation is cooling, lowest unemployment in our lifetimes," he said. "But people don't feel that way."
+When asked (in so many words) if this visit to Fresno, and similar stops coming up, was mainly about trying to win back people who voted against his party, he name-checked a who's who of MAGA celebrities and pundits who have made it their business to convince working-class voters that Democrats can't be trusted.
+"I don't care who you voted for. I care about people. I care about Trump supporters, I care about R.F.K. Jr. supporters. I care about Tucker Carlson supporters. I care about Charlie Kirk supporters. I care about Ben Shapiro supporters. I care about all people," he said. "And I care about being honest with them as well."
+In an interview before the event, Newsom said it was not too late to win back working-class voters, who he predicted would sour fast on the new administration.
+"Donald Trump has a tariff and a mass-deportation plan that will disproportionately impact these communities and have an inflationary impact," he said, pointing out that Trump "owns this."
+"When the reality of Trump 2.0 takes shape," he said, "I think we're going to get people back as long as we don't turn our backs."
+— Shawn Hubler
+— Shawn Hubler 
+PHOTO: Former Representative Matt Gaetz, Republican of Florida, withdrew his bid to become attorney general on Thursday after facing scrutiny over allegations of sex trafficking and drug use. (PHOTOGRAPH BY Haiyun Jiang for The New York Times FOR THE NEW YORK TIMES)

@@ -6,7 +6,7 @@ DATE: 2024-12-11 00:00:00
 SECTION: OPINION
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Union', 'Election', 'Military']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 The weakened condition of the Democratic Party leaves it ill prepared to defend itself against a Republican Party determined to eviscerate liberalism and the left.

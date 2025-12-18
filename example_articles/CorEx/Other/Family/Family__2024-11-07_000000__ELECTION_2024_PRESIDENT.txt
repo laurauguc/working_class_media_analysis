@@ -6,7 +6,7 @@ DATE: 2024-11-07 00:00:00
 SECTION: NEWS; Pg. 6A
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Election', 'Family', 'Business Ownership']
-LABEL: [0.999999, 0.999999, 0.9998534905015013]
+LABEL SCORES: [0.999999, 0.999999, 0.999955430711153]
 
 BODY:
 Elation and despair crept through early morning fog Wednesday as Minnesotans awoke to election results that delivered a Republican mandate across the country and Republican inroads at home.

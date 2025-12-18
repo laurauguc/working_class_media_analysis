@@ -6,7 +6,7 @@ DATE: 2024-12-15 00:00:00
 SECTION: REGION; Pg. B1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Housing', 'Education', 'Union']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 New Jersey Gov. Phil Murphy, a Democrat, is term-limited from running for reelection next year, leaving the race to replace him wide open. And the competition is already heating up, as six Democrats and four Republicans have already thrown their hats in the ring for the job.

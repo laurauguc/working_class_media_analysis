@@ -1,0 +1,52 @@
+TITLE: Democrats Lament Their Failure To Tap Into 'Young World' of Men
+TOPIC: Religion
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-11-16 00:00:00
+SECTION: Section A; Column 0; National Desk; Pg. 12
+SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Health', 'Religion']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
+
+BODY:
+Democrats have widely acknowledged that they have no answer for the online ecosystem of conservative influencers popular with Gen Z men. Some have argued for a rethink of media strategy.
+Three weeks before Election Day, Donald J. Trump appeared on a podcast hosted by two former professional football players. They spent about an hour together, talking as much about sports as his presidential bid. 
+  At one point, the hosts asked Mr. Trump why he had made time for them and other similar shows, spending dozens of hours in podcast studios over the course of the campaign.
+  ''It's a young world,'' he explained. ''You're in a young world, right?''
+  Mr. Trump's gamble that courting this ''young world'' -- an increasingly influential sphere of podcasts and personalities built for, inhabited and consumed overwhelmingly by young men -- would motivate them to vote for him appears to have paid off, at least according to early data.
+  And while many factors contributed to Mr. Trump's victory, Democrats are seizing on exit polling that suggests he improved his performance with Gen Z men, with a focus on the so-called manoverse, as they seek to rebuild a fractured coalition after Vice President Kamala Harris's loss. As young men increasingly reported feeling left behind, Mr. Trump wooed them in part by tapping into a right-leaning online media ecosystem that celebrated traditional masculinity while speaking to their economic insecurities.
+  The Democratic Party failed, some Democrats and young progressives said, to confront the cultural issues motivating Gen Z men, and to offer a coherent message on pocketbook issues that would appeal to them. Now, they are engaging in a period of soul-searching, reckoning with the splintered media environment that Mr. Trump was able to master and casting about for a response. Representative Alexandria Ocasio-Cortez, the prominent New York Democrat, has been speaking directly to the camera on her Instagram page, asking conservative viewers what forms of media they consume.
+  ''Republicans have used culture as a gateway to politics,'' said Brian Tyler Cohen, a Democratic influencer who posts news analyses and interviews to his 3.4 million subscribers on YouTube. ''These are people who are influential to young men through culture, and then politics comes along with it. We do not have that infrastructure.''
+  He pointed to the high-profile voices who spent years building enormous male followings through entertainment, sports, comedy and a bevy of other topics before veering more explicitly into politics and endorsing Mr. Trump this year, like the podcaster Joe Rogan (more than 14 million followers on Spotify, the most of any podcaster on the platform) and the YouTube pranksters known as the Nelk Boys (8.25 million followers on the platform).
+  Ms. Harris's campaign also tried to reach younger voters, with young women preferring her to Mr. Trump, according to exit polls. The vice president was interviewed on the popular podcast ''Call Her Daddy'' and sat down with other social media stars in an effort to make up ground during her truncated campaign.
+  But some younger Democrats said a broader strategy shift was in order, especially in terms of how politicians approach nontraditional media. Celebrity appearances and paid endorsements from influencers come across as transactional and inauthentic, they said.
+  ''It's last-second, 'Let's get Beyoncé onstage to say we support women,' but that doesn't move anyone who wasn't already going to vote Democrat,'' said Ayem Kpenkaan, a liberal content creator who goes by @bocxtop on social media. As Democrats were casting about for explanations for Mr. Trump's victory, posts by Mr. Kpenkaan, 25, blaming ''alpha male podcasts'' for men's rightward shift went viral.
+  He suggested that Democrats needed liberal versions of media platforms that are culturally right-leaning but not inherently political -- like Barstool Sports, the popular sports brand that has become so enmeshed in online culture that it has coined a phrase, Barstool conservatism.
+  ''We have to make entertaining, engaging content that men want to watch and care about,'' Mr. Kpenkaan said. ''Then, over time, you pepper in more progressive views.''
+  The right had a long head start. Organizations like Turning Point, co-founded by the conservative activist Charlie Kirk -- who himself is an influential figure among young people -- have spent years appealing to students on college campuses, and Trump-supporting influencers have built their online followings up into the millions. Media personalities in areas as diverse as relationship advice, finance and exercise pump out right-leaning ideas or conservative cultural opinions. (The podcast Mr. Trump appeared on in October, ''Bussin With the Boys,'' is one of Barstool's offerings.)
+  Some of the cultural values championed by the right could be tricky territory for progressives. The right-leaning media ecosystem scoffs at the left's focus on identity politics, political correctness and pronoun usage, while encouraging traditional expressions of masculinity and femininity that liberals consider archaic.
+  Still, the young men who consume this content are reachable, some said, if only Democrats could shore up both their messaging, particularly on the economy, and their messengers.
+  ''It's just about talking about a positive vision of the future and the day-to-day life experiences that young people are facing,'' said Rachel Janfaza, a researcher of youth political culture. ''Their political ideologies are not fully cemented, so I think it creates an opportunity for Democrats to lean into some of the more economic-focused policies.''
+  Even as online spaces dominated by men have shifted rightward in tone, there was continued skepticism over whether such a group would actually vote in large numbers. Men between 18 and 24 have traditionally turned out at a lower rate than any other cohort -- a trend researchers attribute in part to a distrust for institutions.
+  But Mr. Trump's campaign believed that his candid, irreverent approach and disdain for traditional social norms would dovetail with that anti-establishment worldview.
+  Jack Advent, a social media strategist who handled the Trump campaign's TikTok and helped with influencer outreach, and was nicknamed ''TikTok Jack'' by Mr. Trump, said the campaign deliberately sought out ways to make the candidate feel authentic, having him speak directly to the camera and showing behind-the-scenes clips of the campaign online.
+  The belief, Mr. Advent said, was that style would help young male voters feel like Mr. Trump was offering something unique.
+  ''Most of modern media is so highly curated -- it's whatever message they want to push. Young males, or males in general, felt deprived of seeing authentic content that resonates versus marginalizes them,'' Mr. Advent, 22, said. ''When you watch an individual on a TV hit, they're in a studio, far away, talking at you. Through podcasts and TikToks, it feels like they're talking to you. It's more personable, it's less scripted.''
+  The strategy seemed to have paid off, at least in some quarters.
+  Nathaniel Chavez, 20, a construction worker in Sparks, Nev., said his worldview has been shaped by self-help business books from male authors and podcasts from people like Mr. Rogan and Andrew Tate, the former professional kickboxer and influencer who has proudly labeled himself a misogynist and is facing rape and human trafficking charges, which he has denied.
+  Mr. Chavez said he heard about Mr. Trump's policies through these podcasts and through talks with his father, a Republican.
+  ''There is a strength to Trump, and he will make things happen,'' Mr. Chavez said. ''I'm not saying that he is just going to fix everything, but I do think he will have an impact.''
+  Democrats argued that progressive policies such as building more affordable housing and raising the minimum wage were widely popular and should appeal to young, working-class men. But there was a disconnect in communication. 
+  ''The policies in a lot of ways are moving in the right direction -- the message hasn't,'' said Cristina Tzintzún Ramirez, the president of NextGen America, a progressive group aimed at mobilizing young voters. ''A president's job is to message and frame for the American people that they see their pain, they see a path forward, and I think we just didn't have enough of that from the Biden administration.''
+  Ms. Tzintzún Ramirez said organizations like hers had succeeded in reaching college students with messages that appealed to them, like addressing climate change and lowering student loan debt.
+  But NextGen had been less successful at addressing the priorities of young people not in school -- the type of people Mr. Trump swayed -- in part because it had struggled to secure money from donors to target them.
+  For example, NextGen's ''Men's Voter Power'' campaign focused on swaying young male voters of color, especially those not on college campuses, with events like basketball games in Philadelphia. But it received far less funding than programs aimed at college students.
+  ''It was the very smallest part of our program,'' Ms. Tzintzún Ramirez said. Democrats ''won the youth vote,'' she added, ''but there's a lot more they could be winning if they also focused on these other core groups that were, sadly, an afterthought.''
+
+https://www.nytimes.com/2024/11/13/us/politics/trump-gen-z-influencers-democrats.html
+
+Graphic
+
+ 
+PHOTOS: Some progressives say the Democratic Party has failed to offer a coherent message on key issues that would appeal to young men. (PHOTOGRAPH BY SCOTT MCINTYRE FOR THE NEW YORK TIMES)
+ Democrats lack their own version of platforms like Barstool Sports, which are culturally right-leaning but not that political. (PHOTOGRAPH BY AMIR HAMJA FOR THE NEW YORK TIMES) This article appeared in print on page A12.

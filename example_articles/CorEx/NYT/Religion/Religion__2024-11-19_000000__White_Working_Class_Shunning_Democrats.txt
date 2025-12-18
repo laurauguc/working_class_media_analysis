@@ -1,0 +1,70 @@
+TITLE: White Working Class Shunning Democrats
+TOPIC: Religion
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-11-19 00:00:00
+SECTION: Section A; Column 0; National Desk; Pg. 15
+SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Election', 'Health', 'Religion']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
+
+BODY:
+Democrats hoped to lose by less in blue-collar areas that had drifted toward Donald Trump. In many places, they may have lost by more.
+In Ohio, Senator Sherrod Brown, a longtime champion of working-class voters, was toppled by a rich Republican former car dealer. 
+  In Washington, President Biden -- who won the Democratic nomination four years ago with the help of blue-collar voters -- must now hand back power to Republicans and surrender leadership of a party increasingly dominated by highly educated voters.
+  And in Pennsylvania, Senator Bob Casey, whose family name has for years been synonymous with white working-class Democrats, is confronting the real possibility of defeat.
+  Eight years after fury among white working-class voters propelled Donald J. Trump to victory, Democrats swore that this time, they would try to do better with that group.
+  Instead, the party's staggering challenges with blue-collar voters have only worsened. Widespread frustration with high prices and alienation from Democrats have turned the party's lawmakers in Trump territory into an ever-more-endangered species.
+  ''When the change doesn't show up, the hope for change turns into anger,'' said Representative Matt Cartwright, a battle-tested Pennsylvania Democrat from the Scranton area who narrowly lost this month. ''The anger showed up.''
+  The new inroads Mr. Trump made this year with working-class voters of color, particularly Latino ones, have alarmed Democrats. At the same time, the party's Trump-era Achilles' heel -- its struggle to earn the trust of white working-class voters -- was even starker this year, especially in the Industrial Midwest, where the ''blue wall'' states of Michigan, Pennsylvania and Wisconsin all broke for Mr. Trump.
+  In many of those states' blue-collar counties, Vice President Kamala Harris lost by greater margins than Mr. Biden did in 2020.
+  Certainly, a number of Democratic House and Senate candidates significantly outran Ms. Harris. She also contended with many political barriers Mr. Biden did not face four years ago, including racism and sexism, along with the extraordinary challenge of running a 107-day campaign after the unpopular president was forced out of the race.
+  But she and other Democrats also faced a deepening, newly worrisome perception problem: a widespread belief among working-class Americans that the Democratic Party does not fully grasp their struggles -- and in some cases, disdains them outright.
+  ''This doesn't have to be the end of white working-class Democrats,'' said Justin Barasky, a Democratic strategist who was Mr. Brown's 2018 campaign manager. ''But it will be if we don't start being more inclusive.''
+  Warring over words and culture
+  Democrats have not been shy about offering diagnoses for their devastating losses.
+  Voters, sour about pandemic-era inflation and bothered by the migrant crisis, punished the party in power. Republicans effectively caricatured Democrats as overly liberal and ''woke.'' Democrats needed a stronger populist message. Misinformation thrived in a fractured news environment. The country was simply not ready to elect a woman, especially a woman of color.
+  There is some truth to each theory, according to Democrats who have thought deeply about politics in blue-collar America.
+  But one of the biggest problems, these Democrats say, is that voters in white working-class neighborhoods now see the party as unresponsive to their most pressing daily troubles.
+  Representative-elect Kristen McDonald Rivet, a Michigan Democrat, won a district that is home to many white working-class residents, even as Ms. Harris struggled in many counties there.
+  Ms. McDonald Rivet said that for many voters in her area, high costs were not just an inconvenience. They raised ''fear in people, right, about their ability to make it,'' she said.
+  To those voters, she said, litigating other subjects -- whether Mr. Trump was a ''fascist,'' for example, or the violence of the 2021 Capitol riot -- simply felt less urgent.
+  ''Those sorts of conversations don't impact what is happening in their lives on a daily basis,'' she said. ''It comes down to, what is the price of a gallon of milk?''
+  Frustration with the cost of living was not unique to one demographic or one state, noted Patrick Murray, who directs the polling institute at Monmouth University. But it made it harder for Ms. Harris to meet a Democratic goal of holding or improving on Mr. Biden's 2020 margins in strongly pro-Trump territory.
+  ''There's no question that she did not make up ground,'' Mr. Murray said. ''Not only were they not going to win over Republican-leaning voters, but they were having a hard time getting out their own voters.''
+  To some extent, voters signaled in interviews this year, Mr. Trump benefited from nostalgia for the prepandemic era -- while the chaos of his previous administration receded for some.
+  ''I don't like the rhetoric from the Democrats,'' said Jeff Markey, 66, a former airport technician from Wyoming, Mich., a more blue-collar city outside Grand Rapids. He said he had supported Democrats until Mr. Trump's 2016 candidacy, and supported him again this year.
+  ''I like how safe the country was when Trump was in, internationally and financially,'' he added.
+  Senator John Fetterman, a Pennsylvania Democrat who campaigned for Ms. Harris in conservative areas, also conceded that Republicans were sometimes effective at painting the Democratic Party as out of touch.
+  He cited a widely aired, anti-transgender Trump ad that concluded: ''Kamala's for they/them. President Trump is for you.''
+  The ad was the ''ultimate ear worm of this cycle,'' Mr. Fetterman said. The last beat, he argued, could be interpreted by voters not just as anti-trans bigotry, which he deplored, but also as a subtler promise to help Americans economically.
+  ''It's reprehensible to weaponize and to pick on members of a marginalized community,'' he said. But, he added, ''I can understand why it was very effective.''
+  A pitch for populism
+  Ms. Harris and especially her running mate, Gov. Tim Walz of Minnesota, campaigned in white working-class areas, promising that they did care about the struggles of those Americans.
+  In a barrage of advertising, Democrats also vowed to lower costs and protect working people, and attacked Mr. Trump as a plutocrat beholden to other wealthy Americans.
+  But some Democrats argued that efforts to engage moderate suburban Republicans who abhorred Mr. Trump's style and saw him as threatening democracy came at the expense of a more full-throated populist message.
+  ''They shied away from the populist economic stuff, which they thought would turn off those voters,'' said Mike Lux, a longtime Democratic strategist who has spent years studying blue-collar workers. ''That was a real mistake. Because it made all of those folks back in Bethlehem and Scranton and Erie think, 'Well, I guess they really don't care about me very much.'''
+  With nearly all of the returns in, Ms. Harris does appear to have improved slightly on Mr. Biden's 2020 showing in some suburban areas.
+  But that was not enough to counteract the rightward shift in so many other places.
+  A Pennsylvania problem
+  Perhaps nowhere were the challenges with white working-class voters more painful for Democrats than in Pennsylvania, the state of Mr. Biden's birth and the one that cemented his 2020 victory.
+  This year, Ms. Harris lost the state, Republicans flipped two House seats and Mr. Casey is locked in a recount battle against his Republican challenger, David McCormick.
+  Mr. Casey's struggle -- even as Democrats prevailed outright in Senate races in Michigan and Wisconsin -- was arguably the most striking reflection of the national headwinds the party faced, and how key slices of voters recoiled from its message.
+  Mr. Casey, a three-term senator, is a son of a popular former governor of Pennsylvania, Robert P. Casey Sr., and his family is an institution in state politics. For years, conservative Democrats were known in the state as ''Casey Democrats.''
+  The younger Mr. Casey won his last race, in 2018, by 13 percentage points. This year, the recount was triggered because Mr. McCormick led Mr. Casey by less than half of a percentage point.
+  In an interview, former Representative Charlie Dent, a Pennsylvania Republican, reflected on the political realignment that has been especially vivid in his state.
+  Highly educated or more moderate Republicans have become more open to Democrats, while onetime culturally conservative Democrats have shifted hard to the right in the Trump era.
+  '''Pro-labor, pro-life, pro gun' -- that was a big part of the Democratic Party in Pennsylvania,'' said Mr. Dent, who supported Ms. Harris this year. ''It seems that that population has migrated solidly into the Republican camp.''
+  Still, even some Democrats in Pennsylvania bucked the national trends.
+  Representative Chris Deluzio, a Democrat from Western Pennsylvania, noted that he improved his standing in Beaver County -- a heavily white, working-class county -- this year, though he did not win it.
+  He urged his party not to cede the ''fighter'' mantle, encouraging fellow Democrats to embrace a clear economic message that includes confronting corporate power and fighting to defend unions.
+  ''We certainly have to have a national party that can win in the Rust Belt,'' he added.
+
+https://www.nytimes.com/2024/11/18/us/politics/democrats-white-working-class-harris.html
+
+Graphic
+
+ 
+PHOTOS: Senator Bob Casey of Pennsylvania is headed to a recount in his re-election contest against David McCormick, a Republican. (PHOTOGRAPH BY ERIC LEE/THE NEW YORK TIMES)
+Gov. Tim Walz of Minnesota, visiting Volant, Pa., repeatedly campaigned in white working-class areas across the country. (PHOTOGRAPH BY JEFF SWENSEN FOR THE NEW YORK TIMES)
+ Senator Sherrod Brown of Ohio, second from left, was one of several Democrats who lost this fall. (PHOTOGRAPH BY MADDIE MCGARVEY FOR THE NEW YORK TIMES) This article appeared in print on page A15.

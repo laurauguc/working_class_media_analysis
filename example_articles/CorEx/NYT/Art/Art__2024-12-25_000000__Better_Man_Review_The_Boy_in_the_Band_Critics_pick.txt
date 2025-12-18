@@ -6,7 +6,7 @@ DATE: 2024-12-25 00:00:00
 SECTION: MOVIES
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Art']
-LABEL: [0.999999]
+LABEL SCORES: [0.999999]
 
 BODY:
 The singer Robbie Williams's caustic, often vulnerable narration is the melody that enriches this musical biopic's otherwise familiar beats of pop stardom.

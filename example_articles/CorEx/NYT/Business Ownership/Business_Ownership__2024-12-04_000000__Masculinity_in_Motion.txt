@@ -6,7 +6,7 @@ DATE: 2024-12-04 00:00:00
 SECTION: Section F; Column 0; SpecialSections; Pg. 10
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Art', 'Business Ownership', 'Books']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Diego Vega Solorza does not want people to think of him as a visual artist. He is certainly not a sculptor, he insists, nor a photographer or videographer -- even though he will exhibit that kind of work in a showcase for emerging talent at this year's Art Basel Miami Beach, the visual arts mega-fair running Friday through Sunday.

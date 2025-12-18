@@ -5,8 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-11 00:00:00
 SECTION: BUSINESS; dealbook
 SOURCE_FILE: NYT/2.DOCX
-LABEL: ['Housing', 'Education', 'Union']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Education', 'Union', 'Election']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Industry leaders attending the conference were asked about artificial intelligence, the economy, international relations and more.

@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-31 00:00:00
 SECTION: OPINION; Pg. A13
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Union', 'Indebtedness', 'Business Ownership']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Union', 'Indebtedness']
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 ABSTRACT

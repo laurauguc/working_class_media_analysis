@@ -6,7 +6,7 @@ DATE: 2024-11-27 00:00:00
 SECTION: INTERNATIONAL-HOME
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Family', 'Crime']
-LABEL: [0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 Dominique Pelicot invited men to rape his wife, whom he had drugged. The French media call them "Mr. Every Man" because they come from such ordinary backgrounds.

@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-19 00:00:00
 SECTION: WEEKENDER; Pg. WE-8
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Housing', 'Art', 'Health']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Housing', 'Family', 'Art']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Hard to believe it's already been a quarter-century since we entertained the notion that Y2K was going to shut down civilization.

@@ -6,7 +6,7 @@ DATE: 2024-11-07 00:00:00
 SECTION: Section A; Column 0; Foreign Desk; Pg. 4
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Housing', 'Indebtedness', 'Business Ownership']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 The government says the city's smallest apartments need more regulation. For some of Hong Kong's poorest, that could mean higher rents or even eviction.

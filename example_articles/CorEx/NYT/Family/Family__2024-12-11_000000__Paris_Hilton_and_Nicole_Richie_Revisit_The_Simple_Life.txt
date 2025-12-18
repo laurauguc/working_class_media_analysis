@@ -6,7 +6,7 @@ DATE: 2024-12-11 00:00:00
 SECTION: ARTS; television
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Family', 'Art']
-LABEL: [0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 The celebutantes-turned-businesswomen are rebooting the show that provided a blueprint for the past 20 years of reality TV.

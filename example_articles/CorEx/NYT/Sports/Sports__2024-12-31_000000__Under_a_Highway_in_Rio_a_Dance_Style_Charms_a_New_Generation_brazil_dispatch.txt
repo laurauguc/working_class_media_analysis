@@ -5,8 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-31 00:00:00
 SECTION: WORLD; americas
 SOURCE_FILE: NYT/1.DOCX
-LABEL: ['Art', 'Sports', 'Education']
-LABEL: [0.999999, 0.999999, 0.999895254046757]
+LABEL: ['Art', 'Sports', 'Business Ownership']
+LABEL SCORES: [0.999999, 0.999999, 0.9999979227083945]
 
 BODY:
 Trucks, buses and cars rumbled overhead, drowning out Marcus Azevedo's voice. In the distance, sirens blared and exhaust pipes backfired. From under a highway overpass, Mr. Azevedo, a dance teacher, shouted over the noise, "Five, six, seven, eight!"

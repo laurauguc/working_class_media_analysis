@@ -6,7 +6,7 @@ DATE: 2024-11-22 00:00:00
 SECTION: NEWS; Pg. A1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Housing', 'Union', 'Election']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 For tens of millions of Americans, President-elect Donald Trump's victory on Nov.5 sparked a wave of excitement and hope, particularly when it comes to their wallets. Trump campaigned heavily on his plans to lower gas prices, slow inflation and reduce interest rates - and he won a resounding victory. Voters who opposed Trump worried that agenda would put economic concerns above human rights, access to health care and competent government. But Trump voters interviewed by USA TODAY said the economy is their biggest concern, and they're eager for  him to reverse policies of President Joe Biden's that they blame for post-pandemic price increases.

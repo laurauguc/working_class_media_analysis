@@ -1,0 +1,51 @@
+TITLE: Tiny Homes Face the Ax in Hong Kong, Leaving Many Families Worried
+TOPIC: Business Ownership
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-11-05 00:00:00
+SECTION: Section ; Column 0; Foreign Desk
+SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Housing', 'Indebtedness', 'Business Ownership']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
+
+BODY:
+The government says the city's smallest apartments need more regulation. For some of Hong Kong's poorest, that could mean higher rents or even eviction.
+As she surveyed her home in Hong Kong, Liu Lanhua tried not to be bothered that her narrow kitchen doubled as the family's only bathroom. 
+  Colanders, pans and hairbrushes dangled above the toilet. Jars of chili oil were precariously balanced on water pipes. A stew of chicken wings and chestnuts warmed on an electric stove a few feet from the shower faucet.
+  She and her 12-year-old daughter are among 220,000 people in Hong Kong living in subdivided homes, which have long been among the starkest examples of the city's vast income inequality.
+  Now her home is under threat. Hong Kong's leader, John Lee, last month announced that the city would impose minimum standards on the size and fixtures of such apartments. The policy is expected to phase out more than 30,000 of the smallest subdivided homes.
+  In Ms. Liu's home, there was no space for a sink; the only spot for two pet turtles was in a basin under the fridge. ''If we had money, these would be in separate rooms,'' she said, looking at the cluttered kitchen and toilet. 
+  Beijing has urged the Hong Kong government to get rid of subdivided units and other tiny homes by 2049, because it regards the city's housing shortage as one cause of the antigovernment unrest of 2019.
+  But Mr. Lee's plan has raised concerns among experts and advocates of more public housing, who say it would raise already high rents for the poor and evict a number of people without clear plans for their resettlement. It also doesn't address the worst types of housing in the city: rental bed spaces so small they are known as coffin, or cage, homes.
+  Of Slums and Slumlords
+  Hong Kong's subdivided homes, created when apartments are carved into two or more units, are usually in old tenement buildings in densely packed, working-class neighborhoods. Despite their often dilapidated conditions, the units are in high demand because affordable housing is in short supply.
+  Hong Kong has among the world's most expensive homes, and highest rents. The average living space per person is 64.6 square feet -- less than half the size of a New York City parking space. Owners of tenement apartments partition the units into smaller ones to rent them to more people.
+  ''These are effectively slums and the landlords are slumlords,'' said Brian Wong, a researcher at the Liber Research Community, an independent group in Hong Kong focused on land use and urban issues.
+  He added that the landlords who rent out subdivided units are often upper-middle-class residents looking to maximize profits. Paradoxically, the rent price of such units, on a per-square-foot basis, is usually higher than that of larger private apartments.
+  Ms. Liu pays $500 a month for her home of about 80 square feet, about a quarter of what she earns working at a construction site. Her unit is in a 60-year-old tenement building with peeling pink and yellow paint in Kwun Tong, a district in east Kowloon that was once an industrial heartland, with cotton mills and a soy sauce factory.
+  ''I will live where it's cheap,'' she said, adding that she wanted to pay for after-school classes for her daughter. She has been waiting for six years to move into public housing but has no idea when that might happen.
+  Ms. Liu and her daughter sleep on bunk beds in the 60-square-foot main room, pushed against windows that are covered with paper for privacy and always closed to keep rats out. Ms. Liu appreciates that her neighbors don't complain when her belongings spill into common spaces.
+  Kwun Tong is the most densely populated district in Hong Kong, and the poorest. People are drawn to it for its connectivity and services. Ms. Liu moved there six years ago to take a housekeeping course. Her daughter rides two stops on the subway to attend public school and studies with a tutor nearby until dinnertime. Their apartment is close to a large wet market.
+  The Hong Kong Leader's Plan
+  Ms. Liu's home would not meet the standards required under the policy outlined by Mr. Lee, the city's chief executive, which stipulates that each home must have a separate bathroom and kitchen. It would likely require significant renovation or remodeling.
+  The policy also calls for apartments to be at least 86 square feet and come with windows.
+  Ms. Liu's bathroom and stove are in a narrow cubicle that is slightly more than 20 square feet, separated from the main room by a common hallway. There is one faucet but no shower cubicle or sink, so she soaks ingredients in a bowl on the floor. The fridge faces the toilet.
+  Merged toilet and kitchen setups like this are common in subdivided apartments. Some apartments come only with toilets or kitchens that are shared with other households.
+  The government estimates that 30 percent of the city's 110,000 subdivided homes will fall short of the new standards.
+  The Housing Bureau said in a response to questions from The New York Times that the rules were needed to improve living conditions. It said it would inspect apartments and that landlords could face prison time for not complying with the rules.
+  The bureau also said that landlords would have a few years to renovate their units to meet the standards, and register them in a centralized system.
+  Plan Leaves Much to be Desired
+  At a recent meeting between social workers with the Kwun Tong Subdivided Home Concern Group, a nonprofit, and residents of the district, questions were raised about the government's plan. What are the standards for a proper toilet? If rents go up, will the government provide tenants with subsidies? Will those evicted be given priority in housing wait-lists?
+  ''The standards have been raised but our finances haven't,'' said Moon Tang, a mother of three. She also wondered what would happen to people if they were evicted. ''If they had money, they would have rented a more expensive space in the first place,'' she said. ''Where do they go?''
+  In its emailed response to questions, the Housing Bureau said the government would ''adopt a gradual and orderly approach'' to the changes and would help residents ''where necessary.'' Most affected tenants would be able to turn to an increased supply of permanent and temporary public housing apartments by the time the rules come into force in the coming years, it said.
+  Experts note, however, that the new policy also fails to address problems faced by those living in ''cage homes'' or ''coffin homes'' -- bed spaces separated by wired metal or panels of wood. (Such spaces are regulated by a separate law.)
+  Siu Ming Chan, an assistant professor at the City University of Hong Kong who researches poverty and housing, said the rules could lead to a rise in rents, making apartments even more unaffordable. The government should increase subsidies for those affected by the policy, many of whom are older and live alone, he added.
+  Ben Shek, 68, a former technician who lives alone in a 60-square-foot Kwun Tong apartment that would likely be considered substandard, does not want to move. He suffered a stroke more than a decade ago that left him with a limp and unable to work. He shares a bathroom with two other families, inside a carpentry workshop. He likes his place because it is on the ground floor, making it easy for him to get around.
+  ''Since I'm not working anymore, I don't get to have too many expectations,'' he said. ''And even if I did, they can't be too high.''
+
+https://www.nytimes.com/2024/11/05/world/asia/hong-kong-subdivided-housing.html
+
+Graphic
+
+ 
+PHOTO: Liu Lanhua in her subdivided apartment in the Kwun Tong district of Hong Kong. Such homes are among the starkest examples of the city's vast income inequality. (PHOTOGRAPH BY Billy H.C. Kwok for The New York Times FOR THE NEW YORK TIMES)

@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-12-01 00:00:00
 SECTION: ASECTION; Pg. A-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Housing', 'Union', 'Indebtedness']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Housing', 'Indebtedness', 'Family']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 As the Gateway Clipper made a slow turn to head up the Allegheny River one day earlier this year, Capt. Joe DiNome said transporting sightseers daily on the big blue and white replica of a 19th century paddleboat really doesn't feel like work. Pointing at the city's iconic skyline, he said, "That's my office view."

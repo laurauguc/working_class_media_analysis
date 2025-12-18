@@ -6,7 +6,7 @@ DATE: 2024-12-20 00:00:00
 SECTION: Section A; Column 0; Foreign Desk; Pg. 10
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Crime']
-LABEL: [0.999999]
+LABEL SCORES: [0.999999]
 
 BODY:
 Most of the accused received sentences of eight to 10 years, less than the 10- to 18-year terms that the public prosecutor had recommended.

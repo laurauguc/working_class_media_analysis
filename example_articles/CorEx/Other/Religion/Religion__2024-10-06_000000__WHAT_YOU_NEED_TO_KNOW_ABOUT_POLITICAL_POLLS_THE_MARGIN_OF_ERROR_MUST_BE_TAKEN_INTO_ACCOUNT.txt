@@ -6,7 +6,7 @@ DATE: 2024-10-06 00:00:00
 SECTION: LOCAL; Pg. C-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Election', 'Health', 'Religion']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 With the 2024 election just over a month away, the race between former President Donald Trump and Vice President Kamala Harris is as tight as ever. Most major polls show Ms. Harris slightly in the lead, but - statistically - that could be a mirage, because of a well-worn but little-heeded term: the margin of error.

@@ -6,7 +6,7 @@ DATE: 2024-12-09 00:00:00
 SECTION: STYLE
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Sports']
-LABEL: [0.999999]
+LABEL SCORES: [0.999999]
 
 BODY:
 A reader seeks advice on how to style corduroy in a modern fashion. Our critic offers guidance on wearing the highly versatile fabric.

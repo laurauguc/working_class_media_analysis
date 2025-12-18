@@ -6,7 +6,7 @@ DATE: 2024-12-15 00:00:00
 SECTION: Section MM; Column 0; Magazine Desk; Pg. 24
 SOURCE_FILE: NYT/2.DOCX
 LABEL: ['Housing', 'Education', 'Union']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Louisa, Ky., is a small town of about 2,600 on the border of West Virginia with a single pair of railroad tracks running through it. If you follow these tracks south, against the flow of the Big Sandy River, you'll go between the public library and the Main Street Park and over Lick Creek, one of the manifold creeks that web eastern Kentucky like capillaries. Follow Lick Creek past a baseball diamond and a pawnshop and you'll arrive behind an ordinary gray mobile home in a small lot of grass where Ingrid Jackson was living in the fall of 2023. The days were still long and the afternoon sun settled gently on nearby mountains, turning leaves a lambent red. Reedy gospel music played from inside the trailer, announcing Jackson's presence as she opened the door. Her hair, normally figured in light brown curls, was packed into a shower cap. She smiled from the entryway. It was a smile difficult not to smile back at.

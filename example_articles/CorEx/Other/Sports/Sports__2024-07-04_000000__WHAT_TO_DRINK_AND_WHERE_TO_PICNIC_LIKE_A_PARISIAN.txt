@@ -6,7 +6,7 @@ DATE: 2024-07-04 00:00:00
 SECTION: FOOD; Pg. E-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Housing', 'Business Ownership', 'Sports']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 During the Summer Olympic Games in Paris, large crowds will throng the Eiffel Tower, the Louvre Museum, Seine River cruises and the Palace of Versailles. Meanwhile, many well-known restaurants and bistros will be closed for France's cherished five weeks of vacanes, i.e., summer vacation.

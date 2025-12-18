@@ -6,7 +6,7 @@ DATE: 2024-08-05 00:00:00
 SECTION: OPINION; Pg. A-12
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Election', 'Religion']
-LABEL: [0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 Absent her identity, it's hard to imagine Kamala Harris would have been anywhere near Biden's top choice for his vice president. But you know what? You could say the same for almost every vice-presidential pick in recent memory.

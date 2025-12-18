@@ -6,7 +6,7 @@ DATE: 2024-11-27 00:00:00
 SECTION: Section D; Column 0; Dining In, Dining Out / Style Desk; Pg. 10
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Business Ownership', 'Sports']
-LABEL: [0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 Malört is, in one word, unforgiving. Made from neutral spirits, wormwood and sugar, it tastes a little like sucking dandelion juice through a straw made of car tires. It is also kind of good. Intensely bitter, it's herbaceous and a touch citrusy, as if you were to bite a grapefruit like an apple.

@@ -6,7 +6,7 @@ DATE: 2024-12-16 00:00:00
 SECTION: OPINION
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Union', 'Election', 'Military']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Donald Trump won the 2024 election after promising to wage war on elements of the federal work force. "Either the deep state destroys America, or we destroy the deep state," he said in the first major rally of his campaign. Russell Vought, whom Mr. Trump has tapped to head the Office of Management and Budget, has said he wants bureaucrats to be "increasingly viewed as the villains." Elon Musk and Vivek Ramaswamy, the leaders of Mr. Trump's new Department of Government Efficiency, promise to enact "mass head-count reductions across the federal bureaucracy."

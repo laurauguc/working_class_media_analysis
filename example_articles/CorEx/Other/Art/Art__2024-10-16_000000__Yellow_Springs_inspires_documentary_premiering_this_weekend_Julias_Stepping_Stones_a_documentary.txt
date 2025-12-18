@@ -6,7 +6,7 @@ DATE: 2024-10-16 00:00:00
 SECTION: LIFESTYLES
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Education', 'Art']
-LABEL: [0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 The Wexner Center for the Arts' annual documentary film festival, Unorthodocs, will feature the premiere of "Sound Spring" along with a screening of the Julia Reichert documentary "Julia's Stepping Stones" on Saturday, Oct. 19 at The Ohio State University in Columbus.

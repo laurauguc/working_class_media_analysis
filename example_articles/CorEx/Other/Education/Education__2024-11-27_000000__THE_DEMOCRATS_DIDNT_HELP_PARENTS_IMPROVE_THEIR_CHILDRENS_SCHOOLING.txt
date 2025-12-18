@@ -6,7 +6,7 @@ DATE: 2024-11-27 00:00:00
 SECTION: OPINION; Pg. A-15
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Education']
-LABEL: [0.999999]
+LABEL SCORES: [0.999999]
 
 BODY:
 As a liberal mom of three, I never thought I'd find myself so profoundly disappointed in the Democratic Party. Yet here I am, standing shoulder to shoulder with countless moms across our state - moms who are fed up, disillusioned, and angry.

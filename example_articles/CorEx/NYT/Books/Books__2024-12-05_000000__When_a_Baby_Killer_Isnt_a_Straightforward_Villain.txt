@@ -5,6 +5,8 @@ PUBLISHER: New York Times
 DATE: 2024-12-05 00:00:00
 SECTION: MOVIES
 SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Art', 'Books']
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 The real-life murderer who inspired "The Girl With the Needle" was "a monster," said the actress who plays her, "but the movie is also about showing you her struggles."

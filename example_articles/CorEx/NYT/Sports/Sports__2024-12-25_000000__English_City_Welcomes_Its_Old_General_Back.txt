@@ -6,7 +6,7 @@ DATE: 2024-12-25 00:00:00
 SECTION: Section A; Column 0; Foreign Desk; Pg. 6
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Housing', 'Sports', 'Business Ownership']
-LABEL: [0.999999, 0.999999, 0.9999829316630309]
+LABEL SCORES: [0.999999, 0.999999, 0.9999921815446838]
 
 BODY:
 At six feet, the statue was taller than the man ever was. Carved roughly from limestone, his large shoulders hunched under a bright red jacket, the likeness of the man known as the Old General had held its perch in Nottingham, England, for nearly a century, suspended in a display window above the front door of the local pub.

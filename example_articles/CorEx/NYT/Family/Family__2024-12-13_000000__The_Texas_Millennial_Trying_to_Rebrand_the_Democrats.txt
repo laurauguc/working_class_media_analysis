@@ -1,0 +1,51 @@
+TITLE: The Texas Millennial Trying to Rebrand the Democrats
+TOPIC: Family
+SCORE: 0.999999
+PUBLISHER: New York Times
+DATE: 2024-12-13 00:00:00
+SECTION: US; politics
+SOURCE_FILE: NYT/1.DOCX
+LABEL: ['Union', 'Election', 'Family']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
+
+BODY:
+"We can't bring a policy book to a gunfight," said Representative Greg Casar of Texas, the incoming chair of the Congressional Progressive Caucus.
+Ever since they lost big in November, Democrats have talked about how much their party needs to change.
+Representative Greg Casar is living it.
+Last week, Casar, a 35-year-old Democrat from Austin, Texas, was elected as the chair of the Congressional Progressive Caucus, becoming the youngest person ever tapped to lead the group of liberals at a moment when his party is struggling with younger voters. He's also the first leader from Texas, a state Democrats find perennially vexing.
+Casar, a former union organizer, will be tasked with leading progressives through a challenging period, one that has some Democrats blaming them for tugging the party too far to the left. He believes it was centrists like Joe Manchin, the former Democrat and departing senator from West Virginia, who caused the party to water down policies that could have galvanized working-class voters. But he says progressives need to shift their message, too.
+I spoke by phone with Casar this week, for the second in my series of interviews with Democrats grappling with how to move the party forward. Our conversation was edited for length and clarity.
+JB: Why should somebody from a red state lead progressive Democrats?
+GC: Right now, the Democratic Party is doing really important soul-searching. As we work to regain working-class voters' trust, as we work to bring Democrats back into the fold that decided to vote for Trump this time, I think it's really important that progressives build a big tent.
+It is important for the Democratic Party leadership to be as diverse as the voters that we're trying to bring in. We need older leadership. We need younger leadership, leadership from the South. We need leadership from the coast, but we can't have it all from the coast.
+Let's talk a little bit about that soul-searching. What do you think went wrong in November?
+Ever since 2012, the Democratic Party has been losing working-class voters across races and across geography, and we just can't let that happen.
+Democrats need to rebrand and reform our party to much more clearly communicate to working people that we're in it for them, and that we're willing to take on the powerful interests that are screwing them in this economy. And if we don't tell that last part of the story, if we don't acknowledge that working people are struggling and that they're feeling screwed over, then we can sound preachy or policy wonky or disconnected or like institutionalists. That certainly doesn't work, especially when you're up against Donald Trump.
+You use the word "preachy." Do you think the Democratic Party was too preachy during the campaign?
+We have to have a big tent that includes people who may not agree with us on every single social issue, but who are with us on fighting for the economic interests of the everyday person. I do think it's also incumbent on progressives to make sure our message is focused on winning rather than on just playing to our existing audience.
+I think that this will require reform in all different parts of the party. Some of the institutionalist and corporate parts of the party that wanted to explain to people that inflation wasn't as bad in the United States as in other nations — that's not a winning message.
+If I was to speak critically about myself: In the past, if Governor Abbott or another right-wing politician picked on somebody in the L.G.B.T.Q. community, I would say that L.G.B.T.Q. rights are basic rights, and that we should stand up for those rights, period. And I still believe that.
+But I think that if we want to refocus and re-center the Democratic Party around fighting for working people first and not throwing vulnerable people under the bus, now I would have a different message.
+People like Congresswoman Nancy Mace are filing bills in the Capitol about which marble bathroom certain people can and can't use, because she wants to distract the American people from the billionaire tax cut that she's about to work on with Donald Trump.
+We should be clear that the Republicans are playing a game by targeting and scapegoating a group of vulnerable people in order to make it sound like, in Middle America, that is all the Democratic Party works on and cares about. Instead of fully diving into the culture war fight with the Republicans, I think we should be more clearly calling out the Republican game and connecting the dots for the everyday voter.
+Do you think that the problem in November was a messaging problem, or was it a substance problem?
+I think the Democratic Party brand was already struggling so much with working-class voters that we could not survive the onslaught of Republican dark money and lies. Our brand wasn't strong enough to survive that onslaught, and that brand has problems for a mix of substantive reasons and message reasons.
+If corporate elements of the Democratic Party, like Joe Manchin and his wing of the party, had listened to progressives and had passed the bills to lower housing costs, to contain child care costs within 7 percent of a person's income, I think that substantively would have helped a lot in this election.
+After Brian Thompson, the chief executive of UnitedHealthcare, was assassinated in broad daylight last week, we heard this upswell of dissatisfaction with the way that the health system functions. Most people with whom that resonated would quickly say that doesn't mean they want to kill anybody, but —
+They weren't really talking about him. What people are speaking up about is that they're sick and tired of feeling like C.E.O.s and big corporations are getting away with anything. I think that's where Democrats have hesitated to tell a full story that includes what the problem is and who the villains are.
+Donald Trump clearly always said housing costs are up. It's a lie, but Donald Trump said it's immigrants' fault. Grocery costs are up. It's a lie, but Donald Trump said it's immigrants' fault. He also said that is wokeness's fault. He told us a myth, a lie, but it's a whole story, whereas Democrats too often try to explain things instead of — we can't bring a policy book to a gunfight.
+Democrats need to be able to say, you know, it's not an asylum seeker trying to raise your rent. It's hedge funds just buying up neighborhoods, jacking up the rent and being deregulated by the Republicans. You heard less and less of that during the vice president's campaign. But it's not just about any one candidate, right? I think that message, that kind of message, is what the Democratic Party has needed for the last few years.
+That's not necessarily running further to the left or running further to the right. It's more running directly at working people's issues. It's about the bottom 90 percent punching up at the people who are actually raising prices and suppressing wages.
+Do you think there was a failure by the Democratic Party this year to tap into that kind of discontent?
+Ever since the 2008 housing crash, ever since Occupy Wall Street and Black Lives Matter, there's been serious discontent. If you look at people's wages compared to inflation over the course of my lifetime, it's barely kept up, while profits have soared. Democrats need to acknowledge that discontent and show people that we're going to fight for that.
+When you asked have we failed in that regard, the answer is yes.
+Many elected Democrats are acknowledging a cultural problem, too. Republicans found a way to resonate with working-class men who don't vote a lot — a group that includes Latino, Black and white men. How should Democrats respond?
+The Democratic Party in the past has been able to hold people together across cultural divides because, at the end of the day, the Democratic Party was for the everyday person. I saw this in my time as a labor organizer, where on construction sites we had to bring together fifth-generation Texans and unions who are overwhelmingly white alongside undocumented, Spanish-speaking immigrant construction workers.
+But across those divides, I saw how workers would stand up and fight against some of the biggest developers in the country when they had a shared interest that they were all fighting for: a raise. And that's what I think the Democratic Party has to do.
+So we can say, "I agree on some of these cultural issues. I might disagree some on that cultural issue. At the end of the day, it's the Democrats who are authentic and willing to fight for me." I think that's what starts to erase some of those differences.
+Tell us your favorite movies about politics.
+You might be tired of politics after this roller coaster of a presidential election. Maybe you've tried escaping to the movies — only to find that some of the season's releases, like "Gladiator II" or the Ralph Fiennes pope thriller "Conclave," are themselves about campaigns, conniving and democracy's viability.
+As a follow-up to the On Politics reading guide we assembled over the summer, I want to hear about your favorite movies about politics. Tell me why you adore a classic like "All the President's Men." Or tell me about a movie you love that touches on political themes even as it seems to be about something else.
+Your answer may be featured in an upcoming newsletter.
+Submit your favorite here.
+PHOTO: Representative Greg Casar, a 35-year-old Democrat from Austin, Texas, is the youngest person ever tapped to lead the Congressional Progressive Caucus. (PHOTOGRAPH BY Kenny Holston/The New York Times FOR THE NEW YORK TIMES)

@@ -6,7 +6,7 @@ DATE: 2024-12-16 00:00:00
 SECTION: Section B; Column 0; Business/Financial Desk; Pg. 1
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Election', 'Health', 'Business Ownership']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.9999806554278446]
 
 BODY:
 It was a week of frenzied activity, as Silicon Valley billionaires and their companies brandished checks and compliments for the President-elect.

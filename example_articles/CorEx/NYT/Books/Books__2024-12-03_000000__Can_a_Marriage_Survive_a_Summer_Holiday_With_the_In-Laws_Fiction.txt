@@ -6,7 +6,7 @@ DATE: 2024-12-03 00:00:00
 SECTION: BOOKS; review
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Family', 'Books']
-LABEL: [0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 In Weike Wang's novel "Rental House," a couple invite their families to visit them on vacation.

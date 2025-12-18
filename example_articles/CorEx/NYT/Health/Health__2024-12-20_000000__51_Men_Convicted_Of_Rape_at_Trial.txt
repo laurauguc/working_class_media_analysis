@@ -6,7 +6,7 @@ DATE: 2024-12-20 00:00:00
 SECTION: Section A; Column 0; Foreign Desk; Pg. 1
 SOURCE_FILE: NYT/1.DOCX
 LABEL: ['Family', 'Health', 'Crime']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Dozens of men who abused Gisèle Pelicot were convicted, including the man who invited them to do so: her husband of 50 years. She wanted the public trial to show rape victims they were not alone.

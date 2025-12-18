@@ -6,7 +6,7 @@ DATE: 2024-11-03 00:00:00
 SECTION: ASECTION; Pg. A-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Election', 'Military', 'Health']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 A former president and major-party nominee convicted of 34 felonies for the first time in U.S. history. The oldest-ever sitting president abandoning his re-election bid with just over 100 days left in the race. An assassination attempt. The first woman of color to lead a national ticket. An unprecedented warning from former generals that the Republican candidate poses a dire threat to the country.

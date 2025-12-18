@@ -5,6 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2023-11-28 00:00:00
 SECTION: NEWS; Pg. 0
 SOURCE_FILE: Other publishers/Files (500) (2).DOCX
+LABEL: ['Family', 'Art', 'Books']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 Colman Domingo has a commanding physical presence, an expressive face and soulful eyes. But his most limber and powerful tool is his voice. It can go low in a bone-rattling baritone, like in his Nigerian-accented pimp in Janicza Bravo's "Zola." Or it can rise to the warm, erudite rhythm of civil rights leader Bayard Rustin, in "Rustin." In Steven Spielberg's "Lincoln," Domingo's voice, as a union soldier, is the first thing you hear. 

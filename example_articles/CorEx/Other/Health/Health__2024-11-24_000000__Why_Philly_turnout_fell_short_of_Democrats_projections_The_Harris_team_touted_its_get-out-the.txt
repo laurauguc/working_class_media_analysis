@@ -1,0 +1,44 @@
+TITLE: Why Philly turnout fell short of Democrats' projections; The Harris team touted its get-out-the-vote push, but the city still edged to the right. Party officials are pointing fingers.
+TOPIC: Health
+SCORE: 0.999999
+PUBLISHER: Other publisher
+DATE: 2024-11-24 00:00:00
+SECTION: MAIN NEWS; Pg. A1
+SOURCE_FILE: Other publishers/Files (500) (1).DOCX
+LABEL: ['Election', 'Health', 'Education']
+LABEL SCORES: [0.999999, 0.999999, 0.8251190479969995]
+
+BODY:
+ABSTRACT
+Vice President Kamala Harris' campaign poured significant resources into a vaunted operation to turn out voters in Philadelphia. The effort was supported by an army of door-knocking volunteers, and Democrats projected that Philadelphians would turn out in record numbers. They said the Republican get-out-the-vote operation was comparatively weak.
+Now, two weeks out from a red wave election that sent former President Donald Trump back to the White House, Democrats locally and nationally are questioning whether their expansive operation moved the needle. Similar to the rest of the country, true-blue Philadelphia moved to the right, and the predicted surge in voter turnout didn't materialize. Across most of the city, fewer people came out to vote than did four years ago.
+The difference maker seemed to be less about tactics and more about a deep-seated dissatisfaction among the electorate with the direction the country is headed.
+"This was a failure from the top. This isn't a grassroots failure," said Rafael Álvarez Febo, a Puerto Rican and LGBTQ community leader based in North Philadelphia. "Turnout was low, people were not excited, and this is what we got."
+In 2024, 726,692 ballots were cast in Philadelphia, meaning about 22,600 fewer people voted in the city compared with the last presidential election. About 65% of registered voters cast ballots - a decline of about 1.3 percentage points compared with four years ago. According to an Inquirer analysis of precinct-level data, as of Friday, voter turnout declined in 56 of the city's 66 geographically based political wards.
+In the places where turnout did increase, the largest jumps were around the city's colleges and universities - a predicted spike compared with 2020, when most college students weren't on campus due to the COVID-19 pandemic.
+Elsewhere, some declines in voter turnout were steeper than the citywide average. For example, in North Philadelphia's 11th Ward and West Philadelphia's 44th Ward, turnout dipped more than 5% compared with four years ago.
+And Philadelphia turnout still lagged other places in the state. While the city saw about 65% voter turnout, statewide voter turnout was 76.6% this year, marking an increase of half a percentage point compared with 2020, according to an Inquirer analysis of election returns. A small number of votes remained to be counted.
+In addition to the city's slight overall decline in voter turnout, some Philadelphians changed the method they used to vote. Voters in the city cast about 176,000 fewer mail ballotsin the 2024 presidential election, a decline that was expected because more people stayed home and voted by mail during the pandemic. About 157,000 more people cast ballots in-person at polling places compared with four years ago.
+Democrats question'old-school tactics'
+The lackluster turnout in Philadelphia, coupled with a rightward shift of a few percentage points, meant that Trump carried just 20% of Pennsylvania's most populous city but netted thousands of more votes than he did in 2020, when President Joe Biden won the state.
+And it spells concern for Democrats, who are used to dominating the city where they hold a 6-1 voter advantage but have been concerned about soft turnout for several years. Some in the party are questioning how they message to voters - especially those who are disillusioned with the political process - and asking whether the party is investing in the right methods to reach people.
+"We have a lot of old-school tactics that are being deployed in a new reality," said J.J. Abbott, a Democratic strategist who worked with a coalition of labor unions and progressive organizations that supported Harris. "The idea that it just takes a big push at the end to get people out is not sufficient for us to be able to carry people through the journey to be a voter and to turn out people who are disaffected."
+A nationwide Democratic reckoning has led party officials, elected leaders, and strategists to question their own tactics, including the massive investment in time-consuming field operations like door-knocking, phone-calling, and texting as means of reaching voters.
+The Republican field operation in battleground states was comparatively small. Trump's campaign invested in some traditional on-the-ground approaches, but also placed more emphasis on Election Day staffing at polling places and litigation. Billionaire Elon Musk ran a super PAC focused on voter outreach, but it remains unclear how effective that effort was.
+In Philadelphia, some of the postelection recriminations have been directed at the Democratic City Committee and its longtime chairman Bob Brady. The local Democratic Party is responsible for driving turnout in the city, but critics have long said the operation is ineffective and inconsistent.
+Brady said in an interview that voter turnout was "just a little bit off" in Philadelphia, but that an increase in turnout wouldn't have been a difference maker for Harris, who lost all seven battleground states.
+"We did a great job. We did as best as we could," he said. "The problem is the economy."
+'Deep canvassing' asDems start from a deficit
+Some leaders within the Democratic City Committee have their own get-out-the-vote operations to complement the party's organization. For example, progressive elected officials teamed up with ward leaders in South Philadelphia several years ago to create the South Philly Voter Project, an organization of volunteers who knock on doors and work to drive up turnout.
+Democrats in the river wards created their own version of that project, and this year knocked on more than 18,000 doors in the Fishtown area, said Lauren Rinaldi, the Democratic leader of the city's 18th Ward.
+"Part of it is engaging neighbors and voters and everybody year-round, not just a couple of weeks leading up to Election Day," Rinaldi said. "It has to be deeper than that. It has to be inclusive, welcoming, transparent, and open."
+Febo, a Democrat who supported Harris, said that those tactics are key, and that the Democratic Party hasn't effectively established relationships with voters, especially in the working class, making voters feel like the relationship is transactional during election season. For example, he pointed out, Harris unveiled an agenda for Puerto Rico during a campaign stop in Philadelphia - but it was just nine days before the election.
+Some progressive groups and labor unions have made so-called deep canvassing - or repeatedly engaging with the same voters over an extended period - a core part of their strategy. Salaah Muhammad, the Pennsylvania organizing director of the progressive Working Families Party, believes it shows in the qualitative result.
+"When we engage with voters in a real way, when we show up on their doors and invite them to meetings, they stay engaged with us," he said. "That gives me hope."
+But no matter the vigor of those programs, some Democrats say the party is starting out in a deficit. Abbott said Republicans have a considerably larger network of media personalities and influencers operating outside the political world and facilitating a "deeper cultural connection" with the electorate, whether it be through churches or the podcasting circuit.
+"The liberal movement in general is so far behind that," he said. "We try to make up ground at the end by throwing a bunch of money at a bunch of tactics, when the reality is that we have to make a huge investment up front in all those other things so that they're carrying the movement forward."
+Ryan Boyer, who leads a coalition of politically powerful building trades unions in the city, agreed that Democrats "have to communicate more with voters in off-years."
+But he said turnout was depressed because voters didn't feel inspired by either presidential candidate. The "dark tone" of the Trump campaign was off-putting to some, Boyer said, while Democrats didn't effectively grapple with voters' concerns about the economy and inflation under Biden.
+"The economy is doing better, but that's metrics. How do people feel?" Boyer said. "It has to be more tangible, and we have to connect the dots on things that government does and how it affects you."
+aorso@inquirer.com and sghani@inquirer.com
+anna_orso

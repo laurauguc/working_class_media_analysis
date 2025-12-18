@@ -6,7 +6,7 @@ DATE: 2024-12-13 00:00:00
 SECTION: NEWS; Pg. 1A
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
 LABEL: ['Union', 'Election']
-LABEL: [0.999999, 0.999999]
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 Five weeks after losing a national election, Gov. Tim Walz is keeping his options open both in Minnesota and nationally, gearing up for the 2025 legislative session and trying to understand why the ticket he joined with Democratic Vice President Kamala Harris didn't win over enough voters.

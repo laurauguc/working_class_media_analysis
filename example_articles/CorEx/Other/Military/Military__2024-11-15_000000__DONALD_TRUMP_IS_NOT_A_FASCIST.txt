@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-15 00:00:00
 SECTION: OPINION; Pg. A-17
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Union', 'Election', 'Military']
-LABEL: [0.999999, 0.999999, 0.999999]
+LABEL: ['Election', 'Military', 'Health']
+LABEL SCORES: [0.999999, 0.999999, 0.999999]
 
 BODY:
 For months, Democratic Party leaders, mainstream media figures, and renowned scholars have told us that Donald Trump is a fascist - a new Hitler eager to destroy our democracy. Now, despite all the warnings, Trump has decisively won the popular and Electoral College votes.

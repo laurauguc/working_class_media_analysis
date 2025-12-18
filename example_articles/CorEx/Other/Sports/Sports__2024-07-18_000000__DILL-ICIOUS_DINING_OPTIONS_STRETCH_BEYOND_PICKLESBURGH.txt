@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-07-18 00:00:00
 SECTION: FOOD; Pg. E-1
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Business Ownership', 'Sports', 'Art']
-LABEL: [0.999999, 0.999999, 0.8068037147929783]
+LABEL: ['Business Ownership', 'Sports']
+LABEL SCORES: [0.999999, 0.999999]
 
 BODY:
 Picklesburgh was voted USA Today's Best Specialty Food Festival in 2023. This year, it got bumped to second place, but we're still pickled pink with excitement about the festival, which runs July 18-21 on Boulevard of the Allies and in PPG Plaza in Downtown.

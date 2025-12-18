@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-11-17 00:00:00
 SECTION: NEWS; Pg. 12
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Art']
-LABEL: [0.999999]
+LABEL: ['Art', 'Books']
+LABEL SCORES: [0.999999, 0.9962746862651519]
 
 BODY:
 "Is it too real for ya?" blares in the background of Andrea Arnold's latest film, "Bird," as 12-year-old Bailey (Nykiya Adams) rides with her shirtless, tattoo-covered dad, Bug (Barry Keoghan), on his electric scooter past scenes of poverty in working-class Kent. The song's question "" courtesy of the Irish post-punk band Fontains D.C. "" is an acute one for "Bird." Arnold's films ("American Honey," "Fish Tank") are rigorous in their gritty naturalism. Her fiction films "" this is her first in eight years "" tend toward bleak, hand-held verité in rough-and-tumble real-world locations. 

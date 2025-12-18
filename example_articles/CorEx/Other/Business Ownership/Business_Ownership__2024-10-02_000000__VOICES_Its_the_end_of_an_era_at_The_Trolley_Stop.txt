@@ -5,8 +5,8 @@ PUBLISHER: Other publisher
 DATE: 2024-10-02 00:00:00
 SECTION: IDEAS VOICES
 SOURCE_FILE: Other publishers/Files (500) (1).DOCX
-LABEL: ['Education', 'Business Ownership']
-LABEL: [0.999999, 0.999999]
+LABEL: ['Business Ownership', 'Education']
+LABEL SCORES: [0.999999, 0.8107696770181406]
 
 BODY:
 Robin Sassenberg and Dani Bandura are retiring from their care of the Trolley Stop, one of the Oregon District's oldest and most popular bar and restaurants in Dayton. I use the word "care" because that's what they've been doing for their employees, customers, and community for almost thirty years: caring.
